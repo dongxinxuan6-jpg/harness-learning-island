@@ -1,0 +1,22 @@
+:root {
+  --color-canvas: oklch(0.975 0.006 170);
+  --color-paper: oklch(0.995 0.003 70);
+  --color-ink: oklch(0.285 0.035 255);
+  --color-muted: oklch(0.55 0.025 245);
+  --color-line: oklch(0.89 0.012 190);
+  --color-coral: oklch(0.65 0.185 10);
+  --color-coral-soft: oklch(0.94 0.045 10);
+  --color-mint: oklch(0.66 0.13 170);
+  --color-mint-soft: oklch(0.94 0.045 170);
+  --color-blue: oklch(0.67 0.13 245);
+  --color-blue-soft: oklch(0.94 0.035 245);
+  --color-yellow: oklch(0.78 0.13 82);
+  --color-yellow-soft: oklch(0.96 0.045 82);
+  --shadow-low: 0 4px 8px oklch(0.25 0.03 255 / 0.08);
+  --radius-card: 8px;
+  --radius-control: 6px;
+  --content-width: 1120px;
+  --reading-width: 760px;
+  --header-height: 64px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
