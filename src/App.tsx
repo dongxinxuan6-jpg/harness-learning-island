@@ -6,6 +6,8 @@ import { IntroHero } from './components/IntroHero'
 import { ProgressRail } from './components/ProgressRail'
 import { chapter1 } from './content/chapters/chapter1'
 import { chapter2 } from './content/chapters/chapter2'
+import { chapter3 } from './content/chapters/chapter3'
+import { BugTriageLab } from './interactions/BugTriageLab'
 import { IterationSimulator } from './interactions/IterationSimulator'
 import { ScopeBuilder } from './interactions/ScopeBuilder'
 
@@ -79,8 +81,9 @@ export default function App() {
         <div className="course-flow">
           <ChapterSection chapter={chapter1} interaction={<ScopeBuilder />} headingRef={firstChapterHeading} />
           <ChapterSection chapter={chapter2} interaction={<IterationSimulator />} />
-          {chapterTitles.slice(2).map((title, offset) => {
-            const index = offset + 2
+          <ChapterSection chapter={chapter3} interaction={<BugTriageLab />} interactionAfter={8} />
+          {chapterTitles.slice(3).map((title, offset) => {
+            const index = offset + 3
             return (
             <section
               className="chapter-placeholder"

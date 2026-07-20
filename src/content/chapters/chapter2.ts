@@ -6,7 +6,7 @@ export const chapter2: Chapter = {
   id: 'chapter-2',
   number: 2,
   title: 'AI First（人工智能优先）开发与反馈闭环',
-  source: { start: 661.44, end: 1151.3 },
+  source: { start: 661.44, end: 1151.08 },
   objectives: [
     '理解组织转型为什么先处理 Mindset（思维方式）和信任，而不是先购买更多工具。',
     '看懂业务指标、测试与发布信号怎样驱动 Roll out（放量发布）和 Fall back（回退）。',
@@ -125,7 +125,7 @@ export const chapter2: Chapter = {
       check: check('c2-q9', 'c2-product-soul', '开发速度超过销售速度后，什么更稀缺？', ['功能数量', '价值选择与市场表达', '代码字符'], 1, '能力供给过多时，选择和解释价值成为瓶颈。'),
     },
     {
-      id: 'c2-product-basket', source: { start: 1098, end: 1151.3, speakers: [1, 4] },
+      id: 'c2-product-basket', source: { start: 1098, end: 1151.08, speakers: [1, 4] },
       title: '产品路线图从“先决定再开发”变成“从能力篮子中选择”',
       takeaway: '当开发提前准备了大量能力，市场可以根据需求变化选择合适功能，而不是等待数月排期。',
       beginner: '传统模式像顾客点菜后才开始种菜；新模式像已有丰富菜篮子，先判断今天顾客需要苹果还是香蕉。',
