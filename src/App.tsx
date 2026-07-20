@@ -10,12 +10,14 @@ import { chapter3 } from './content/chapters/chapter3'
 import { chapter4 } from './content/chapters/chapter4'
 import { chapter5 } from './content/chapters/chapter5'
 import { chapter6 } from './content/chapters/chapter6'
+import { chapter7 } from './content/chapters/chapter7'
 import { AgentConfigurator } from './interactions/AgentConfigurator'
 import { BugTriageLab } from './interactions/BugTriageLab'
 import { IterationSimulator } from './interactions/IterationSimulator'
 import { OrgWorkbench } from './interactions/OrgWorkbench'
 import { PlanCritic } from './interactions/PlanCritic'
 import { ScopeBuilder } from './interactions/ScopeBuilder'
+import { TalentMixer } from './interactions/TalentMixer'
 
 const chapterTitles = [
   '从提示词到 Harness 系统',
@@ -91,8 +93,9 @@ export default function App() {
           <ChapterSection chapter={chapter4} interaction={<PlanCritic />} />
           <ChapterSection chapter={chapter5} interaction={<AgentConfigurator />} interactionAfter={6} />
           <ChapterSection chapter={chapter6} interaction={<OrgWorkbench />} interactionAfter={5} />
-          {chapterTitles.slice(6).map((title, offset) => {
-            const index = offset + 6
+          <ChapterSection chapter={chapter7} interaction={<TalentMixer />} interactionAfter={8} />
+          {chapterTitles.slice(7).map((title, offset) => {
+            const index = offset + 7
             return (
             <section
               className="chapter-placeholder"

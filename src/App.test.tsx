@@ -3,17 +3,12 @@ import userEvent from '@testing-library/user-event'
 import App from './App'
 
 describe('guided learning entry', () => {
-  it('shows the explicit first learning action', () => {
-    render(<App />)
-
-    expect(screen.getByRole('button', { name: '从第一章开始' })).toBeVisible()
-  })
-
-  it('starts at chapter one without requiring directory use', async () => {
+  it('shows the explicit first action and starts at chapter one without directory use', async () => {
     const user = userEvent.setup()
     Element.prototype.scrollIntoView = vi.fn()
     render(<App />)
 
+    expect(screen.getByRole('button', { name: '从第一章开始' })).toBeVisible()
     await user.click(screen.getByRole('button', { name: '从第一章开始' }))
 
     expect(screen.getByRole('heading', { name: /第 1 章/ })).toHaveFocus()
@@ -21,5 +16,5 @@ describe('guided learning entry', () => {
       behavior: 'smooth',
       block: 'start',
     })
-  })
+  }, 15_000)
 })

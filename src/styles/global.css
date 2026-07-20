@@ -208,6 +208,21 @@ main { padding-top: var(--header-height); }
 .org-workbench__result dl div { padding: 10px; border-radius: var(--radius-control); background: var(--color-blue-soft); }
 .org-workbench__result dt { color: var(--color-muted); font-size: 11px; }
 .org-workbench__result dd { margin: 4px 0 0; font-size: 13px; font-weight: 800; line-height: 1.55; }
+.talent-mixer { padding: 0 24px 24px; }
+.talent-mixer__controls { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.talent-mixer__controls label { min-width: 0; padding: 14px; border-radius: var(--radius-control); display: grid; gap: 9px; background: white; color: var(--color-ink); }
+.talent-mixer__controls label > span { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.talent-mixer__controls output { min-width: 34px; color: var(--color-coral); font-weight: 900; text-align: right; }
+.talent-mixer__controls input { width: 100%; accent-color: var(--color-coral); cursor: pointer; }
+.talent-mixer__controls small { color: var(--color-muted); line-height: 1.5; }
+.talent-mixer__actions { display: flex; gap: 8px; margin-top: 16px; }
+.talent-mixer__actions .secondary-button { display: inline-flex; align-items: center; gap: 7px; }
+.talent-mixer__result { margin-top: 16px; padding: 17px; border-radius: var(--radius-control); background: white; color: var(--color-ink); animation: layer-in 240ms var(--ease-out) both; }
+.talent-mixer__result > span { color: var(--color-coral); font-size: 11px; font-weight: 900; }
+.talent-mixer__result h4 { margin: 7px 0; font-size: 20px; }
+.talent-mixer__result p { margin: 0; color: var(--color-muted); line-height: 1.75; }
+.talent-mixer__result aside { margin-top: 13px; padding: 12px; border-radius: var(--radius-control); background: var(--color-yellow-soft); color: var(--color-muted); line-height: 1.7; }
+.talent-mixer__result aside b { display: block; margin-bottom: 3px; color: var(--color-ink); }
 .chapter-section__recap { width: min(var(--reading-width), 100%); margin: 52px auto 0; padding: 26px; border-radius: var(--radius-card); background: var(--color-mint-soft); }
 .chapter-section__recap p { margin: 0 0 9px; color: oklch(0.5 0.12 170); font-size: 12px; font-weight: 900; }
 .chapter-section__recap h3 { margin: 0 0 10px; font-size: 21px; }
@@ -241,6 +256,7 @@ main { padding-top: var(--header-height); }
   .agent-configurator__result > div { grid-template-columns: 1fr; }
   .org-workbench__responsibilities { grid-template-columns: 1fr 1fr; }
   .org-workbench__lanes, .org-workbench__result { grid-template-columns: 1fr; }
+  .talent-mixer__controls { grid-template-columns: 1fr; }
   .learning-unit__header, .learning-unit__beginner { padding-left: 18px; padding-right: 18px; }
   .learning-unit__layers { padding-left: 18px; padding-right: 18px; }
   .expandable-layer__content { padding-left: 0; }

@@ -80,4 +80,12 @@ export const glossary: GlossaryEntry[] = [
   { key: 'ux-designer', english: 'UX Designer', chinese: '用户体验设计师', beginner: '设计用户完成任务时的流程、理解和感受。' },
   { key: 'ui-designer', english: 'UI Designer', chinese: '界面设计师', beginner: '设计产品界面的视觉层级、状态和操作方式。' },
   { key: 'commercialization', english: 'Commercialization', chinese: '商业化', beginner: '把产品变成客户愿意持续付费且公司能稳定提供的业务。' },
+  { key: 'junior-engineer', english: 'Junior Engineer', chinese: '初级工程师', beginner: '工作经验较少、仍在建立专业基础和完整交付能力的工程师。' },
+  { key: 'senior-engineer', english: 'Senior Engineer', chinese: '资深工程师', beginner: '具备深厚经验，能够处理复杂系统、风险和技术决策的工程师。' },
+  { key: 'tech-debt', english: 'Tech Debt', chinese: '技术债', beginner: '为了短期速度留下、以后需要付出维护成本的技术问题。' },
+  { key: 'specialty', english: 'Specialty', chinese: '专业专长', beginner: '在某个细分技术或业务领域积累的深入能力。' },
+  { key: 'impact', english: 'Impact', chinese: '实际影响', beginner: '一项改动对用户、指标、成本和系统产生的真实结果。' },
+  { key: 'attention-paper', english: 'Attention Is All You Need', chinese: '注意力机制论文', beginner: '提出 Transformer（变换器）架构、推动现代大模型发展的研究论文。' },
+  { key: 'bert', english: 'BERT', chinese: '双向编码器表示模型', beginner: '通过预训练学习通用语言表示、再适配具体任务的语言模型。' },
+  { key: 'traffic-prediction', english: 'Traffic Prediction', chinese: '交通预测', beginner: '根据历史和实时交通信号预测道路状态或流量变化。' },
 ]
