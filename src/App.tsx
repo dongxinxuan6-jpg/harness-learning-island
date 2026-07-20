@@ -4,6 +4,7 @@ import { ChapterSection } from './components/ChapterSection'
 import { DirectoryDrawer } from './components/DirectoryDrawer'
 import { IntroHero } from './components/IntroHero'
 import { ProgressRail } from './components/ProgressRail'
+import { ReviewCenter } from './components/ReviewCenter'
 import { chapter1 } from './content/chapters/chapter1'
 import { chapter2 } from './content/chapters/chapter2'
 import { chapter3 } from './content/chapters/chapter3'
@@ -20,6 +21,7 @@ import { OrgWorkbench } from './interactions/OrgWorkbench'
 import { PlanCritic } from './interactions/PlanCritic'
 import { ScopeBuilder } from './interactions/ScopeBuilder'
 import { TalentMixer } from './interactions/TalentMixer'
+import { LearningProvider } from './state/LearningProvider'
 
 const chapterTitles = [
   '从提示词到 Harness 系统',
@@ -32,7 +34,7 @@ const chapterTitles = [
   '人的价值、伦理与谨慎乐观',
 ]
 
-export default function App() {
+function CourseApp() {
   const firstChapterHeading = useRef<HTMLHeadingElement>(null)
   const [directoryOpen, setDirectoryOpen] = useState(false)
   const [currentChapter, setCurrentChapter] = useState(0)
@@ -98,7 +100,12 @@ export default function App() {
           <ChapterSection chapter={chapter7} interaction={<TalentMixer />} interactionAfter={8} />
           <ChapterSection chapter={chapter8} interaction={<EthicsLab />} interactionAfter={3} />
         </div>
+        <ReviewCenter />
       </main>
     </>
   )
+}
+
+export default function App() {
+  return <LearningProvider><CourseApp /></LearningProvider>
 }

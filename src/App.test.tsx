@@ -11,7 +11,7 @@ describe('guided learning entry', () => {
     expect(screen.getByRole('button', { name: '从第一章开始' })).toBeVisible()
     await user.click(screen.getByRole('button', { name: '从第一章开始' }))
 
-    expect(screen.getByRole('heading', { name: /第 1 章/ })).toHaveFocus()
+    expect(screen.getByRole('heading', { level: 2, name: /^第 1 章：/ })).toHaveFocus()
     expect(Element.prototype.scrollIntoView).toHaveBeenCalledWith({
       behavior: 'smooth',
       block: 'start',

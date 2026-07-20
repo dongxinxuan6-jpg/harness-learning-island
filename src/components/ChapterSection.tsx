@@ -1,5 +1,6 @@
 import type { ReactNode, RefObject } from 'react'
 import type { Chapter } from '../content/types'
+import { ChapterQuiz } from './ChapterQuiz'
 import { LearningUnitCard } from './LearningUnitCard'
 
 interface ChapterSectionProps {
@@ -37,6 +38,7 @@ export function ChapterSection({ chapter, interaction, interactionAfter = 4, hea
           </div>
         ))}
       </div>
+      <ChapterQuiz chapterNumber={chapter.number} questions={chapter.quiz} />
       <footer className="chapter-section__recap">
         <p>本章已覆盖 {chapter.units.length} 个知识单元</p>
         <h3>{chapter.recap}</h3>
