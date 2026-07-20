@@ -64,4 +64,13 @@ export const glossary: GlossaryEntry[] = [
   { key: 'open-source', english: 'Open Source', chinese: '开源', beginner: '公开代码并允许他人按许可证查看、使用和改进。' },
   { key: 'framework', english: 'Framework', chinese: '开发框架', beginner: '提供常用结构和能力，帮助系统更快搭建的基础工具。' },
   { key: 'tech-lead', english: 'Tech Lead', chinese: '技术负责人', beginner: '负责关键技术方向、方案质量和团队技术决策的人。' },
+  { key: 'evaluation', english: 'Evaluation', chinese: '评估', beginner: '用明确标准判断结果是否达到目标。' },
+  { key: 'workflow', english: 'Workflow', chinese: '工作流', beginner: '任务从开始到完成所经过的步骤、角色和状态。' },
+  { key: 'permission', english: 'Permission', chinese: '权限', beginner: '规定身份可以读取哪些数据、调用哪些能力和执行哪些动作。' },
+  { key: 'access', english: 'Access', chinese: '访问', beginner: '读取数据、进入系统或调用能力的行为与资格。' },
+  { key: 'campaign', english: 'Campaign', chinese: '营销活动', beginner: '围绕一个市场目标组织的一系列广告、内容和投放动作。' },
+  { key: 'performance', english: 'Performance', chinese: '表现', beginner: '系统在质量、速度、成本或业务结果上的实际效果。' },
+  { key: 'cloud-service', english: 'Cloud Service', chinese: '云端服务', beginner: '通过网络提供计算、存储、工具和管理能力的服务。' },
+  { key: 'legacy-system', english: 'Legacy System', chinese: '历史遗留系统', beginner: '长期运行但结构、技术或数据难以适应新需求的旧系统。' },
+  { key: 'adoption', english: 'Adoption', chinese: '采用', beginner: '用户或组织真正开始并持续使用一种产品或工作方式。' },
 ]

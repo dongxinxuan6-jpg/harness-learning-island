@@ -174,6 +174,20 @@ main { padding-top: var(--header-height); }
 .plan-critic__revisions h4 { margin: 0 0 8px; }
 .plan-critic__revisions p { margin: 0; color: var(--color-muted); }
 .plan-critic__revisions ul { margin: 0; padding-left: 20px; line-height: 1.75; font-size: 13px; }
+.agent-configurator { padding: 0 24px 24px; }
+.agent-configurator fieldset { margin: 0 0 14px; padding: 14px; border: 0; border-radius: var(--radius-control); background: white; color: var(--color-ink); }
+.agent-configurator legend { padding: 0 6px; font-weight: 900; }
+.agent-configurator label { display: grid; grid-template-columns: 20px 1fr; column-gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--color-line); cursor: pointer; font-weight: 750; }
+.agent-configurator label:last-child { border-bottom: 0; }
+.agent-configurator label input { grid-row: 1 / 3; margin-top: 3px; accent-color: var(--color-coral); }
+.agent-configurator label span { margin-top: 4px; color: var(--color-muted); font-size: 11px; font-weight: 400; line-height: 1.5; }
+.agent-configurator__actions { display: flex; gap: 8px; }
+.agent-configurator__result { margin-top: 16px; padding: 16px; border-radius: var(--radius-control); background: white; color: var(--color-ink); }
+.agent-configurator__result > div { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 10px; margin-bottom: 10px; }
+.agent-configurator__result > div > span { height: 9px; border-radius: 999px; background: var(--color-line); overflow: hidden; }
+.agent-configurator__result i { display: block; width: 100%; height: 100%; background: var(--color-mint); transform-origin: left; transition: transform 300ms var(--ease-out); }
+.agent-configurator__result > div:nth-child(2) i { background: var(--color-coral); }
+.agent-configurator__result p { margin: 14px 0 0; color: var(--color-muted); line-height: 1.75; }
 .chapter-section__recap { width: min(var(--reading-width), 100%); margin: 52px auto 0; padding: 26px; border-radius: var(--radius-card); background: var(--color-mint-soft); }
 .chapter-section__recap p { margin: 0 0 9px; color: oklch(0.5 0.12 170); font-size: 12px; font-weight: 900; }
 .chapter-section__recap h3 { margin: 0 0 10px; font-size: 21px; }
@@ -204,6 +218,7 @@ main { padding-top: var(--header-height); }
   .triage-lab__issues, .triage-lab__lanes { grid-template-columns: 1fr; }
   .plan-critic__buttons { grid-template-columns: 1fr; }
   .plan-critic__score { grid-template-columns: 1fr; }
+  .agent-configurator__result > div { grid-template-columns: 1fr; }
   .learning-unit__header, .learning-unit__beginner { padding-left: 18px; padding-right: 18px; }
   .learning-unit__layers { padding-left: 18px; padding-right: 18px; }
   .expandable-layer__content { padding-left: 0; }
