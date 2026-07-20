@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { glossary } from './glossary'
+import { chapters } from './chapters'
 import { sourceSegments } from './sourceSegments'
 import { validateCoverage, validateEnglishAnnotations } from './validateContent'
 
@@ -50,4 +51,24 @@ describe('canonical glossary', () => {
   })
 })
 
-it.todo('maps every one of the 179 source segments to exactly one completed learning unit')
+describe('completed course coverage', () => {
+  const units = chapters.flatMap((chapter) => chapter.units)
+
+  it('contains exactly eight chapters and 106 complete learning units', () => {
+    expect(chapters).toHaveLength(8)
+    expect(units).toHaveLength(106)
+    expect(units.every((unit) => (
+      unit.takeaway && unit.beginner && unit.example && unit.principle
+      && unit.misconception && unit.extension && unit.terms.length > 0 && unit.check
+    ))).toBe(true)
+    expect(new Set(chapters.map((chapter) => chapter.interaction.id)).size).toBe(8)
+  })
+
+  it('maps every one of the 179 source segments to exactly one learning unit', () => {
+    expect(validateCoverage(sourceSegments, units)).toEqual({ unmapped: [], ambiguous: [] })
+  })
+
+  it('keeps all learner-facing English adjacent to Chinese annotations', () => {
+    expect(validateEnglishAnnotations(chapters)).toEqual([])
+  })
+})
