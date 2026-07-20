@@ -3,6 +3,7 @@ import { AppHeader } from './components/AppHeader'
 import { ChapterSection } from './components/ChapterSection'
 import { DirectoryDrawer } from './components/DirectoryDrawer'
 import { IntroHero } from './components/IntroHero'
+import { KnowledgeMap } from './components/KnowledgeMap'
 import { ProgressRail } from './components/ProgressRail'
 import { ReviewCenter } from './components/ReviewCenter'
 import { chapter1 } from './content/chapters/chapter1'
@@ -24,11 +25,11 @@ import { TalentMixer } from './interactions/TalentMixer'
 import { LearningProvider } from './state/LearningProvider'
 
 const chapterTitles = [
-  '从提示词到 Harness 系统',
-  'AI First 开发与反馈闭环',
-  'Bug、质量与自我修复',
-  '从 AI 辅助到 AI 主导',
-  '市场、个人 Agent 与 SaaS 重构',
+  '提示词、上下文与驾驭系统',
+  '人工智能优先开发与反馈闭环',
+  '错误、质量与自我修复',
+  '从人工智能辅助到人工智能主导',
+  '市场、个人智能体与软件即服务重构',
   '组织结构与角色融合',
   '未来工程师与复合型人才',
   '人的价值、伦理与谨慎乐观',
@@ -38,6 +39,7 @@ function CourseApp() {
   const firstChapterHeading = useRef<HTMLHeadingElement>(null)
   const [directoryOpen, setDirectoryOpen] = useState(false)
   const [currentChapter, setCurrentChapter] = useState(0)
+  const [started, setStarted] = useState(false)
 
   const goToChapter = (index: number) => {
     const section = document.getElementById(`chapter-${index + 1}`)
@@ -48,6 +50,7 @@ function CourseApp() {
   }
 
   const startLearning = () => {
+    setStarted(true)
     const section = document.getElementById('chapter-1')
     section?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     firstChapterHeading.current?.focus({ preventScroll: true })
@@ -61,7 +64,10 @@ function CourseApp() {
         const visible = entries
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
-        if (visible) setCurrentChapter(Number((visible.target as HTMLElement).dataset.chapter) - 1)
+        if (visible) {
+          setCurrentChapter(Number((visible.target as HTMLElement).dataset.chapter) - 1)
+          setStarted(true)
+        }
       },
       { rootMargin: '-30% 0px -55%', threshold: [0, 0.3, 0.6] },
     )
@@ -73,7 +79,8 @@ function CourseApp() {
     <>
       <AppHeader
         currentChapter={currentChapter}
-        progress={(currentChapter + 1) / chapterTitles.length}
+        progress={(started ? currentChapter + 1 : 0) / chapterTitles.length}
+        started={started}
         onOpenDirectory={() => setDirectoryOpen(true)}
       />
       <ProgressRail
@@ -90,6 +97,7 @@ function CourseApp() {
       />
       <main>
         <IntroHero chapters={chapterTitles} onStart={startLearning} />
+        <KnowledgeMap />
         <div className="course-flow">
           <ChapterSection chapter={chapter1} interaction={<ScopeBuilder />} headingRef={firstChapterHeading} />
           <ChapterSection chapter={chapter2} interaction={<IterationSimulator />} />

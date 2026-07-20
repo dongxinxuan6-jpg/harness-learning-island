@@ -10,7 +10,7 @@ export function IntroHero({ chapters, onStart }: IntroHeroProps) {
     <section className="intro-hero" id="top">
       <div className="intro-hero__copy">
         <p className="intro-hero__label">零基础连续课程</p>
-        <h1>Harness 学习岛</h1>
+        <h1>驾驭系统学习岛</h1>
         <p className="intro-hero__summary">
           从 Prompt Engineering（提示词工程）一路学到 AI First（人工智能优先）组织、Agent Economy（智能体经济）与人的价值。内容来自整期播客，并增加解释、案例、互动和复习。
         </p>

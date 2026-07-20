@@ -1,14 +1,14 @@
 import { CheckCircle2, RotateCcw, XCircle } from 'lucide-react'
 import { useState } from 'react'
 import type { QuizQuestion } from '../content/types'
-import { useLearning } from '../state/LearningProvider'
+import { useLearningActions } from '../state/LearningProvider'
 
 interface QuickCheckProps {
   question: QuizQuestion
 }
 
 export function QuickCheck({ question }: QuickCheckProps) {
-  const { recordAnswer } = useLearning()
+  const { recordAnswer } = useLearningActions()
   const [selected, setSelected] = useState<number | null>(null)
   const [submitted, setSubmitted] = useState(false)
   const correct = selected === question.answer

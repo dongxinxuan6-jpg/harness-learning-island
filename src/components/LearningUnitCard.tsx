@@ -1,6 +1,6 @@
 import { BookOpenText, CircleAlert, FlaskConical, Languages, Lightbulb, Telescope } from 'lucide-react'
 import type { LearningUnit } from '../content/types'
-import { useLearning } from '../state/LearningProvider'
+import { useFavoriteTerms, useLearningActions } from '../state/LearningProvider'
 import { ExpandableLayer } from './ExpandableLayer'
 import { QuickCheck } from './QuickCheck'
 import { TermList } from './TermList'
@@ -11,7 +11,8 @@ interface LearningUnitCardProps {
 }
 
 export function LearningUnitCard({ unit, index }: LearningUnitCardProps) {
-  const { state, toggleFavorite } = useLearning()
+  const favoriteTerms = useFavoriteTerms()
+  const { toggleFavorite } = useLearningActions()
 
   return (
     <article className="learning-unit" id={unit.id}>
@@ -35,7 +36,7 @@ export function LearningUnitCard({ unit, index }: LearningUnitCardProps) {
           <p>{unit.misconception}</p>
         </ExpandableLayer>
         <ExpandableLayer label="英文词卡" collapseLabel="收起词卡" icon={<Languages aria-hidden="true" size={17} />}>
-          <TermList termKeys={unit.terms} favorites={new Set(state.favoriteTerms)} onToggleFavorite={toggleFavorite} />
+          <TermList termKeys={unit.terms} favorites={new Set(favoriteTerms)} onToggleFavorite={toggleFavorite} />
         </ExpandableLayer>
         <ExpandableLayer label="再多学一点" collapseLabel="收起延伸" icon={<Telescope aria-hidden="true" size={17} />}>
           <p>{unit.extension}</p>

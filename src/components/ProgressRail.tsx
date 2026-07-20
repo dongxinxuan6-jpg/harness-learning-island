@@ -10,6 +10,7 @@ export function ProgressRail({ chapters, currentChapter, onSelect }: ProgressRai
       {chapters.map((chapter, index) => (
         <button
           className={index === currentChapter ? 'is-current' : ''}
+          aria-current={index === currentChapter ? 'step' : undefined}
           type="button"
           key={chapter}
           onClick={() => onSelect(index)}

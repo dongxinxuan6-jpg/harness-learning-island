@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react'
 import { chapters } from '../content/chapters'
 import { glossary } from '../content/glossary'
 import type { QuizQuestion } from '../content/types'
-import { useLearning } from '../state/LearningProvider'
+import { useLearningActions, useLearningState } from '../state/LearningProvider'
 import { getReviewBucket, type ReviewBucket } from '../state/reviewScheduler'
 
 const bucketLabels: Record<ReviewBucket, string> = {
@@ -25,7 +25,8 @@ interface ReviewCenterProps {
 }
 
 export function ReviewCenter({ now = new Date() }: ReviewCenterProps) {
-  const { state, markReview, resetLearning } = useLearning()
+  const state = useLearningState()
+  const { markReview, resetLearning } = useLearningActions()
   const [confirmReset, setConfirmReset] = useState(false)
   const reviews = Object.values(state.reviews)
   const wrongAnswers = Object.values(state.answers).filter((answer) => !answer.correct)

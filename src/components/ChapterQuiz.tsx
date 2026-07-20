@@ -1,7 +1,7 @@
 import { ArrowRight, CheckCircle2, RotateCcw, XCircle } from 'lucide-react'
 import { useState } from 'react'
 import type { QuizQuestion } from '../content/types'
-import { useLearning } from '../state/LearningProvider'
+import { useLearningActions } from '../state/LearningProvider'
 
 interface ChapterQuizProps {
   chapterNumber: number
@@ -9,7 +9,7 @@ interface ChapterQuizProps {
 }
 
 export function ChapterQuiz({ chapterNumber, questions }: ChapterQuizProps) {
-  const { recordAnswer } = useLearning()
+  const { recordAnswer } = useLearningActions()
   const [started, setStarted] = useState(false)
   const [finished, setFinished] = useState(false)
   const [index, setIndex] = useState(0)
