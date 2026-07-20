@@ -5,6 +5,8 @@ import { DirectoryDrawer } from './components/DirectoryDrawer'
 import { IntroHero } from './components/IntroHero'
 import { ProgressRail } from './components/ProgressRail'
 import { chapter1 } from './content/chapters/chapter1'
+import { chapter2 } from './content/chapters/chapter2'
+import { IterationSimulator } from './interactions/IterationSimulator'
 import { ScopeBuilder } from './interactions/ScopeBuilder'
 
 const chapterTitles = [
@@ -76,8 +78,9 @@ export default function App() {
         <IntroHero chapters={chapterTitles} onStart={startLearning} />
         <div className="course-flow">
           <ChapterSection chapter={chapter1} interaction={<ScopeBuilder />} headingRef={firstChapterHeading} />
-          {chapterTitles.slice(1).map((title, offset) => {
-            const index = offset + 1
+          <ChapterSection chapter={chapter2} interaction={<IterationSimulator />} />
+          {chapterTitles.slice(2).map((title, offset) => {
+            const index = offset + 2
             return (
             <section
               className="chapter-placeholder"

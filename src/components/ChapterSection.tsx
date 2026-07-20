@@ -39,8 +39,8 @@ export function ChapterSection({ chapter, interaction, interactionAfter = 4, hea
       </div>
       <footer className="chapter-section__recap">
         <p>本章已覆盖 {chapter.units.length} 个知识单元</p>
-        <h3>不是让模型回答一次，而是让整个系统持续可靠地工作。</h3>
-        <span>下一步将学习 AI First（人工智能优先）开发怎样把六周流程压缩成一天多轮反馈。</span>
+        <h3>{chapter.recap}</h3>
+        <span>{chapter.next}</span>
       </footer>
     </section>
   )

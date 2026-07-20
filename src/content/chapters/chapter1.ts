@@ -25,6 +25,8 @@ export const chapter1: Chapter = {
     title: '概念分层搭建器',
     description: '把请求、资料、工具、安全和反馈放入正确层级，亲手搭出一套最小系统。',
   },
+  recap: '不是让模型回答一次，而是让整个系统持续可靠地工作。',
+  next: '下一步将学习 AI First（人工智能优先）开发怎样把六周流程压缩成一天多轮反馈。',
   units: [
     {
       id: 'c1-evolution',

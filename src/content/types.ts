@@ -50,6 +50,8 @@ export interface Chapter {
   units: LearningUnit[]
   interaction: InteractionSpec
   quiz: QuizQuestion[]
+  recap: string
+  next: string
 }
 
 export interface CoverageUnit {

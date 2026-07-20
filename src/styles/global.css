@@ -18,7 +18,7 @@ a { color: inherit; text-decoration: none; }
 .icon-button:hover { background: var(--color-blue-soft); }
 
 main { padding-top: var(--header-height); }
-.intro-hero { width: min(var(--content-width), calc(100% - 64px)); min-height: calc(100svh - var(--header-height)); margin: 0 auto; padding: 64px 0 78px; display: grid; grid-template-columns: minmax(0, 1fr) 440px; gap: 64px; align-items: center; }
+.intro-hero { width: min(var(--content-width), calc(100% - 64px)); min-height: min(760px, calc(100svh - var(--header-height) - 72px)); margin: 0 auto; padding: 64px 0 78px; display: grid; grid-template-columns: minmax(0, 1fr) 440px; gap: 64px; align-items: center; }
 .intro-hero__label { margin: 0 0 12px; color: var(--color-coral); font-weight: 800; }
 .intro-hero h1 { margin: 0 0 18px; font-size: 52px; line-height: 1.1; }
 .intro-hero__summary { max-width: 650px; margin: 0; color: var(--color-muted); font-size: 18px; line-height: 1.9; overflow-wrap: anywhere; }
@@ -121,6 +121,22 @@ main { padding-top: var(--header-height); }
 .scope-builder__result ul { margin: 0; padding-left: 20px; line-height: 1.75; font-size: 13px; }
 .scope-builder__result li.is-correct b { color: oklch(0.51 0.12 165); }
 .scope-builder__result li.is-wrong b { color: var(--color-coral); }
+.iteration-simulator { padding: 0 24px 24px; }
+.iteration-simulator__track { height: 5px; margin: 8px 0 14px; border-radius: 999px; background: oklch(0.44 0.03 250); overflow: hidden; }
+.iteration-simulator__track span { display: block; width: 100%; height: 100%; background: var(--color-coral); transform: scaleX(0); transform-origin: left; }
+.iteration-simulator__steps { list-style: none; padding: 0; margin: 0 0 22px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.iteration-simulator__steps li { min-height: 82px; padding: 12px; border-radius: var(--radius-control); display: grid; align-content: center; gap: 5px; background: oklch(0.35 0.035 250); color: oklch(0.72 0.02 240); }
+.iteration-simulator__steps li.is-active { background: white; color: var(--color-ink); }
+.iteration-simulator__steps b { color: var(--color-yellow); }
+.iteration-simulator__steps span { font-size: 11px; line-height: 1.45; }
+.iteration-simulator__panel, .iteration-simulator__result { margin-bottom: 12px; padding: 16px; border-radius: var(--radius-control); background: white; color: var(--color-ink); }
+.iteration-simulator__panel h4, .iteration-simulator__result h4 { margin: 0 0 7px; }
+.iteration-simulator__panel p, .iteration-simulator__result p { margin: 0 0 14px; color: var(--color-muted); line-height: 1.75; }
+.iteration-simulator__result p { margin-bottom: 0; }
+.iteration-simulator__choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.iteration-simulator__choices button { min-height: 44px; border: 0; border-radius: var(--radius-control); padding: 8px; background: var(--color-blue-soft); cursor: pointer; font-weight: 750; }
+.iteration-simulator__choices button:nth-child(2) { background: var(--color-yellow-soft); }
+.iteration-simulator__choices button:nth-child(3) { background: var(--color-coral-soft); }
 .chapter-section__recap { width: min(var(--reading-width), 100%); margin: 52px auto 0; padding: 26px; border-radius: var(--radius-card); background: var(--color-mint-soft); }
 .chapter-section__recap p { margin: 0 0 9px; color: oklch(0.5 0.12 170); font-size: 12px; font-weight: 900; }
 .chapter-section__recap h3 { margin: 0 0 10px; font-size: 21px; }
@@ -146,6 +162,8 @@ main { padding-top: var(--header-height); }
   .scope-builder__instructions span { display: block; margin-top: 8px; }
   .scope-builder__cards { grid-template-columns: 1fr 1fr; }
   .scope-builder__layers { grid-template-columns: 1fr; }
+  .iteration-simulator__steps { grid-template-columns: 1fr 1fr; }
+  .iteration-simulator__choices { grid-template-columns: 1fr; }
   .learning-unit__header, .learning-unit__beginner { padding-left: 18px; padding-right: 18px; }
   .learning-unit__layers { padding-left: 18px; padding-right: 18px; }
   .expandable-layer__content { padding-left: 0; }
