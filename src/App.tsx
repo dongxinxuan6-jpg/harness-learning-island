@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import { AppHeader } from './components/AppHeader'
+import { ChapterSection } from './components/ChapterSection'
 import { DirectoryDrawer } from './components/DirectoryDrawer'
 import { IntroHero } from './components/IntroHero'
 import { ProgressRail } from './components/ProgressRail'
+import { chapter1 } from './content/chapters/chapter1'
+import { ScopeBuilder } from './interactions/ScopeBuilder'
 
 const chapterTitles = [
   '从提示词到 Harness 系统',
@@ -72,7 +75,10 @@ export default function App() {
       <main>
         <IntroHero chapters={chapterTitles} onStart={startLearning} />
         <div className="course-flow">
-          {chapterTitles.map((title, index) => (
+          <ChapterSection chapter={chapter1} interaction={<ScopeBuilder />} headingRef={firstChapterHeading} />
+          {chapterTitles.slice(1).map((title, offset) => {
+            const index = offset + 1
+            return (
             <section
               className="chapter-placeholder"
               data-chapter={index + 1}
@@ -90,7 +96,8 @@ export default function App() {
                 </div>
               </div>
             </section>
-          ))}
+            )
+          })}
         </div>
       </main>
     </>

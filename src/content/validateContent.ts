@@ -40,6 +40,7 @@ export function validateEnglishAnnotations(content: unknown): string[] {
   const english = /[A-Za-z][A-Za-z0-9+./-]*(?:[ -][A-Za-z][A-Za-z0-9+./-]*)*/g
 
   for (const item of collectStrings(content)) {
+    if (/(^|\.)(id|unitId|kind)$/.test(item.path) || item.path.includes('.terms[')) continue
     for (const match of item.value.matchAll(english)) {
       const end = (match.index ?? 0) + match[0].length
       if (item.value[end] !== '（') issues.push(`${item.path}: ${match[0]}`)
