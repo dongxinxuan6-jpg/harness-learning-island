@@ -7,5 +7,7 @@ playwright-report/
 .worktrees/
 .venv/
 .env
+vite.stdout.log
+vite.stderr.log
 .env.*
 !.env.example

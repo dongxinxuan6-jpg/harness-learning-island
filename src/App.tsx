@@ -9,9 +9,11 @@ import { chapter2 } from './content/chapters/chapter2'
 import { chapter3 } from './content/chapters/chapter3'
 import { chapter4 } from './content/chapters/chapter4'
 import { chapter5 } from './content/chapters/chapter5'
+import { chapter6 } from './content/chapters/chapter6'
 import { AgentConfigurator } from './interactions/AgentConfigurator'
 import { BugTriageLab } from './interactions/BugTriageLab'
 import { IterationSimulator } from './interactions/IterationSimulator'
+import { OrgWorkbench } from './interactions/OrgWorkbench'
 import { PlanCritic } from './interactions/PlanCritic'
 import { ScopeBuilder } from './interactions/ScopeBuilder'
 
@@ -88,8 +90,9 @@ export default function App() {
           <ChapterSection chapter={chapter3} interaction={<BugTriageLab />} interactionAfter={8} />
           <ChapterSection chapter={chapter4} interaction={<PlanCritic />} />
           <ChapterSection chapter={chapter5} interaction={<AgentConfigurator />} interactionAfter={6} />
-          {chapterTitles.slice(5).map((title, offset) => {
-            const index = offset + 5
+          <ChapterSection chapter={chapter6} interaction={<OrgWorkbench />} interactionAfter={5} />
+          {chapterTitles.slice(6).map((title, offset) => {
+            const index = offset + 6
             return (
             <section
               className="chapter-placeholder"

@@ -73,4 +73,11 @@ export const glossary: GlossaryEntry[] = [
   { key: 'cloud-service', english: 'Cloud Service', chinese: '云端服务', beginner: '通过网络提供计算、存储、工具和管理能力的服务。' },
   { key: 'legacy-system', english: 'Legacy System', chinese: '历史遗留系统', beginner: '长期运行但结构、技术或数据难以适应新需求的旧系统。' },
   { key: 'adoption', english: 'Adoption', chinese: '采用', beginner: '用户或组织真正开始并持续使用一种产品或工作方式。' },
+  { key: 'guardrails', english: 'Guardrails', chinese: '护栏规则', beginner: '限制高风险行为并在越界时阻止或升级处理的规则。' },
+  { key: 'execution', english: 'Execution', chinese: '执行', beginner: '把计划转化为实际动作与结果的过程。' },
+  { key: 'product-manager', english: 'Product Manager', chinese: '产品经理', beginner: '连接用户、市场和开发，推动产品判断与交付的角色。' },
+  { key: 'generalist', english: 'Generalist', chinese: '复合型人才', beginner: '能够跨多个领域理解问题并直接推动结果的人。' },
+  { key: 'ux-designer', english: 'UX Designer', chinese: '用户体验设计师', beginner: '设计用户完成任务时的流程、理解和感受。' },
+  { key: 'ui-designer', english: 'UI Designer', chinese: '界面设计师', beginner: '设计产品界面的视觉层级、状态和操作方式。' },
+  { key: 'commercialization', english: 'Commercialization', chinese: '商业化', beginner: '把产品变成客户愿意持续付费且公司能稳定提供的业务。' },
 ]
