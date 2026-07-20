@@ -7,8 +7,10 @@ import { ProgressRail } from './components/ProgressRail'
 import { chapter1 } from './content/chapters/chapter1'
 import { chapter2 } from './content/chapters/chapter2'
 import { chapter3 } from './content/chapters/chapter3'
+import { chapter4 } from './content/chapters/chapter4'
 import { BugTriageLab } from './interactions/BugTriageLab'
 import { IterationSimulator } from './interactions/IterationSimulator'
+import { PlanCritic } from './interactions/PlanCritic'
 import { ScopeBuilder } from './interactions/ScopeBuilder'
 
 const chapterTitles = [
@@ -82,8 +84,9 @@ export default function App() {
           <ChapterSection chapter={chapter1} interaction={<ScopeBuilder />} headingRef={firstChapterHeading} />
           <ChapterSection chapter={chapter2} interaction={<IterationSimulator />} />
           <ChapterSection chapter={chapter3} interaction={<BugTriageLab />} interactionAfter={8} />
-          {chapterTitles.slice(3).map((title, offset) => {
-            const index = offset + 3
+          <ChapterSection chapter={chapter4} interaction={<PlanCritic />} />
+          {chapterTitles.slice(4).map((title, offset) => {
+            const index = offset + 4
             return (
             <section
               className="chapter-placeholder"

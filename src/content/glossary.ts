@@ -57,4 +57,11 @@ export const glossary: GlossaryEntry[] = [
   { key: 'agent-economy', english: 'Agent Economy', chinese: '智能体经济', beginner: '智能体参与搜索、比较、购买和交易决策的经济活动。' },
   { key: 'saas', english: 'SaaS', chinese: '软件即服务', beginner: '通过网络持续提供、按服务方式使用的软件产品。' },
   { key: 'dashboard', english: 'Dashboard', chinese: '仪表盘', beginner: '集中展示任务、状态和指标的可视化界面。' },
+  { key: 'planning', english: 'Planning', chinese: '规划', beginner: '在执行前确定目标、步骤、约束、风险和验证方法。' },
+  { key: 'criticize', english: 'Criticize', chinese: '批评审查', beginner: '指出方案中缺失、错误或不合理的部分。' },
+  { key: 'challenge', english: 'Challenge', chinese: '质疑挑战', beginner: '要求方案解释依据、考虑替代路线并修正薄弱点。' },
+  { key: 'skill-rule', english: 'Skill', chinese: '技能规则', beginner: '把可复用经验写成系统下次能够遵循的明确原则。' },
+  { key: 'open-source', english: 'Open Source', chinese: '开源', beginner: '公开代码并允许他人按许可证查看、使用和改进。' },
+  { key: 'framework', english: 'Framework', chinese: '开发框架', beginner: '提供常用结构和能力，帮助系统更快搭建的基础工具。' },
+  { key: 'tech-lead', english: 'Tech Lead', chinese: '技术负责人', beginner: '负责关键技术方向、方案质量和团队技术决策的人。' },
 ]

@@ -158,6 +158,22 @@ main { padding-top: var(--header-height); }
 .triage-lab__result dl div { padding: 9px; border-radius: var(--radius-control); background: var(--color-blue-soft); }
 .triage-lab__result dt { color: var(--color-muted); font-size: 10px; }
 .triage-lab__result dd { margin: 4px 0 0; font-weight: 800; }
+.plan-critic { padding: 0 24px 24px; }
+.plan-critic__draft { padding: 16px; border-radius: var(--radius-control); background: white; color: var(--color-ink); }
+.plan-critic__draft > span { color: var(--color-coral); font-size: 11px; font-weight: 900; }
+.plan-critic__draft h4 { margin: 8px 0; line-height: 1.6; }
+.plan-critic__draft p { margin: 0; color: var(--color-muted); font-size: 13px; line-height: 1.7; }
+.plan-critic__score { display: grid; grid-template-columns: 150px 1fr; gap: 12px; align-items: center; margin: 16px 0; }
+.plan-critic__score > span { height: 10px; border-radius: 999px; background: oklch(0.43 0.03 250); overflow: hidden; }
+.plan-critic__score i { display: block; width: 100%; height: 100%; background: var(--color-yellow); transform-origin: left; transition: transform 300ms var(--ease-out); }
+.plan-critic__buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.plan-critic__buttons button { min-height: 44px; border: 0; border-radius: var(--radius-control); background: var(--color-blue-soft); cursor: pointer; font-weight: 750; }
+.plan-critic__buttons button:nth-child(2n) { background: var(--color-mint-soft); }
+.plan-critic__buttons button.is-used { background: var(--color-yellow-soft); color: var(--color-muted); }
+.plan-critic__revisions { min-height: 112px; margin-top: 14px; padding: 16px; border-radius: var(--radius-control); background: white; color: var(--color-ink); }
+.plan-critic__revisions h4 { margin: 0 0 8px; }
+.plan-critic__revisions p { margin: 0; color: var(--color-muted); }
+.plan-critic__revisions ul { margin: 0; padding-left: 20px; line-height: 1.75; font-size: 13px; }
 .chapter-section__recap { width: min(var(--reading-width), 100%); margin: 52px auto 0; padding: 26px; border-radius: var(--radius-card); background: var(--color-mint-soft); }
 .chapter-section__recap p { margin: 0 0 9px; color: oklch(0.5 0.12 170); font-size: 12px; font-weight: 900; }
 .chapter-section__recap h3 { margin: 0 0 10px; font-size: 21px; }
@@ -186,6 +202,8 @@ main { padding-top: var(--header-height); }
   .iteration-simulator__steps { grid-template-columns: 1fr 1fr; }
   .iteration-simulator__choices { grid-template-columns: 1fr; }
   .triage-lab__issues, .triage-lab__lanes { grid-template-columns: 1fr; }
+  .plan-critic__buttons { grid-template-columns: 1fr; }
+  .plan-critic__score { grid-template-columns: 1fr; }
   .learning-unit__header, .learning-unit__beginner { padding-left: 18px; padding-right: 18px; }
   .learning-unit__layers { padding-left: 18px; padding-right: 18px; }
   .expandable-layer__content { padding-left: 0; }
