@@ -88,4 +88,11 @@ export const glossary: GlossaryEntry[] = [
   { key: 'attention-paper', english: 'Attention Is All You Need', chinese: '注意力机制论文', beginner: '提出 Transformer（变换器）架构、推动现代大模型发展的研究论文。' },
   { key: 'bert', english: 'BERT', chinese: '双向编码器表示模型', beginner: '通过预训练学习通用语言表示、再适配具体任务的语言模型。' },
   { key: 'traffic-prediction', english: 'Traffic Prediction', chinese: '交通预测', beginner: '根据历史和实时交通信号预测道路状态或流量变化。' },
+  { key: 'human-value', english: 'Human Value', chinese: '人的价值', beginner: '由人定义需求、利益和什么结果值得追求的能力与责任。' },
+  { key: 'stakeholder', english: 'Stakeholder', chinese: '利益相关者', beginner: '会受到一项系统决策影响、也可能拥有权利或责任的人或组织。' },
+  { key: 'privacy', english: 'Privacy', chinese: '隐私', beginner: '个人控制自己的信息由谁看到、用于什么目的以及保留多久的权利。' },
+  { key: 'human-review', english: 'Human Review', chinese: '人工审核', beginner: '由人检查高影响结果并决定是否接受、修改或停止执行。' },
+  { key: 'cautious-optimism', english: 'Cautious Optimism', chinese: '谨慎乐观', beginner: '相信长期结果可能更好，同时正视转型过程中的风险和痛苦。' },
+  { key: 'industrial-revolution', english: 'Industrial Revolution', chinese: '工业革命', beginner: '机器和生产组织变化带来巨大效率提升及职业重组的历史过程。' },
+  { key: 'work-play', english: 'Work Hard, Play Hard', chinese: '努力工作，尽情生活', beginner: '强调投入工作，也为休息、兴趣和生活保留清晰空间。' },
 ]

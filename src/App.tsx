@@ -11,8 +11,10 @@ import { chapter4 } from './content/chapters/chapter4'
 import { chapter5 } from './content/chapters/chapter5'
 import { chapter6 } from './content/chapters/chapter6'
 import { chapter7 } from './content/chapters/chapter7'
+import { chapter8 } from './content/chapters/chapter8'
 import { AgentConfigurator } from './interactions/AgentConfigurator'
 import { BugTriageLab } from './interactions/BugTriageLab'
+import { EthicsLab } from './interactions/EthicsLab'
 import { IterationSimulator } from './interactions/IterationSimulator'
 import { OrgWorkbench } from './interactions/OrgWorkbench'
 import { PlanCritic } from './interactions/PlanCritic'
@@ -94,28 +96,7 @@ export default function App() {
           <ChapterSection chapter={chapter5} interaction={<AgentConfigurator />} interactionAfter={6} />
           <ChapterSection chapter={chapter6} interaction={<OrgWorkbench />} interactionAfter={5} />
           <ChapterSection chapter={chapter7} interaction={<TalentMixer />} interactionAfter={8} />
-          {chapterTitles.slice(7).map((title, offset) => {
-            const index = offset + 7
-            return (
-            <section
-              className="chapter-placeholder"
-              data-chapter={index + 1}
-              id={`chapter-${index + 1}`}
-              key={title}
-            >
-              <div className="chapter-placeholder__inner">
-                <div className="chapter-placeholder__number">{String(index + 1).padStart(2, '0')}</div>
-                <div>
-                  <p className="chapter-placeholder__eyebrow">第 {index + 1} 章</p>
-                  <h2 ref={index === 0 ? firstChapterHeading : undefined} tabIndex={-1}>
-                    第 {index + 1} 章：{title}
-                  </h2>
-                  <p>本章知识卡、例子、互动和测试将在对应章节任务中完整加入。</p>
-                </div>
-              </div>
-            </section>
-            )
-          })}
+          <ChapterSection chapter={chapter8} interaction={<EthicsLab />} interactionAfter={3} />
         </div>
       </main>
     </>
