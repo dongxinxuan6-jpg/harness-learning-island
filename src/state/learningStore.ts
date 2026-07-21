@@ -2,7 +2,7 @@ import type { QuizQuestion } from '../content/types'
 import { nextReviewAt } from './reviewScheduler'
 
 export const STORAGE_KEY = 'harness-learning-state-v1'
-export const LEARNING_STATE_VERSION = 1
+export const LEARNING_STATE_VERSION = 2
 
 export interface AnswerRecord {
   questionId: string
@@ -23,27 +23,49 @@ export interface ReviewRecord {
   lastReviewedAt: string
 }
 
+export interface ReadingPosition {
+  chapter: number
+  unitId: string
+  unitProgress: number
+  updatedAt: string
+}
+
 export interface LearningState {
   version: number
   answers: Record<string, AnswerRecord>
   favoriteTerms: string[]
   reviews: Record<string, ReviewRecord>
+  readingPosition: ReadingPosition | null
 }
 
 type ReadableStorage = Pick<Storage, 'getItem'>
 type WritableStorage = Pick<Storage, 'setItem'>
 
 export function createEmptyLearningState(): LearningState {
-  return { version: LEARNING_STATE_VERSION, answers: {}, favoriteTerms: [], reviews: {} }
+  return { version: LEARNING_STATE_VERSION, answers: {}, favoriteTerms: [], reviews: {}, readingPosition: null }
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value)
 }
 
-function isLearningState(value: unknown): value is LearningState {
-  if (!isRecord(value) || value.version !== LEARNING_STATE_VERSION) return false
+function hasLearningRecords(value: Record<string, unknown>) {
   return isRecord(value.answers) && Array.isArray(value.favoriteTerms) && isRecord(value.reviews)
+}
+
+function isReadingPosition(value: unknown): value is ReadingPosition {
+  if (!isRecord(value)) return false
+  return typeof value.chapter === 'number'
+    && Number.isFinite(value.chapter)
+    && typeof value.unitId === 'string'
+    && typeof value.unitProgress === 'number'
+    && Number.isFinite(value.unitProgress)
+    && typeof value.updatedAt === 'string'
+}
+
+function isLearningState(value: unknown): value is LearningState {
+  if (!isRecord(value) || value.version !== LEARNING_STATE_VERSION || !hasLearningRecords(value)) return false
+  return value.readingPosition === null || isReadingPosition(value.readingPosition)
 }
 
 export function loadLearningState(storage?: ReadableStorage): LearningState {
@@ -52,7 +74,17 @@ export function loadLearningState(storage?: ReadableStorage): LearningState {
     const raw = storage.getItem(STORAGE_KEY)
     if (!raw) return createEmptyLearningState()
     const parsed: unknown = JSON.parse(raw)
-    return isLearningState(parsed) ? parsed : createEmptyLearningState()
+    if (isLearningState(parsed)) return parsed
+    if (isRecord(parsed) && parsed.version === 1 && hasLearningRecords(parsed)) {
+      return {
+        version: LEARNING_STATE_VERSION,
+        answers: parsed.answers as Record<string, AnswerRecord>,
+        favoriteTerms: parsed.favoriteTerms as string[],
+        reviews: parsed.reviews as Record<string, ReviewRecord>,
+        readingPosition: null,
+      }
+    }
+    return createEmptyLearningState()
   } catch {
     return createEmptyLearningState()
   }
@@ -65,6 +97,20 @@ export function saveLearningState(storage: WritableStorage | undefined, state: L
   } catch {
     // Learning remains usable when private browsing or storage quotas block persistence.
   }
+}
+
+export function updateReadingPosition(state: LearningState, position: ReadingPosition): LearningState {
+  return {
+    ...state,
+    readingPosition: {
+      ...position,
+      unitProgress: Math.min(1, Math.max(0, position.unitProgress)),
+    },
+  }
+}
+
+export function clearReadingPosition(state: LearningState): LearningState {
+  return { ...state, readingPosition: null }
 }
 
 export function recordQuestionAnswer(state: LearningState, question: QuizQuestion, selected: number, now = new Date()): LearningState {
