@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { useLearningActions, useLearningState } from '../state/LearningProvider'
 
 interface ReadingProgressOptions {
@@ -23,6 +23,18 @@ export function useReadingProgress({ onRestore, headerOffset = 88 }: ReadingProg
   const visibleUnitsRef = useRef(new Set<HTMLElement>())
   const restoredRef = useRef(false)
   const suppressSaveRef = useRef(Boolean(initialPositionRef.current))
+  const saveTimerRef = useRef<number | undefined>(undefined)
+  const releasePauseTimerRef = useRef<number | undefined>(undefined)
+
+  const pauseSaving = useCallback(() => {
+    suppressSaveRef.current = true
+    if (saveTimerRef.current !== undefined) window.clearTimeout(saveTimerRef.current)
+    if (releasePauseTimerRef.current !== undefined) window.clearTimeout(releasePauseTimerRef.current)
+    releasePauseTimerRef.current = window.setTimeout(() => {
+      suppressSaveRef.current = false
+      releasePauseTimerRef.current = undefined
+    }, 200)
+  }, [])
 
   useEffect(() => {
     if (restoredRef.current) return
@@ -39,12 +51,12 @@ export function useReadingProgress({ onRestore, headerOffset = 88 }: ReadingProg
 
       const unit = document.getElementById(position.unitId)
       const target = unit ?? document.getElementById(`chapter-${position.chapter}`)
-      target?.scrollIntoView({ behavior: 'auto', block: 'start' })
+      target?.scrollIntoView({ behavior: 'instant', block: 'start' })
 
       if (unit && position.unitProgress > 0) {
         window.scrollBy({
           top: position.unitProgress * unit.offsetHeight,
-          behavior: 'auto',
+          behavior: 'instant',
         })
       }
 
@@ -60,8 +72,6 @@ export function useReadingProgress({ onRestore, headerOffset = 88 }: ReadingProg
   useEffect(() => {
     const units = [...document.querySelectorAll<HTMLElement>('.learning-unit[id]')]
     if (!units.length) return
-    let saveTimer: number | undefined
-
     const findViewportUnit = () => {
       const atReadingLine = units.find((unit) => {
         const rect = unit.getBoundingClientRect()
@@ -88,8 +98,12 @@ export function useReadingProgress({ onRestore, headerOffset = 88 }: ReadingProg
     }
 
     const scheduleSave = () => {
-      if (saveTimer !== undefined) window.clearTimeout(saveTimer)
-      saveTimer = window.setTimeout(saveCurrentPosition, SAVE_DELAY_MS)
+      if (suppressSaveRef.current) return
+      if (saveTimerRef.current !== undefined) window.clearTimeout(saveTimerRef.current)
+      saveTimerRef.current = window.setTimeout(() => {
+        saveTimerRef.current = undefined
+        saveCurrentPosition()
+      }, SAVE_DELAY_MS)
     }
 
     const observer = 'IntersectionObserver' in window
@@ -111,10 +125,16 @@ export function useReadingProgress({ onRestore, headerOffset = 88 }: ReadingProg
 
     return () => {
       observer?.disconnect()
-      if (saveTimer !== undefined) window.clearTimeout(saveTimer)
+      if (saveTimerRef.current !== undefined) window.clearTimeout(saveTimerRef.current)
       window.removeEventListener('scroll', scheduleSave)
       window.removeEventListener('resize', scheduleSave)
       window.removeEventListener('pagehide', saveCurrentPosition)
     }
   }, [headerOffset, saveReadingPosition])
+
+  useEffect(() => () => {
+    if (releasePauseTimerRef.current !== undefined) window.clearTimeout(releasePauseTimerRef.current)
+  }, [])
+
+  return { pauseSaving }
 }

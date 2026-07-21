@@ -59,7 +59,7 @@ describe('guided learning entry', () => {
     await user.click(screen.getByLabelText('从头开始'))
 
     expect(confirm).toHaveBeenCalledWith('回到第一章开头？答题、错题、收藏和复习记录都会保留。')
-    expect(Element.prototype.scrollIntoView).toHaveBeenCalledWith({ behavior: 'auto', block: 'start' })
+    expect(Element.prototype.scrollIntoView).toHaveBeenCalledWith({ behavior: 'instant', block: 'start' })
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)!)
     expect(saved.readingPosition).toBeNull()
     expect(saved.answers['q-1']).toMatchObject({ correct: true })

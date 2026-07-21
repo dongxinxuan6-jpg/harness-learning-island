@@ -89,7 +89,7 @@ main { padding-top: var(--header-height); }
 .directory-drawer li button:hover, .directory-drawer li button.is-current { background: var(--color-coral-soft); }
 .directory-drawer li button span { color: var(--color-coral); font-weight: 900; }
 
-.learning-unit { width: min(var(--reading-width), 100%); margin: 0 auto 18px; scroll-margin-top: calc(var(--header-height) + 24px); border-radius: var(--radius-card); background: var(--color-paper); box-shadow: var(--shadow-low); overflow: hidden; content-visibility: auto; contain-intrinsic-size: auto 520px; }
+.learning-unit { width: min(var(--reading-width), 100%); margin: 0 auto 18px; scroll-margin-top: calc(var(--header-height) + 24px); border-radius: var(--radius-card); background: var(--color-paper); box-shadow: var(--shadow-low); overflow: hidden; }
 .learning-unit__header { padding: 24px 24px 18px; }
 .learning-unit__index { display: block; margin-bottom: 9px; color: var(--color-coral); font-size: 12px; font-weight: 900; }
 .learning-unit h3 { margin: 0 0 14px; font-size: 23px; line-height: 1.4; overflow-wrap: anywhere; }

@@ -49,7 +49,7 @@ function CourseApp() {
     setStarted(true)
   }, [])
 
-  useReadingProgress({ onRestore: handleRestore })
+  const { pauseSaving } = useReadingProgress({ onRestore: handleRestore })
 
   const goToChapter = (index: number) => {
     const section = document.getElementById(`chapter-${index + 1}`)
@@ -67,10 +67,11 @@ function CourseApp() {
   }
 
   const restartLearning = () => {
+    pauseSaving()
     resetReadingPosition()
     setCurrentChapter(0)
     setStarted(true)
-    document.getElementById('chapter-1')?.scrollIntoView({ behavior: 'auto', block: 'start' })
+    document.getElementById('chapter-1')?.scrollIntoView({ behavior: 'instant', block: 'start' })
     firstChapterHeading.current?.focus({ preventScroll: true })
   }
 

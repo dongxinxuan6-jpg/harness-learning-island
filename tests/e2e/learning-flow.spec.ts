@@ -46,3 +46,46 @@ test('chapter quiz and review center expose a complete learning loop', async ({ 
   await expect(page.getByRole('heading', { name: '复习中心' })).toBeVisible()
   await expect(page.getByText('已答题')).toBeVisible()
 })
+
+test('refresh resumes the last unit and restart returns to chapter one', async ({ page }) => {
+  await page.goto('/')
+  await page.evaluate(() => {
+    localStorage.setItem('harness-learning-state-v1', JSON.stringify({
+      version: 2,
+      answers: {
+        'seed-answer': {
+          questionId: 'seed-answer',
+          unitId: 'c1-evolution',
+          selected: 1,
+          correct: true,
+          attempts: 1,
+          answeredAt: '2026-07-21T10:00:00.000Z',
+        },
+      },
+      favoriteTerms: [],
+      reviews: {},
+      readingPosition: null,
+    }))
+  })
+  await page.reload()
+
+  const target = page.locator('#c3-autofixing')
+  await target.scrollIntoViewIfNeeded()
+  await page.waitForFunction(() => {
+    const raw = localStorage.getItem('harness-learning-state-v1')
+    return raw && JSON.parse(raw).readingPosition?.unitId === 'c3-autofixing'
+  })
+
+  await page.reload()
+  await expect(target).toBeInViewport()
+
+  page.once('dialog', (dialog) => dialog.accept())
+  await page.getByRole('button', { name: '从头开始' }).click()
+  await page.waitForFunction(() => Math.abs((document.querySelector('#chapter-1')?.getBoundingClientRect().top ?? 0) - 64) < 16)
+  await expect(page.getByRole('button', { name: '从头开始' })).toBeHidden()
+  await page.waitForTimeout(450)
+
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('harness-learning-state-v1')!))
+  expect(stored.readingPosition).toBeNull()
+  expect(stored.answers['seed-answer']).toMatchObject({ correct: true })
+})

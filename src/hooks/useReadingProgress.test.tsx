@@ -69,7 +69,7 @@ describe('useReadingProgress', () => {
 
     renderHarness(initialState, onRestore)
 
-    await waitFor(() => expect(Element.prototype.scrollIntoView).toHaveBeenCalledWith({ behavior: 'auto', block: 'start' }))
+    await waitFor(() => expect(Element.prototype.scrollIntoView).toHaveBeenCalledWith({ behavior: 'instant', block: 'start' }))
     expect(onRestore).toHaveBeenCalledWith(2)
   })
 
