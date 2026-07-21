@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { AppHeader } from './components/AppHeader'
 import { ChapterSection } from './components/ChapterSection'
 import { DirectoryDrawer } from './components/DirectoryDrawer'
@@ -22,7 +22,8 @@ import { OrgWorkbench } from './interactions/OrgWorkbench'
 import { PlanCritic } from './interactions/PlanCritic'
 import { ScopeBuilder } from './interactions/ScopeBuilder'
 import { TalentMixer } from './interactions/TalentMixer'
-import { LearningProvider } from './state/LearningProvider'
+import { useReadingProgress } from './hooks/useReadingProgress'
+import { LearningProvider, useLearningActions, useLearningState } from './state/LearningProvider'
 
 const chapterTitles = [
   '提示词、上下文与驾驭系统',
@@ -36,10 +37,19 @@ const chapterTitles = [
 ]
 
 function CourseApp() {
+  const { readingPosition } = useLearningState()
+  const { resetReadingPosition } = useLearningActions()
   const firstChapterHeading = useRef<HTMLHeadingElement>(null)
   const [directoryOpen, setDirectoryOpen] = useState(false)
   const [currentChapter, setCurrentChapter] = useState(0)
   const [started, setStarted] = useState(false)
+
+  const handleRestore = useCallback((chapter: number) => {
+    setCurrentChapter(Math.min(chapterTitles.length - 1, Math.max(0, chapter - 1)))
+    setStarted(true)
+  }, [])
+
+  useReadingProgress({ onRestore: handleRestore })
 
   const goToChapter = (index: number) => {
     const section = document.getElementById(`chapter-${index + 1}`)
@@ -53,6 +63,14 @@ function CourseApp() {
     setStarted(true)
     const section = document.getElementById('chapter-1')
     section?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    firstChapterHeading.current?.focus({ preventScroll: true })
+  }
+
+  const restartLearning = () => {
+    resetReadingPosition()
+    setCurrentChapter(0)
+    setStarted(true)
+    document.getElementById('chapter-1')?.scrollIntoView({ behavior: 'auto', block: 'start' })
     firstChapterHeading.current?.focus({ preventScroll: true })
   }
 
@@ -81,6 +99,8 @@ function CourseApp() {
         currentChapter={currentChapter}
         progress={(started ? currentChapter + 1 : 0) / chapterTitles.length}
         started={started}
+        canRestart={Boolean(readingPosition)}
+        onRestart={restartLearning}
         onOpenDirectory={() => setDirectoryOpen(true)}
       />
       <ProgressRail

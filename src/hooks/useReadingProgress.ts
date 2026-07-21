@@ -43,7 +43,7 @@ export function useReadingProgress({ onRestore, headerOffset = 88 }: ReadingProg
 
       if (unit && position.unitProgress > 0) {
         window.scrollBy({
-          top: position.unitProgress * Math.max(unit.offsetHeight - headerOffset, 0),
+          top: position.unitProgress * unit.offsetHeight,
           behavior: 'auto',
         })
       }
