@@ -2,18 +2,23 @@ import { createContext, useContext, useEffect, useMemo, useState, type ReactNode
 import type { QuizQuestion } from '../content/types'
 import {
   completeReview,
+  clearReadingPosition,
   createEmptyLearningState,
   loadLearningState,
   recordQuestionAnswer,
   saveLearningState,
   toggleFavoriteTerm,
+  updateReadingPosition,
   type LearningState,
+  type ReadingPosition,
 } from './learningStore'
 
 interface LearningActions {
   recordAnswer: (question: QuizQuestion, selected: number) => void
   toggleFavorite: (termKey: string) => void
   markReview: (key: string, remembered: boolean) => void
+  saveReadingPosition: (position: ReadingPosition) => void
+  resetReadingPosition: () => void
   resetLearning: () => void
 }
 
@@ -21,6 +26,8 @@ const fallbackActions: LearningActions = {
   recordAnswer: () => undefined,
   toggleFavorite: () => undefined,
   markReview: () => undefined,
+  saveReadingPosition: () => undefined,
+  resetReadingPosition: () => undefined,
   resetLearning: () => undefined,
 }
 
@@ -46,6 +53,8 @@ export function LearningProvider({ children, storage, initialState, now = curren
     recordAnswer: (question, selected) => setState((current) => recordQuestionAnswer(current, question, selected, now())),
     toggleFavorite: (termKey) => setState((current) => toggleFavoriteTerm(current, termKey, now())),
     markReview: (key, remembered) => setState((current) => completeReview(current, key, remembered, now())),
+    saveReadingPosition: (position) => setState((current) => updateReadingPosition(current, position)),
+    resetReadingPosition: () => setState((current) => clearReadingPosition(current)),
     resetLearning: () => setState(createEmptyLearningState()),
   }), [now])
 
