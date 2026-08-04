@@ -1,0 +1,47 @@
+{
+  "id": "p-rokid-style",
+  "slug": "rokid-ai-style",
+  "brand": "Rokid",
+  "name": "AI Glasses Style",
+  "form": "audio",
+  "status": "shipping",
+  "heroImage": "/assets/products/rokid-ai-style.webp",
+  "officialUrl": "https://global.rokid.com/",
+  "positioning": "强调轻量、长时间拍摄与翻译会议能力的无显示眼镜。",
+  "audience": "会议、旅行和日常记录用户。",
+  "scenarios": [
+    "会议纪要",
+    "翻译",
+    "拍摄"
+  ],
+  "capabilities": [
+    "相机",
+    "语音助手",
+    "实时转写"
+  ],
+  "specs": {
+    "连接": "蓝牙 / Wi-Fi（依产品而定）",
+    "核心输入": "语音、触控与第一视角感知",
+    "显示": "无"
+  },
+  "architecture": [
+    "眼镜采集",
+    "手机 App",
+    "云端 AI"
+  ],
+  "tradeoffs": [
+    "重量较低",
+    "核心反馈依赖音频和手机"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "rokid",
+      "name": "Rokid",
+      "url": "https://global.rokid.com/",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

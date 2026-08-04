@@ -1,0 +1,27 @@
+{
+  "id": "repo-openglass",
+  "slug": "based-openglass",
+  "name": "OpenGlass",
+  "owner": "BasedHardware",
+  "repositoryUrl": "https://github.com/BasedHardware/OpenGlass",
+  "description": "使用 ESP32-S3 和手机应用构建低成本相机 AI 眼镜的早期开源项目。",
+  "status": "migrated",
+  "license": "MIT",
+  "languages": [
+    "C"
+  ],
+  "supportedDevices": [
+    "DIY ESP32-S3 glasses"
+  ],
+  "stars": 4106,
+  "lastCommitAt": "2025-09-22T03:05:53Z",
+  "difficulty": "intermediate",
+  "architecture": [
+    "ESP32 相机模组",
+    "React Native 手机应用",
+    "图像与音频传输",
+    "Ollama/OpenAI 服务",
+    "语音或手机输出"
+  ],
+  "productInsight": "低成本原型清楚展示了眼镜采集、手机计算和云模型的最小链路；当前维护已迁往 Omi。"
+}

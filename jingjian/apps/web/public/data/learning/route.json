@@ -1,0 +1,224 @@
+{
+  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "items": [
+    {
+      "id": "stage-1-form-factors",
+      "stage": 1,
+      "title": "先分清三种产品形态",
+      "question": "无显示、轻显示与空间计算眼镜分别解决什么问题？",
+      "summary": "从输出方式、全天佩戴和计算位置建立产品边界。",
+      "durationMinutes": 18,
+      "prerequisites": [],
+      "productSlugs": [
+        "ray-ban-meta",
+        "even-g2",
+        "xreal-aura"
+      ],
+      "outcomes": [
+        "判断产品形态",
+        "解释形态与场景的关系"
+      ]
+    },
+    {
+      "id": "stage-1-users",
+      "stage": 1,
+      "title": "从目标用户看产品",
+      "question": "同样叫 AI 眼镜，为什么服务的人完全不同？",
+      "summary": "比较记录、会议、旅行、辅助与空间生产力用户。",
+      "durationMinutes": 16,
+      "prerequisites": [
+        "stage-1-form-factors"
+      ],
+      "productSlugs": [
+        "xiaomi-ai-glasses",
+        "halliday-g2"
+      ],
+      "outcomes": [
+        "识别目标用户",
+        "区分核心与展示场景"
+      ]
+    },
+    {
+      "id": "stage-1-capability-map",
+      "stage": 1,
+      "title": "建立能力地图",
+      "question": "拍摄、理解、显示与行动如何组合成产品？",
+      "summary": "用输入、理解、输出和行动四层整理能力。",
+      "durationMinutes": 20,
+      "prerequisites": [
+        "stage-1-users"
+      ],
+      "productSlugs": [
+        "rayneo-x3-pro",
+        "rokid-glasses"
+      ],
+      "outcomes": [
+        "绘制能力地图"
+      ]
+    },
+    {
+      "id": "stage-2-journey",
+      "stage": 2,
+      "title": "拆解全天用户旅程",
+      "question": "眼镜从戴上到摘下会在哪些环节失败？",
+      "summary": "关注唤醒、连接、反馈、中断、充电和社交接受度。",
+      "durationMinutes": 22,
+      "prerequisites": [
+        "stage-1-capability-map"
+      ],
+      "productSlugs": [
+        "ray-ban-meta",
+        "even-g2"
+      ],
+      "outcomes": [
+        "识别体验断点"
+      ]
+    },
+    {
+      "id": "stage-2-interaction",
+      "stage": 2,
+      "title": "声音、触控与轻显示",
+      "question": "哪种反馈适合哪种信息？",
+      "summary": "比较语音、镜腿触控、手势、字幕和短提示。",
+      "durationMinutes": 20,
+      "prerequisites": [
+        "stage-2-journey"
+      ],
+      "productSlugs": [
+        "rayneo-x3-pro",
+        "halliday-g2"
+      ],
+      "outcomes": [
+        "选择交互通道"
+      ]
+    },
+    {
+      "id": "stage-2-privacy",
+      "stage": 2,
+      "title": "隐私提示与社会接受",
+      "question": "相机和持续感知如何影响真实使用？",
+      "summary": "从指示灯、无相机设计、数据边界和公共场景评估产品。",
+      "durationMinutes": 18,
+      "prerequisites": [
+        "stage-2-interaction"
+      ],
+      "productSlugs": [
+        "ray-ban-meta",
+        "even-g2"
+      ],
+      "outcomes": [
+        "评估隐私边界"
+      ]
+    },
+    {
+      "id": "stage-3-ai-stack",
+      "stage": 3,
+      "title": "感知到 Agent 的 AI 链路",
+      "question": "眼镜如何理解用户看到和听到的世界？",
+      "summary": "拆解 ASR、VLM、检索、记忆、Agent 与端云协同。",
+      "durationMinutes": 28,
+      "prerequisites": [
+        "stage-2-privacy"
+      ],
+      "productSlugs": [
+        "ray-ban-meta",
+        "xiaomi-ai-glasses"
+      ],
+      "outcomes": [
+        "画出 AI 数据流"
+      ]
+    },
+    {
+      "id": "stage-3-software-stack",
+      "stage": 3,
+      "title": "操作系统、SDK 与应用",
+      "question": "硬件能力如何开放给开发者？",
+      "summary": "比较 Android XR、Lens Studio、品牌 SDK 与跨设备运行时。",
+      "durationMinutes": 26,
+      "prerequisites": [
+        "stage-3-ai-stack"
+      ],
+      "productSlugs": [
+        "xreal-aura",
+        "snap-spectacles"
+      ],
+      "outcomes": [
+        "判断生态开放度"
+      ]
+    },
+    {
+      "id": "stage-3-hardware",
+      "stage": 3,
+      "title": "硬件与结构取舍",
+      "question": "重量、续航、显示和算力为什么互相牵制？",
+      "summary": "理解芯片、相机、麦克风、光学、电池、散热和连接。",
+      "durationMinutes": 30,
+      "prerequisites": [
+        "stage-3-software-stack"
+      ],
+      "productSlugs": [
+        "xreal-aura",
+        "rokid-glasses"
+      ],
+      "outcomes": [
+        "解释关键硬件代价"
+      ]
+    },
+    {
+      "id": "stage-4-judgement",
+      "stage": 4,
+      "title": "从参数回到产品价值",
+      "question": "参数更高是否等于产品更好？",
+      "summary": "把技术参数还原为用户收益、失败模式和成本。",
+      "durationMinutes": 24,
+      "prerequisites": [
+        "stage-3-hardware"
+      ],
+      "productSlugs": [
+        "even-g2",
+        "rayneo-x3-pro"
+      ],
+      "outcomes": [
+        "识别营销参数",
+        "形成产品判断"
+      ]
+    },
+    {
+      "id": "stage-4-comparison",
+      "stage": 4,
+      "title": "统一八维横评",
+      "question": "如何公平比较不同形态的眼镜？",
+      "summary": "按用户、场景、能力、交互、佩戴、智能、边界和生态比较。",
+      "durationMinutes": 32,
+      "prerequisites": [
+        "stage-4-judgement"
+      ],
+      "productSlugs": [
+        "ray-ban-meta",
+        "even-g2",
+        "xreal-aura"
+      ],
+      "outcomes": [
+        "完成跨形态横评"
+      ]
+    },
+    {
+      "id": "stage-4-signals",
+      "stage": 4,
+      "title": "长期信号与短期噪音",
+      "question": "什么变化真正会改变产品路线？",
+      "summary": "从量产状态、生态、技术成熟度和用户行为区分趋势与热度。",
+      "durationMinutes": 22,
+      "prerequisites": [
+        "stage-4-comparison"
+      ],
+      "productSlugs": [
+        "meta-ray-ban-display",
+        "xreal-aura"
+      ],
+      "outcomes": [
+        "判断前沿信号质量"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "items": [
+    {
+      "id": "repo-mentra",
+      "slug": "mentra-os",
+      "name": "MentraOS",
+      "owner": "Mentra-Community",
+      "repositoryUrl": "https://github.com/Mentra-Community/MentraOS",
+      "description": "跨品牌智能眼镜应用运行时、SDK 与应用商店。",
+      "status": "active",
+      "license": "MIT",
+      "languages": [
+        "TypeScript"
+      ],
+      "supportedDevices": [
+        "Mentra Live",
+        "Even G1/G2",
+        "Vuzix Z100"
+      ],
+      "stars": 2278,
+      "latestRelease": "v2.10",
+      "lastCommitAt": "2026-08-04T04:22:23Z",
+      "difficulty": "intermediate",
+      "architecture": [
+        "眼镜传感与显示",
+        "手机 Mentra Runtime",
+        "MiniApp SDK",
+        "可选云端 AI",
+        "字幕、翻译与应用输出"
+      ],
+      "productInsight": "用手机运行时统一不同硬件，可降低应用适配成本并保持眼镜轻量。"
+    },
+    {
+      "id": "repo-executorch",
+      "slug": "executorch",
+      "name": "ExecuTorch",
+      "owner": "pytorch",
+      "repositoryUrl": "https://github.com/pytorch/executorch",
+      "description": "面向移动、嵌入式与边缘设备的 PyTorch 端侧推理运行时。",
+      "status": "active",
+      "license": "NOASSERTION",
+      "languages": [
+        "Python"
+      ],
+      "supportedDevices": [
+        "Ray-Ban Meta",
+        "Meta Ray-Ban Display",
+        "Quest"
+      ],
+      "stars": 4855,
+      "latestRelease": "1.x",
+      "lastCommitAt": "2026-08-04T05:24:37Z",
+      "difficulty": "advanced",
+      "architecture": [
+        "眼镜 SoC/NPU",
+        "端侧运行时",
+        "PyTorch 导出与后端",
+        "模型发布流水线",
+        "OCR、字幕与视觉理解"
+      ],
+      "productInsight": "端侧运行时把隐私、速度和功耗从模型问题变成可部署的产品能力。"
+    },
+    {
+      "id": "repo-frame",
+      "slug": "brilliant-frame-codebase",
+      "name": "frame-codebase",
+      "owner": "brilliantlabsAR",
+      "repositoryUrl": "https://github.com/brilliantlabsAR/frame-codebase",
+      "description": "Brilliant Labs Frame 的完整固件与设备代码。",
+      "status": "watch",
+      "license": "NOASSERTION",
+      "languages": [
+        "C"
+      ],
+      "supportedDevices": [
+        "Brilliant Labs Frame"
+      ],
+      "stars": 497,
+      "lastCommitAt": "2025-10-05T11:35:32Z",
+      "difficulty": "advanced",
+      "architecture": [
+        "nRF52/FPGA 与传感器",
+        "BLE 主机连接",
+        "Lua/消息 SDK",
+        "主机或云端模型",
+        "单眼显示与音频"
+      ],
+      "productInsight": "完整开放硬件代码能帮助理解低功耗设备如何把相机、显示和 BLE 组织成产品。"
+    },
+    {
+      "id": "repo-xrblocks",
+      "slug": "google-xrblocks",
+      "name": "xrblocks",
+      "owner": "google",
+      "repositoryUrl": "https://github.com/google/xrblocks",
+      "description": "用于快速构建 WebXR、手势和 AI 原型的轻量库。",
+      "status": "active",
+      "license": "Apache-2.0",
+      "languages": [
+        "TypeScript"
+      ],
+      "supportedDevices": [
+        "WebXR devices",
+        "Android XR prototypes"
+      ],
+      "stars": 455,
+      "lastCommitAt": "2026-08-04T02:19:38Z",
+      "difficulty": "intermediate",
+      "architecture": [
+        "XR 传感设备",
+        "浏览器运行时",
+        "WebXR 组件",
+        "Gemini/LiteRT",
+        "手势与空间内容"
+      ],
+      "productInsight": "Web 技术可缩短 AI+XR 交互验证周期，但最终眼镜仍受浏览器能力与性能限制。"
+    },
+    {
+      "id": "repo-snap",
+      "slug": "spectacles-sample",
+      "name": "Spectacles-Sample",
+      "owner": "Snapchat",
+      "repositoryUrl": "https://github.com/Snapchat/Spectacles-Sample",
+      "description": "早期 Spectacles 模板与示例集合，已迁移至新的 specs-devs 组织。",
+      "status": "migrated",
+      "license": "NOASSERTION",
+      "languages": [
+        "TypeScript"
+      ],
+      "supportedDevices": [
+        "Snap Spectacles"
+      ],
+      "stars": 190,
+      "lastCommitAt": "2026-04-11T00:51:41Z",
+      "difficulty": "beginner",
+      "architecture": [
+        "Spectacles 硬件",
+        "Snap OS",
+        "Lens Studio",
+        "Lens 云服务",
+        "空间 Lens 输出"
+      ],
+      "productInsight": "项目价值在于历史示例和迁移线索，学习时应转向当前组织而非旧仓库。"
+    },
+    {
+      "id": "repo-openglass",
+      "slug": "based-openglass",
+      "name": "OpenGlass",
+      "owner": "BasedHardware",
+      "repositoryUrl": "https://github.com/BasedHardware/OpenGlass",
+      "description": "使用 ESP32-S3 和手机应用构建低成本相机 AI 眼镜的早期开源项目。",
+      "status": "migrated",
+      "license": "MIT",
+      "languages": [
+        "C"
+      ],
+      "supportedDevices": [
+        "DIY ESP32-S3 glasses"
+      ],
+      "stars": 4106,
+      "lastCommitAt": "2025-09-22T03:05:53Z",
+      "difficulty": "intermediate",
+      "architecture": [
+        "ESP32 相机模组",
+        "React Native 手机应用",
+        "图像与音频传输",
+        "Ollama/OpenAI 服务",
+        "语音或手机输出"
+      ],
+      "productInsight": "低成本原型清楚展示了眼镜采集、手机计算和云模型的最小链路；当前维护已迁往 Omi。"
+    }
+  ]
+}

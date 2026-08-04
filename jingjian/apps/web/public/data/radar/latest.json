@@ -1,0 +1,141 @@
+{
+  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "items": [
+    {
+      "id": "signal-glimmer",
+      "title": "Jetpack Compose Glimmer 面向透明显示建立新 UI 规则",
+      "summary": "黑色在光学透明显示中相当于透明，界面需要围绕短文本、对比度与扫读重新设计。",
+      "category": "显示交互",
+      "maturity": "developer-preview",
+      "date": "2026-05-19",
+      "source": {
+        "id": "android-xr-dp4",
+        "name": "Android Developers Blog",
+        "url": "https://developer.android.com/blog/posts/updates-to-the-android-xr-sdk-introducing-developer-preview-4",
+        "tier": "official",
+        "language": "en",
+        "fetchedAt": "2026-08-03T02:00:00.000Z"
+      },
+      "productSlugs": [
+        "xreal-aura"
+      ],
+      "projectSlugs": [
+        "google-xrblocks"
+      ],
+      "impact": 94
+    },
+    {
+      "id": "signal-egocentric",
+      "title": "第一视角多模态模型开始拥有专用评测集",
+      "summary": "研究重点从通用图片问答转向对象关注、连续环境与外部知识检索。",
+      "category": "多模态 AI",
+      "maturity": "research",
+      "date": "2026-02-26",
+      "source": {
+        "id": "superglasses-paper",
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2602.22683",
+        "tier": "research",
+        "language": "en",
+        "fetchedAt": "2026-08-03T02:00:00.000Z"
+      },
+      "productSlugs": [
+        "ray-ban-meta",
+        "xiaomi-ai-glasses"
+      ],
+      "projectSlugs": [
+        "executorch"
+      ],
+      "impact": 91
+    },
+    {
+      "id": "signal-event-camera",
+      "title": "事件相机与事件唤醒降低眼镜端持续感知功耗",
+      "summary": "仅处理变化像素并按事件启动 SoC，可显著延长小电池设备的端侧推理时间。",
+      "category": "传感与功耗",
+      "maturity": "research",
+      "date": "2026-06-05",
+      "source": {
+        "id": "openglass-paper",
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2606.07431",
+        "tier": "research",
+        "language": "en",
+        "fetchedAt": "2026-08-03T02:00:00.000Z"
+      },
+      "productSlugs": [
+        "brilliant-frame"
+      ],
+      "projectSlugs": [],
+      "impact": 88
+    },
+    {
+      "id": "signal-split",
+      "title": "分体计算成为大视场角空间眼镜的现实路线",
+      "summary": "眼镜端承担低延迟显示与追踪，计算盒或手机承担生成式 AI 与空间应用。",
+      "category": "系统架构",
+      "maturity": "announced",
+      "date": "2026-07-15",
+      "source": {
+        "id": "xreal-aura",
+        "name": "XREAL",
+        "url": "https://www.xreal.com/us/aura",
+        "tier": "official",
+        "language": "en",
+        "fetchedAt": "2026-08-03T02:00:00.000Z"
+      },
+      "productSlugs": [
+        "xreal-aura"
+      ],
+      "projectSlugs": [],
+      "impact": 86
+    },
+    {
+      "id": "signal-on-device",
+      "title": "端侧 OCR、字幕与翻译进入量产眼镜",
+      "summary": "模型运行时开始直接影响延迟、隐私、断网体验和电池分配。",
+      "category": "端侧 AI",
+      "maturity": "shipping",
+      "date": "2025-11-21",
+      "source": {
+        "id": "meta-ai",
+        "name": "AI at Meta",
+        "url": "https://ai.meta.com/blog/executorch-reality-labs-on-device-ai/",
+        "tier": "official",
+        "language": "en",
+        "fetchedAt": "2026-08-03T02:00:00.000Z"
+      },
+      "productSlugs": [
+        "ray-ban-meta",
+        "meta-ray-ban-display"
+      ],
+      "projectSlugs": [
+        "executorch"
+      ],
+      "impact": 84
+    },
+    {
+      "id": "signal-cross-runtime",
+      "title": "跨品牌眼镜运行时尝试统一硬件差异",
+      "summary": "应用在手机运行时中共享眼镜连接，让字幕、翻译和 Agent 同时工作。",
+      "category": "开发生态",
+      "maturity": "shipping",
+      "date": "2026-04-16",
+      "source": {
+        "id": "github",
+        "name": "GitHub",
+        "url": "https://github.com/topics/smart-glasses",
+        "tier": "research",
+        "language": "en",
+        "fetchedAt": "2026-08-03T02:00:00.000Z"
+      },
+      "productSlugs": [
+        "even-g2"
+      ],
+      "projectSlugs": [
+        "mentra-os"
+      ],
+      "impact": 79
+    }
+  ]
+}

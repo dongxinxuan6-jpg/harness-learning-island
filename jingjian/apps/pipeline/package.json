@@ -1,0 +1,28 @@
+{
+  "name": "@jingjian/pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pipeline": "tsx src/cli.ts run",
+    "generate": "tsx src/cli.ts seed",
+    "hydrate": "tsx src/cli.ts hydrate",
+    "check": "tsx src/cli.ts check"
+  },
+  "dependencies": {
+    "@jingjian/domain": "*",
+    "@mozilla/readability": "latest",
+    "cheerio": "latest",
+    "fast-xml-parser": "latest",
+    "openai": "latest",
+    "sharp": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}

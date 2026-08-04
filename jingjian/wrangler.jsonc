@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "jingjian",
+  "compatibility_date": "2026-08-04",
+  "pages_build_output_dir": "apps/web/dist",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jingjian",
+      "database_id": "db528800-eae6-4f2d-9c44-9b05f0a7e7ec",
+      "migrations_dir": "infra/d1/migrations",
+      "remote": true
+    }
+  ]
+}

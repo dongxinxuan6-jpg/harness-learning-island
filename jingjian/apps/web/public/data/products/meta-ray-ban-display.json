@@ -1,0 +1,47 @@
+{
+  "id": "p-meta-display",
+  "slug": "meta-ray-ban-display",
+  "brand": "Meta × Ray-Ban",
+  "name": "Ray-Ban Display",
+  "form": "display",
+  "status": "shipping",
+  "heroImage": "/assets/products/meta-ray-ban-display.webp",
+  "officialUrl": "https://www.meta.com/smart-glasses/",
+  "positioning": "把字幕、OCR 与上下文信息直接放入视野的轻显示眼镜。",
+  "audience": "需要实时视觉提示、翻译与信息回看的用户。",
+  "scenarios": [
+    "实时字幕",
+    "翻译",
+    "文本识别"
+  ],
+  "capabilities": [
+    "私密显示",
+    "端侧 OCR",
+    "手部交互"
+  ],
+  "specs": {
+    "连接": "蓝牙 / Wi-Fi（依产品而定）",
+    "核心输入": "语音、触控与第一视角感知",
+    "显示": "单眼轻显示"
+  },
+  "architecture": [
+    "眼镜端显示与感知",
+    "神经腕带/触控输入",
+    "端侧 ExecuTorch"
+  ],
+  "tradeoffs": [
+    "信息更直观",
+    "显示增加重量与功耗"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "meta-ai",
+      "name": "AI at Meta",
+      "url": "https://ai.meta.com/blog/executorch-reality-labs-on-device-ai/",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

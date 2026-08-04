@@ -1,0 +1,648 @@
+{
+  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "kind": "value",
+  "items": [
+    {
+      "id": "content-android-xr-dp4",
+      "slug": "android-xr-dp4-glasses",
+      "title": "Android XR 把 AI 眼镜正式拆成音频与显示两条产品路线",
+      "originalTitle": "Updates to the Android XR SDK: Introducing Developer Preview 4",
+      "summary": "Google 正在用统一 SDK 覆盖音频眼镜、显示眼镜与有线 XR 眼镜，并为轻显示界面提供 Glimmer 组件体系。",
+      "whyItMatters": "操作系统开始按产品形态定义能力边界，开发者可以更早判断一项体验应该通过声音、轻显示还是空间界面交付。",
+      "beginnerNote": "音频眼镜依赖相机、麦克风和扬声器；显示眼镜在此基础上加入短小、私密、可扫读的视觉提示。",
+      "productImpact": "统一平台会降低跨品牌开发成本，但也会增强手机与系统生态对眼镜体验的控制力。",
+      "publishedAt": "2026-05-19T00:00:00Z",
+      "readMinutes": 2,
+      "tags": [
+        "Android XR",
+        "操作系统",
+        "显示交互"
+      ],
+      "productSlugs": [
+        "xreal-aura"
+      ],
+      "learningNodeIds": [
+        "stage-1-form-factors",
+        "stage-3-software-stack"
+      ],
+      "sources": [
+        {
+          "id": "android-xr-dp4",
+          "name": "Android Developers Blog",
+          "url": "https://developer.android.com/blog/posts/updates-to-the-android-xr-sdk-introducing-developer-preview-4",
+          "tier": "official",
+          "language": "en",
+          "fetchedAt": "2026-08-03T02:00:00.000Z"
+        },
+        {
+          "id": "android-xr",
+          "name": "Android XR Developers",
+          "url": "https://developer.android.com/develop/xr/devices",
+          "tier": "official",
+          "language": "en",
+          "fetchedAt": "2026-08-03T02:00:00.000Z"
+        }
+      ],
+      "score": {
+        "value": 94,
+        "heat": 67,
+        "confidence": 0.9,
+        "verification": "verified",
+        "independentSources": 1,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 78,
+          "crossPlatformSources": 1,
+          "observedMentions": 2,
+          "windowHours": 24
+        }
+      }
+    },
+    {
+      "id": "content-meta-executorch",
+      "slug": "meta-executorch-on-device-ai",
+      "title": "Meta 如何把端侧 AI 放进全天佩戴的眼镜",
+      "originalTitle": "ExecuTorch Adoption in Reality Labs: Powering On-Device AI Across Meta Devices",
+      "summary": "ExecuTorch 已用于 Ray-Ban Meta、Meta Ray-Ban Display 与运动眼镜中的 OCR、字幕、翻译和视觉理解。",
+      "whyItMatters": "端侧推理决定响应速度、隐私、网络依赖和续航，是 AI 眼镜从相机配件走向实时助手的关键。",
+      "beginnerNote": "端侧模型在眼镜或手机本地运行，云端模型能力更强；真实产品通常在两者之间分配任务。",
+      "productImpact": "产品需要在模型尺寸、芯片功耗、发热和输出质量之间持续取舍。",
+      "publishedAt": "2025-11-21T00:00:00Z",
+      "readMinutes": 2,
+      "tags": [
+        "端侧 AI",
+        "ExecuTorch",
+        "OCR"
+      ],
+      "productSlugs": [
+        "ray-ban-meta",
+        "meta-ray-ban-display"
+      ],
+      "learningNodeIds": [
+        "stage-3-ai-stack",
+        "stage-3-hardware"
+      ],
+      "sources": [
+        {
+          "id": "meta-ai",
+          "name": "AI at Meta",
+          "url": "https://ai.meta.com/blog/executorch-reality-labs-on-device-ai/",
+          "tier": "official",
+          "language": "en",
+          "fetchedAt": "2026-08-03T02:00:00.000Z"
+        }
+      ],
+      "score": {
+        "value": 92,
+        "heat": 63,
+        "confidence": 0.9,
+        "verification": "verified",
+        "independentSources": 1,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 62,
+          "crossPlatformSources": 1,
+          "observedMentions": 1,
+          "windowHours": 24
+        }
+      }
+    },
+    {
+      "id": "content-xreal-aura",
+      "slug": "xreal-aura-split-computing",
+      "title": "XREAL AURA 用分体计算换取 70° 视场角与眼镜形态",
+      "summary": "AURA 将 Snapdragon Reality Elite 放在计算盒中，眼镜端使用 X1S 协处理器承担低延迟空间显示。",
+      "whyItMatters": "它直接展示了高性能空间计算与轻量佩戴之间的一种现实解法。",
+      "beginnerNote": "分体计算把高功耗任务放到手机或计算盒，眼镜保留显示、传感与低延迟处理。",
+      "productImpact": "体验上获得更大视场角和完整应用生态，代价是线缆、额外设备与携带复杂度。",
+      "publishedAt": "2026-07-15T00:00:00Z",
+      "readMinutes": 2,
+      "tags": [
+        "空间计算",
+        "分体计算",
+        "光学"
+      ],
+      "productSlugs": [
+        "xreal-aura"
+      ],
+      "learningNodeIds": [
+        "stage-1-form-factors",
+        "stage-3-hardware"
+      ],
+      "sources": [
+        {
+          "id": "xreal-aura",
+          "name": "XREAL",
+          "url": "https://www.xreal.com/us/aura",
+          "tier": "official",
+          "language": "en",
+          "fetchedAt": "2026-08-03T02:00:00.000Z"
+        },
+        {
+          "id": "android-xr",
+          "name": "Android XR Developers",
+          "url": "https://developer.android.com/develop/xr/devices",
+          "tier": "official",
+          "language": "en",
+          "fetchedAt": "2026-08-03T02:00:00.000Z"
+        }
+      ],
+      "score": {
+        "value": 90,
+        "heat": 70,
+        "confidence": 0.9,
+        "verification": "verified",
+        "independentSources": 2,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 91,
+          "crossPlatformSources": 2,
+          "observedMentions": 2,
+          "windowHours": 24
+        }
+      }
+    },
+    {
+      "id": "content-openglass-paper",
+      "slug": "openglass-event-camera",
+      "title": "事件相机让 200mAh 眼镜实现最长 11.8 小时端侧手势识别",
+      "originalTitle": "OpenGlass: Open-Source Smart Glasses for On-Device Event-Based Gesture Recognition",
+      "summary": "研究原型使用事件相机、RISC-V SoC 与事件唤醒电源管理，只在需要推理时启动主要计算单元。",
+      "whyItMatters": "它给出了续航问题的系统级答案：降低传感数据量，并让硬件按事件醒来。",
+      "beginnerNote": "事件相机只报告像素变化，不持续输出完整画面，因此数据量和处理压力更低。",
+      "productImpact": "适合手势和状态识别，但成像内容与传统相机不同，仍需针对具体任务设计模型。",
+      "publishedAt": "2026-06-05T16:27:02Z",
+      "readMinutes": 2,
+      "tags": [
+        "事件相机",
+        "低功耗",
+        "手势"
+      ],
+      "productSlugs": [
+        "brilliant-frame"
+      ],
+      "learningNodeIds": [
+        "stage-3-hardware",
+        "stage-4-judgement"
+      ],
+      "sources": [
+        {
+          "id": "openglass-paper",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2606.07431",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-03T02:00:00.000Z"
+        }
+      ],
+      "score": {
+        "value": 89,
+        "heat": 57,
+        "confidence": 0.9,
+        "verification": "verified",
+        "independentSources": 1,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 54,
+          "crossPlatformSources": 1,
+          "observedMentions": 1,
+          "windowHours": 24
+        }
+      }
+    },
+    {
+      "id": "content-superglasses",
+      "slug": "superglasses-vlm-benchmark",
+      "title": "第一视角 VQA 暴露通用视觉模型在 AI 眼镜上的能力缺口",
+      "originalTitle": "SUPERGLASSES: Benchmarking Vision Language Models as Intelligent Agents for AI Smart Glasses",
+      "summary": "SUPERGLASSES 使用真实眼镜采集的第一视角数据评估视觉语言模型，强调先识别关注对象、再检索知识。",
+      "whyItMatters": "手机图片问答效果好，并不代表模型能理解持续移动、遮挡和用户注意目标不明确的第一视角。",
+      "beginnerNote": "第一视角模型既要看懂画面，还要判断用户此刻真正关心哪个对象。",
+      "productImpact": "产品需要对象定位、查询拆分和外部检索组成完整链路，而非只调用一次大模型。",
+      "publishedAt": "2026-02-26T06:55:48Z",
+      "readMinutes": 2,
+      "tags": [
+        "第一视角",
+        "VLM",
+        "评测"
+      ],
+      "productSlugs": [
+        "ray-ban-meta",
+        "xiaomi-ai-glasses"
+      ],
+      "learningNodeIds": [
+        "stage-3-ai-stack",
+        "stage-4-judgement"
+      ],
+      "sources": [
+        {
+          "id": "superglasses-paper",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2602.22683",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-03T02:00:00.000Z"
+        }
+      ],
+      "score": {
+        "value": 87,
+        "heat": 58,
+        "confidence": 0.9,
+        "verification": "verified",
+        "independentSources": 1,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 58,
+          "crossPlatformSources": 1,
+          "observedMentions": 1,
+          "windowHours": 24
+        }
+      }
+    },
+    {
+      "id": "meta-product-news-55b74e4db487",
+      "slug": "we-re-partnering-with-essilorluxottica-to-launch-meta-glasses",
+      "title": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
+      "summary": "Meta 宣布与 EssilorLuxottica 合作推出 Meta Glasses，起售价 299 美元，首发提供三种镜框风格、26 种款式并支持处方镜片。产品配备 Meta AI、开放式扬声器、多麦克风阵列、免手拍摄、专用操作按钮、超过 8 小时续航和可额外提供最多 40 小时电量的充电盒；正文称其已在多个国家开售。",
+      "whyItMatters": "这是正文明确宣布并开始销售的具体 AI 眼镜产品，说明 Meta 正把 AI 眼镜从单一硬件功能推进到结合时尚设计、处方镜片、相机、音频和持续软件更新的完整消费产品线。首发搭载 Muse Spark 驱动的 Meta AI，也使模型能力成为产品体验的一部分。",
+      "beginnerNote": "AI 眼镜是在普通眼镜形态中加入摄像头、麦克风、扬声器和 AI 助手的可穿戴设备。Meta Glasses 主要通过语音、开放式音频和拍摄功能与 Meta AI 交互，正文未提及内置显示屏。",
+      "productImpact": "该产品将 Meta AI、相机、开放式音频和多麦克风能力整合到更具时尚属性的消费级眼镜产品线中，并以多镜框、多颜色和处方镜片兼容性扩大日常佩戴场景。Meta AI 由 Muse Spark 驱动，动态照片、即将推出的无显示屏步行导航及新增实时翻译语言则体现了通过软件更新扩展产品能力的路线。",
+      "publishedAt": "2026-07-30T06:52:59.000Z",
+      "readMinutes": 2,
+      "tags": [
+        "智能眼镜",
+        "头戴设备",
+        "计算机视觉",
+        "人体姿态估计",
+        "全身网格重建",
+        "边缘推理",
+        "生成模型",
+        "AI眼镜"
+      ],
+      "productSlugs": [],
+      "learningNodeIds": [
+        "stage-4-signals"
+      ],
+      "sources": [
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.27755v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.15868v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.08083v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.09780v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.02689v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2606.30554v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2606.15859v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2606.10276v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2606.07431v2",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2606.03774v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2605.27464v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2605.16797v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2605.10936v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2605.10404v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "meta-product-news",
+          "name": "Meta Product News",
+          "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+          "tier": "official",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "uploadvr",
+          "name": "UploadVR",
+          "url": "https://www.uploadvr.com/meta-still-internally-debating-privacy-of-always-on-ai-glasses/",
+          "tier": "media",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "uploadvr",
+          "name": "UploadVR",
+          "url": "https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/",
+          "tier": "media",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "uploadvr",
+          "name": "UploadVR",
+          "url": "https://www.uploadvr.com/18birdies-arccos-meta-glasses-ai-golf-caddy/",
+          "tier": "media",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        },
+        {
+          "id": "uploadvr",
+          "name": "UploadVR",
+          "url": "https://www.uploadvr.com/meta-one-premium-subscription-now-required-for-longer-access-to-glasses-features/",
+          "tier": "media",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        }
+      ],
+      "score": {
+        "value": 83,
+        "heat": 56,
+        "confidence": 0.91,
+        "verification": "verified",
+        "independentSources": 3,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 10,
+          "crossPlatformSources": 3,
+          "observedMentions": 19,
+          "windowHours": 24
+        }
+      }
+    },
+    {
+      "id": "content-qualcomm-ar2",
+      "slug": "snapdragon-ar2-distributed",
+      "title": "为什么 AI 眼镜芯片开始采用多芯片与分布式架构",
+      "summary": "Snapdragon AR2 将感知、协处理与连接职责拆开，并把复杂任务分配给手机或主机。",
+      "whyItMatters": "眼镜镜腿空间、散热面积和电池都很有限，单芯片堆性能会迅速破坏佩戴体验。",
+      "beginnerNote": "分布式架构让不同芯片只处理自己擅长的任务，并把高耗能工作移出眼镜。",
+      "productImpact": "可降低眼镜端功耗和 PCB 尺寸，但系统集成、连接稳定性和延迟调优更复杂。",
+      "publishedAt": "2026-07-20T00:00:00Z",
+      "readMinutes": 2,
+      "tags": [
+        "芯片",
+        "分布式架构",
+        "功耗"
+      ],
+      "productSlugs": [
+        "xreal-aura",
+        "rokid-glasses"
+      ],
+      "learningNodeIds": [
+        "stage-3-hardware"
+      ],
+      "sources": [
+        {
+          "id": "qualcomm-ar2",
+          "name": "Qualcomm",
+          "url": "https://www.qualcomm.com/xr-vr-ar/products/ar-series/snapdragon-ar2-gen-1-platform",
+          "tier": "official",
+          "language": "en",
+          "fetchedAt": "2026-08-03T02:00:00.000Z"
+        }
+      ],
+      "score": {
+        "value": 82,
+        "heat": 53,
+        "confidence": 0.9,
+        "verification": "verified",
+        "independentSources": 1,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 45,
+          "crossPlatformSources": 1,
+          "observedMentions": 1,
+          "windowHours": 24
+        }
+      }
+    },
+    {
+      "id": "arxiv-7b18054e2a81",
+      "slug": "craft-exploring-wearable-creative-ai-on-smart-glasses-for-fiction-writing-in-rea",
+      "title": "CRAFT: Exploring Wearable Creative AI on Smart Glasses for Fiction Writing in Real-World Contexts",
+      "summary": "论文提出 CRAFT（Context-aware Reality-Fiction Transformation）方法，探索 AI 眼镜如何把用户在现实环境中的日常经历转化为小说创作素材。研究通过九名作者访谈、16 名作者与研究人员参与的共创工作坊，以及覆盖八名作者、24 次创作时段的实地试用，分析了现场感知增强、现实经验真实性、虚构化处理和创作自主权等设计问题。研究发现，AI 眼镜可能帮助作者从偶然遇见的现实事物中获得更丰富的创作想法，并形成“微创作”等使用实践。",
+      "whyItMatters": "该研究直接讨论 AI 眼镜在现实环境中的长期创作辅助价值，说明产品机会不只在信息提示或拍摄，也包括基于环境与经历的创意生成。它同时指出，持续使用时必须处理隐私、现实生活边界、素材真实性与作者控制权等产品设计问题。",
+      "beginnerNote": "这是一项关于 AI 眼镜如何辅助现场灵感采集和小说创作的研究，不是已上市眼镜产品或商业发布公告。",
+      "productImpact": "研究为 AI 眼镜的创意写作场景提供了交互设计方向，包括从现实环境中捕捉灵感、将日常经历转化为虚构素材，以及支持碎片化的即时创作。产品设计还需要平衡现实体验的真实性、内容虚构化、用户创作自主权和生活与艺术之间的边界。",
+      "publishedAt": "2026-07-23T14:56:51.000Z",
+      "readMinutes": 2,
+      "tags": [
+        "AI眼镜",
+        "创意写作",
+        "情境感知",
+        "人机协作",
+        "现场创作",
+        "交互设计研究",
+        "可穿戴AI"
+      ],
+      "productSlugs": [],
+      "learningNodeIds": [
+        "stage-4-signals"
+      ],
+      "sources": [
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.21394v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        }
+      ],
+      "score": {
+        "value": 78,
+        "heat": 27,
+        "confidence": 0.75,
+        "verification": "verified",
+        "independentSources": 1,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 10,
+          "crossPlatformSources": 1,
+          "observedMentions": 1,
+          "windowHours": 24
+        }
+      }
+    },
+    {
+      "id": "arxiv-50541a8983b9",
+      "slug": "devil-in-the-lens-analyzing-and-defending-physical-prompt-injection-against-visi",
+      "title": "Devil in the Lens: Analyzing and Defending Physical Prompt Injection Against Vision-Language Models on Wearable Devices",
+      "summary": "论文研究面向 AI 眼镜等可穿戴设备的物理提示注入攻击。攻击者将恶意指令嵌入现实环境中的文字，借助眼镜拍摄的图像影响视觉语言模型，可能干扰设备任务，诱导模型生成不当、偏见或不真实的输出。研究使用来自 200 多个现实环境的 AI 眼镜照片，分析了 6 类威胁向量并评估 12 个视觉语言模型；攻击在模拟环境中的成功率最高达 96%，在真实环境中最高达 60%。论文还提出了基于掩码的外部过滤器和基于语义向量的内部检测器。",
+      "whyItMatters": "AI 眼镜持续感知现实环境，场景文字因此可能成为影响模型行为的新攻击入口。论文显示，多种模型会过度信任环境文字而忽略实际视觉上下文，导致摘要或指令与真实场景相反；这直接关系到 AI 眼镜在导航、识别、辅助决策等安全关键任务中的可靠性。",
+      "beginnerNote": "这是一篇安全研究论文，不是某款 AI 眼镜的产品发布。它研究的是：现实环境中的恶意文字，如何通过眼镜摄像头进入视觉语言模型并影响其判断。",
+      "productImpact": "AI 眼镜需要把现实场景中的文字视为不可信输入，并在模型推理前后增加安全防护。论文提出的外部掩码过滤器和基于语义向量的内部检测器，为识别及降低物理提示注入攻击提供了两类防御方向。",
+      "publishedAt": "2026-07-11T11:56:05.000Z",
+      "readMinutes": 2,
+      "tags": [
+        "AI眼镜",
+        "视觉语言模型",
+        "可穿戴设备安全",
+        "物理提示注入",
+        "提示注入防御",
+        "摄像头安全",
+        "模型安全"
+      ],
+      "productSlugs": [],
+      "learningNodeIds": [
+        "stage-4-signals"
+      ],
+      "sources": [
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.10269v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        }
+      ],
+      "score": {
+        "value": 78,
+        "heat": 27,
+        "confidence": 0.75,
+        "verification": "verified",
+        "independentSources": 1,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 10,
+          "crossPlatformSources": 1,
+          "observedMentions": 1,
+          "windowHours": 24
+        }
+      }
+    },
+    {
+      "id": "arxiv-14c65a679322",
+      "slug": "glassteng-self-powered-triboelectric-nanogenerator-based-sensing-of-pulse-jaw-an",
+      "title": "GlassTENG: Self-Powered Triboelectric Nanogenerator based Sensing of Pulse, Jaw, and Upper Facial Activity from Everyday Glasses",
+      "summary": "论文提出 GlassTENG，一种嵌入日常眼镜框架的超低功耗、自供电摩擦电纳米发电机传感系统。系统在鼻梁角动脉、延伸镜腿处的颞浅动脉和太阳穴颞肌位置部署三个传感器，可同时采集动脉脉搏波形、下颌运动和上脸部活动。20 名参与者研究中，六类下颌及上脸部活动识别准确率为 93.8%，在 30 秒窗口内相对胸带传感器的心率平均绝对误差为 1.82 BPM。",
+      "whyItMatters": "它直接探索了眼镜作为长期生理与面部活动感知平台的硬件基础，重点解决持续佩戴舒适性和传感器功耗问题。脉搏、咀嚼、咬紧、眨眼及眉毛运动等信号可为健康监测、无障碍交互和眼镜端输入提供潜在数据来源；不过正文没有说明 AI 推理、端侧软件、实际产品发布或商业部署。",
+      "beginnerNote": "这是一项关于眼镜式生理传感的研究论文，不是已上市或正式发布的 AI 眼镜产品。GlassTENG 将三种自供电摩擦电纳米发电机嵌入眼镜框架，用于采集脉搏、下颌和上脸部活动。",
+      "productImpact": "如果后续实现产品化，这类自供电传感器可能减少传统凝胶、黏附式传感器带来的佩戴不适，并降低眼镜持续生理监测的功耗、重量和维护负担。但正文仅说明其为未来长期佩戴式平台提供路径，未说明商业化、量产或与具体 AI 眼镜产品集成。",
+      "publishedAt": "2026-07-07T17:11:55.000Z",
+      "readMinutes": 2,
+      "tags": [
+        "AI眼镜传感器",
+        "生理监测",
+        "自供电传感",
+        "摩擦电纳米发电机",
+        "心率监测",
+        "面部活动识别",
+        "下颌运动识别",
+        "研究原型"
+      ],
+      "productSlugs": [],
+      "learningNodeIds": [
+        "stage-4-signals"
+      ],
+      "sources": [
+        {
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2607.06509v1",
+          "tier": "research",
+          "language": "en",
+          "fetchedAt": "2026-08-04T05:56:42.376Z"
+        }
+      ],
+      "score": {
+        "value": 78,
+        "heat": 27,
+        "confidence": 0.75,
+        "verification": "verified",
+        "independentSources": 1,
+        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "heatSignals": {
+          "discussionVelocity": 10,
+          "crossPlatformSources": 1,
+          "observedMentions": 1,
+          "windowHours": 24
+        }
+      }
+    }
+  ]
+}

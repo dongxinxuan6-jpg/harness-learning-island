@@ -1,0 +1,27 @@
+{
+  "id": "repo-frame",
+  "slug": "brilliant-frame-codebase",
+  "name": "frame-codebase",
+  "owner": "brilliantlabsAR",
+  "repositoryUrl": "https://github.com/brilliantlabsAR/frame-codebase",
+  "description": "Brilliant Labs Frame 的完整固件与设备代码。",
+  "status": "watch",
+  "license": "NOASSERTION",
+  "languages": [
+    "C"
+  ],
+  "supportedDevices": [
+    "Brilliant Labs Frame"
+  ],
+  "stars": 497,
+  "lastCommitAt": "2025-10-05T11:35:32Z",
+  "difficulty": "advanced",
+  "architecture": [
+    "nRF52/FPGA 与传感器",
+    "BLE 主机连接",
+    "Lua/消息 SDK",
+    "主机或云端模型",
+    "单眼显示与音频"
+  ],
+  "productInsight": "完整开放硬件代码能帮助理解低功耗设备如何把相机、显示和 BLE 组织成产品。"
+}

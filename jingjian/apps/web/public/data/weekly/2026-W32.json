@@ -1,0 +1,31 @@
+{
+  "isoWeek": "2026-W32",
+  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "editorial": false,
+  "title": "第 32 周：Android XR",
+  "thesis": "Android XR 把 AI 眼镜正式拆成音频与显示两条产品路线是本周最值得建立产品判断的变化。统一平台会降低跨品牌开发成本，但也会增强手机与系统生态对眼镜体验的控制力。",
+  "contentIds": [
+    "content-android-xr-dp4",
+    "content-meta-executorch",
+    "content-xreal-aura"
+  ],
+  "signalIds": [
+    "signal-glimmer",
+    "signal-egocentric",
+    "signal-event-camera"
+  ],
+  "sections": [
+    {
+      "title": "长期信号",
+      "body": "Jetpack Compose Glimmer 面向透明显示建立新 UI 规则。黑色在光学透明显示中相当于透明，界面需要围绕短文本、对比度与扫读重新设计。"
+    },
+    {
+      "title": "短期噪音",
+      "body": "轻显示眼镜正在从功能集合走向专用 AI 操作系统仍处于“发展中”，需要继续核对独立来源、交付状态与真实体验。"
+    },
+    {
+      "title": "下周学习",
+      "body": "围绕“音频眼镜依赖相机、麦克风和扬声器；显示眼镜在此基础上加入短小、私密、可扫读的视觉提示。”，继续拆解相关产品的用户场景、软硬件链路与体验取舍。"
+    }
+  ]
+}

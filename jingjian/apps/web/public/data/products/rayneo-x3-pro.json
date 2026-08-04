@@ -1,0 +1,47 @@
+{
+  "id": "p-rayneo",
+  "slug": "rayneo-x3-pro",
+  "brand": "RayNeo",
+  "name": "X3 Pro",
+  "form": "display",
+  "status": "shipping",
+  "heroImage": "/assets/products/rayneo-x3-pro.webp",
+  "officialUrl": "https://www.rayneo.com/pages/x3-pro-launch",
+  "positioning": "面向翻译、导航和 AR 应用的双目全彩轻显示眼镜。",
+  "audience": "开发者、旅行者和 AR 早期用户。",
+  "scenarios": [
+    "彩色导航",
+    "实时翻译",
+    "AR 应用"
+  ],
+  "capabilities": [
+    "双目全彩显示",
+    "Gemini",
+    "AIOS"
+  ],
+  "specs": {
+    "连接": "蓝牙 / Wi-Fi（依产品而定）",
+    "核心输入": "语音、触控与第一视角感知",
+    "显示": "双目全彩 MicroLED 光波导"
+  },
+  "architecture": [
+    "眼镜端系统",
+    "Android/Unity SDK",
+    "Gemini 云端能力"
+  ],
+  "tradeoffs": [
+    "输出丰富",
+    "系统和硬件复杂度较高"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "rayneo",
+      "name": "RayNeo",
+      "url": "https://www.rayneo.com/pages/x3-pro-launch",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

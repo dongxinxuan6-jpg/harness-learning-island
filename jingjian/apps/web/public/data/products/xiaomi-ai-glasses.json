@@ -1,0 +1,47 @@
+{
+  "id": "p-xiaomi",
+  "slug": "xiaomi-ai-glasses",
+  "brand": "小米",
+  "name": "小米 AI 眼镜",
+  "form": "audio",
+  "status": "shipping",
+  "heroImage": "/assets/products/xiaomi-ai-glasses.webp",
+  "officialUrl": "https://www.mi.com/prod/xiaomi-ai-glasses",
+  "positioning": "连接小米手机与生态服务的相机音频 AI 眼镜。",
+  "audience": "小米生态用户与轻量第一视角拍摄用户。",
+  "scenarios": [
+    "拍摄",
+    "翻译",
+    "语音助手"
+  ],
+  "capabilities": [
+    "相机",
+    "音频",
+    "小爱同学"
+  ],
+  "specs": {
+    "连接": "蓝牙 / Wi-Fi（依产品而定）",
+    "核心输入": "语音、触控与第一视角感知",
+    "显示": "无"
+  },
+  "architecture": [
+    "眼镜采集",
+    "手机协同",
+    "小米云服务"
+  ],
+  "tradeoffs": [
+    "生态协同完整",
+    "体验受地区与手机生态影响"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "xiaomi",
+      "name": "小米",
+      "url": "https://www.mi.com/prod/xiaomi-ai-glasses",
+      "tier": "official",
+      "language": "zh",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

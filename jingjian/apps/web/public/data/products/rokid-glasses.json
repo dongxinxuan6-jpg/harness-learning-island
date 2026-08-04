@@ -1,0 +1,47 @@
+{
+  "id": "p-rokid",
+  "slug": "rokid-glasses",
+  "brand": "Rokid",
+  "name": "Rokid Glasses",
+  "form": "display",
+  "status": "shipping",
+  "heroImage": "/assets/products/rokid-glasses.webp",
+  "officialUrl": "https://global.rokid.com/products/rokid-glasses",
+  "positioning": "将相机、AI 与 MicroLED 显示合并到日常眼镜形态。",
+  "audience": "需要翻译、提词、导航和视觉提示的用户。",
+  "scenarios": [
+    "翻译字幕",
+    "提词",
+    "导航"
+  ],
+  "capabilities": [
+    "MicroLED 显示",
+    "相机",
+    "语音交互"
+  ],
+  "specs": {
+    "连接": "蓝牙 / Wi-Fi（依产品而定）",
+    "核心输入": "语音、触控与第一视角感知",
+    "显示": "MicroLED 光波导"
+  },
+  "architecture": [
+    "眼镜显示感知",
+    "手机协同",
+    "云端模型"
+  ],
+  "tradeoffs": [
+    "功能完整",
+    "显示带来续航与适配成本"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "rokid",
+      "name": "Rokid",
+      "url": "https://global.rokid.com/",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

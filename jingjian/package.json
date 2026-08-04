@@ -1,0 +1,51 @@
+{
+  "name": "jingjian",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run build -w @jingjian/domain && npm run dev -w @jingjian/web",
+    "build": "npm run build -w @jingjian/domain && npm run build -w @jingjian/pipeline && npm run build -w @jingjian/web",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "pipeline": "npm run build -w @jingjian/domain && npm run pipeline -w @jingjian/pipeline",
+    "generate": "npm run build -w @jingjian/domain && npm run generate -w @jingjian/pipeline",
+    "hydrate": "npm run build -w @jingjian/domain && npm run hydrate -w @jingjian/pipeline",
+    "check": "npm run build -w @jingjian/domain && npm run check -w @jingjian/pipeline"
+  },
+  "dependencies": {
+    "@mozilla/readability": "latest",
+    "cheerio": "latest",
+    "fast-xml-parser": "latest",
+    "idb": "latest",
+    "lucide-react": "latest",
+    "openai": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "7.18.2",
+    "tldts": "^7.4.10",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "fake-indexeddb": "latest",
+    "jsdom": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vite-plugin-pwa": "latest",
+    "vitest": "latest",
+    "wrangler": "latest"
+  }
+}
