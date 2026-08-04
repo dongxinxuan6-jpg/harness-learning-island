@@ -1,0 +1,47 @@
+{
+  "id": "p-solos",
+  "slug": "solos-airgo-v2",
+  "brand": "Solos",
+  "name": "AirGo V2",
+  "form": "audio",
+  "status": "shipping",
+  "heroImage": "/assets/products/solos-airgo-v2.webp",
+  "officialUrl": "https://solosglasses.com/",
+  "positioning": "模块化镜框与相机、音频 AI 能力组合的消费眼镜。",
+  "audience": "通话、拍摄和语音助手用户。",
+  "scenarios": [
+    "视频拍摄",
+    "即时翻译",
+    "语音查询"
+  ],
+  "capabilities": [
+    "16MP 相机",
+    "开放式音频",
+    "SolosChat"
+  ],
+  "specs": {
+    "连接": "蓝牙 / Wi-Fi（依产品而定）",
+    "核心输入": "语音、触控与第一视角感知",
+    "显示": "无"
+  },
+  "architecture": [
+    "可替换镜框",
+    "手机应用",
+    "云端 AI"
+  ],
+  "tradeoffs": [
+    "镜框选择多",
+    "缺少视觉输出"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "solos",
+      "name": "Solos",
+      "url": "https://solosglasses.com/",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

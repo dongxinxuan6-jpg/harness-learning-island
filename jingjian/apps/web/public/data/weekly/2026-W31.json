@@ -1,0 +1,30 @@
+{
+  "isoWeek": "2026-W31",
+  "generatedAt": "2026-08-03T02:00:00.000Z",
+  "thesis": "AI 眼镜的竞争正在从单项硬件参数转向端侧 AI、系统平台与全天佩戴的共同优化。",
+  "title": "第 31 周：平台开始定义眼镜形态",
+  "signalIds": [
+    "signal-glimmer",
+    "signal-egocentric",
+    "signal-split"
+  ],
+  "contentIds": [
+    "content-android-xr-dp4",
+    "content-meta-executorch",
+    "content-xreal-aura"
+  ],
+  "sections": [
+    {
+      "title": "长期信号",
+      "body": "Android XR 的形态分类和端侧运行时说明平台层正在成熟，开发者入口比单一硬件发布更值得持续观察。"
+    },
+    {
+      "title": "短期噪音",
+      "body": "单次发布会的参数对比热度很高，但交付状态、SDK 可用性和真实续航仍需后续证据。"
+    },
+    {
+      "title": "下周学习",
+      "body": "先完成“感知到 Agent 的 AI 链路”，再比较 Ray-Ban Meta 与 Even G2 的输入输出取舍。"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "repo-snap",
+  "slug": "spectacles-sample",
+  "name": "Spectacles-Sample",
+  "owner": "Snapchat",
+  "repositoryUrl": "https://github.com/Snapchat/Spectacles-Sample",
+  "description": "早期 Spectacles 模板与示例集合，已迁移至新的 specs-devs 组织。",
+  "status": "migrated",
+  "license": "NOASSERTION",
+  "languages": [
+    "TypeScript"
+  ],
+  "supportedDevices": [
+    "Snap Spectacles"
+  ],
+  "stars": 190,
+  "lastCommitAt": "2026-04-11T00:51:41Z",
+  "difficulty": "beginner",
+  "architecture": [
+    "Spectacles 硬件",
+    "Snap OS",
+    "Lens Studio",
+    "Lens 云服务",
+    "空间 Lens 输出"
+  ],
+  "productInsight": "项目价值在于历史示例和迁移线索，学习时应转向当前组织而非旧仓库。"
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">镜见双镜标</title>
+  <rect width="256" height="256" rx="48" fill="#fff"/>
+  <circle cx="78" cy="128" r="45" fill="#080808" stroke="#080808" stroke-width="12"/>
+  <circle cx="178" cy="128" r="45" fill="#fff" stroke="#080808" stroke-width="12"/>
+  <path d="M123 128h10" stroke="#080808" stroke-width="12" stroke-linecap="round"/>
+</svg>

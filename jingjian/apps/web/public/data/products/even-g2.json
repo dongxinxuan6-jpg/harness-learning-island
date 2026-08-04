@@ -1,0 +1,47 @@
+{
+  "id": "p-even",
+  "slug": "even-g2",
+  "brand": "Even Realities",
+  "name": "G2",
+  "form": "display",
+  "status": "shipping",
+  "heroImage": "/assets/products/even-g2.webp",
+  "officialUrl": "https://www.evenrealities.com/en-US/smart-glasses",
+  "positioning": "强调全天佩戴、对话提示与无相机隐私设计的显示眼镜。",
+  "audience": "会议、演讲和日常信息提示用户。",
+  "scenarios": [
+    "对话提示",
+    "提词",
+    "通知"
+  ],
+  "capabilities": [
+    "双目绿色显示",
+    "Conversate",
+    "翻译"
+  ],
+  "specs": {
+    "显示": "双目 MicroLED 光波导",
+    "分辨率": "640×350",
+    "视场角": "27.5°"
+  },
+  "architecture": [
+    "眼镜端轻显示",
+    "手机 App",
+    "上下文 AI"
+  ],
+  "tradeoffs": [
+    "隐私与佩戴友好",
+    "缺少相机视觉能力"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "even-g2",
+      "name": "Even Realities",
+      "url": "https://www.evenrealities.com/en-US/smart-glasses",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

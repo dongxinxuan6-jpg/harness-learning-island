@@ -1,0 +1,30 @@
+{
+  "id": "repo-mentra",
+  "slug": "mentra-os",
+  "name": "MentraOS",
+  "owner": "Mentra-Community",
+  "repositoryUrl": "https://github.com/Mentra-Community/MentraOS",
+  "description": "跨品牌智能眼镜应用运行时、SDK 与应用商店。",
+  "status": "active",
+  "license": "MIT",
+  "languages": [
+    "TypeScript"
+  ],
+  "supportedDevices": [
+    "Mentra Live",
+    "Even G1/G2",
+    "Vuzix Z100"
+  ],
+  "stars": 2278,
+  "latestRelease": "v2.10",
+  "lastCommitAt": "2026-08-04T04:22:23Z",
+  "difficulty": "intermediate",
+  "architecture": [
+    "眼镜传感与显示",
+    "手机 Mentra Runtime",
+    "MiniApp SDK",
+    "可选云端 AI",
+    "字幕、翻译与应用输出"
+  ],
+  "productInsight": "用手机运行时统一不同硬件，可降低应用适配成本并保持眼镜轻量。"
+}

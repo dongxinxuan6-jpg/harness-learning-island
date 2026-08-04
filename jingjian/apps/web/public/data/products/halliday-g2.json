@@ -1,0 +1,47 @@
+{
+  "id": "p-halliday",
+  "slug": "halliday-g2",
+  "brand": "Halliday",
+  "name": "G2",
+  "form": "display",
+  "status": "announced",
+  "heroImage": "/assets/products/halliday-g2.webp",
+  "officialUrl": "https://www.hallidayglobal.com/",
+  "positioning": "聚焦会议过程和实时对话辅助的无相机双目显示眼镜。",
+  "audience": "会议密集的专业用户。",
+  "scenarios": [
+    "会议跟踪",
+    "翻译",
+    "提醒"
+  ],
+  "capabilities": [
+    "双目显示",
+    "四麦克风",
+    "Meeting Flow"
+  ],
+  "specs": {
+    "显示": "双目 MicroLED 光波导",
+    "续航": "标称 12 小时",
+    "防护": "IP54"
+  },
+  "architecture": [
+    "眼镜音频显示",
+    "手机应用",
+    "会议 AI 服务"
+  ],
+  "tradeoffs": [
+    "场景定位清晰",
+    "高级会议能力依赖订阅"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "halliday-g2",
+      "name": "Halliday",
+      "url": "https://www.hallidayglobal.com/",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

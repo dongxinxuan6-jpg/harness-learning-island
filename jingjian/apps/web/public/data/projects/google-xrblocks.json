@@ -1,0 +1,28 @@
+{
+  "id": "repo-xrblocks",
+  "slug": "google-xrblocks",
+  "name": "xrblocks",
+  "owner": "google",
+  "repositoryUrl": "https://github.com/google/xrblocks",
+  "description": "用于快速构建 WebXR、手势和 AI 原型的轻量库。",
+  "status": "active",
+  "license": "Apache-2.0",
+  "languages": [
+    "TypeScript"
+  ],
+  "supportedDevices": [
+    "WebXR devices",
+    "Android XR prototypes"
+  ],
+  "stars": 455,
+  "lastCommitAt": "2026-08-04T02:19:38Z",
+  "difficulty": "intermediate",
+  "architecture": [
+    "XR 传感设备",
+    "浏览器运行时",
+    "WebXR 组件",
+    "Gemini/LiteRT",
+    "手势与空间内容"
+  ],
+  "productInsight": "Web 技术可缩短 AI+XR 交互验证周期，但最终眼镜仍受浏览器能力与性能限制。"
+}

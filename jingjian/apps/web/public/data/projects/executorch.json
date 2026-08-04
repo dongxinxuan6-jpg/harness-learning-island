@@ -1,0 +1,30 @@
+{
+  "id": "repo-executorch",
+  "slug": "executorch",
+  "name": "ExecuTorch",
+  "owner": "pytorch",
+  "repositoryUrl": "https://github.com/pytorch/executorch",
+  "description": "面向移动、嵌入式与边缘设备的 PyTorch 端侧推理运行时。",
+  "status": "active",
+  "license": "NOASSERTION",
+  "languages": [
+    "Python"
+  ],
+  "supportedDevices": [
+    "Ray-Ban Meta",
+    "Meta Ray-Ban Display",
+    "Quest"
+  ],
+  "stars": 4855,
+  "latestRelease": "1.x",
+  "lastCommitAt": "2026-08-04T05:24:37Z",
+  "difficulty": "advanced",
+  "architecture": [
+    "眼镜 SoC/NPU",
+    "端侧运行时",
+    "PyTorch 导出与后端",
+    "模型发布流水线",
+    "OCR、字幕与视觉理解"
+  ],
+  "productInsight": "端侧运行时把隐私、速度和功耗从模型问题变成可部署的产品能力。"
+}

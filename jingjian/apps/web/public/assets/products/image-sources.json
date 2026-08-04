@@ -1,0 +1,47 @@
+{
+  "brilliant-frame": {
+    "pageUrl": "https://docs.brilliant.xyz/frame/frame/",
+    "assetUrl": "https://docs.brilliant.xyz/frame/images/frame-splash.png"
+  },
+  "meta-与-essilorluxottica-meta-glasses": {
+    "pageUrl": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+    "assetUrl": "https://about.fb.com/wp-content/uploads/2026/06/Meta-Partnering-with-EssilorLucottica-to-Launch-Meta-Glasses_Social-Share.jpg?w=1200"
+  },
+  "meta-ray-ban-display": {
+    "pageUrl": "https://www.meta.com/ai-glasses/meta-ray-ban-display/",
+    "assetUrl": "https://lookaside.fbsbx.com/elementpath/media/?media_id=1663092534932266&transcode_extension=webp&version=1778003602"
+  },
+  "ray-ban-meta": {
+    "pageUrl": "https://www.meta.com/ai-glasses/meta-ray-ban-display/",
+    "assetUrl": "https://lookaside.fbsbx.com/elementpath/media/?media_id=1581424099595114&transcode_extension=webp&version=1778003614"
+  },
+  "rayneo-x3-pro": {
+    "pageUrl": "https://www.rayneo.com/collections/ai-smart-glasses/products/x3-pro-ai-display-glasses",
+    "assetUrl": "https://www.rayneo.com/cdn/shop/files/x3-pro.png?v=1783043767&width=1200"
+  },
+  "rokid-ai-style": {
+    "pageUrl": "https://global.rokid.com/products/rokid-ai-glasses-style",
+    "assetUrl": "https://global.rokid.com/cdn/shop/files/001_6_48afc345-c913-4148-bfaf-4984f1f62ff9.jpg?v=1768896106&width=3840"
+  },
+  "rokid-glasses": {
+    "pageUrl": "https://global.rokid.com/products/rokid-glasses",
+    "assetUrl": "https://global.rokid.com/cdn/shop/files/002.png?v=1777113204&width=3840"
+  },
+  "snap-spectacles": {
+    "pageUrl": "https://developers.snap.com/spectacles/get-started/introduction",
+    "assetUrl": "https://developers.snap.com/img/spectacles/misc/spectacles-2024-hero.png"
+  },
+  "solos-airgo-v2": {
+    "pageUrl": "https://solosglasses.com/products/prime-2-smartglasses-solos-airgo%E2%84%A2-v2",
+    "assetUrl": "https://solosglasses.com/cdn/shop/files/Image_9.jpg?v=1784104176&width=1214"
+  },
+  "xiaomi-ai-glasses": {
+    "pageUrl": "https://www.mi.com/prod/xiaomi-ai-glasses",
+    "assetUrl": "https://i0.wp.com/skarredghost.com/wp-content/uploads/2025/07/xiaomi-ai-glasses-hero_jpg_92.jpg?resize=1280%2C720&ssl=1",
+    "note": "Xiaomi official launch image mirrored by a product review."
+  },
+  "xreal-aura": {
+    "pageUrl": "https://www.xreal.com/us/aura",
+    "assetUrl": "https://resource.xreal.com/www-xreal-com/images/aura/xreal-aura-eyewear-compute-puck.webp"
+  }
+}

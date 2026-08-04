@@ -1,0 +1,48 @@
+{
+  "id": "p-meta",
+  "slug": "ray-ban-meta",
+  "brand": "Meta × Ray-Ban",
+  "name": "Ray-Ban Meta",
+  "form": "audio",
+  "status": "shipping",
+  "heroImage": "/assets/products/ray-ban-meta.webp",
+  "officialUrl": "https://www.meta.com/smart-glasses/",
+  "positioning": "面向日常拍摄、开放式音频与多模态助手的无显示 AI 眼镜。",
+  "audience": "希望全天佩戴并随手记录、查询环境信息的消费者。",
+  "scenarios": [
+    "第一视角拍摄",
+    "语音问答",
+    "通话与音频"
+  ],
+  "capabilities": [
+    "相机",
+    "麦克风阵列",
+    "开放式扬声器",
+    "Meta AI"
+  ],
+  "specs": {
+    "连接": "蓝牙 / Wi-Fi（依产品而定）",
+    "核心输入": "语音、触控与第一视角感知",
+    "显示": "无"
+  },
+  "architecture": [
+    "眼镜负责采集与音频",
+    "手机负责连接和应用",
+    "端侧与云端模型协同"
+  ],
+  "tradeoffs": [
+    "外形接近日常眼镜",
+    "视觉输出依赖声音和手机"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "meta-ai",
+      "name": "AI at Meta",
+      "url": "https://ai.meta.com/blog/executorch-reality-labs-on-device-ai/",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

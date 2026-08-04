@@ -1,0 +1,22 @@
+:root {
+  color-scheme: light;
+  font-family: "SF Pro Display", "SF Pro Text", "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  letter-spacing: 0;
+  color: #0a0a0a;
+  background: #f3f3f1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --black: #080808;
+  --ink: #171715;
+  --muted: #666661;
+  --soft: #8d8d87;
+  --line: #deded9;
+  --line-strong: #c9c9c3;
+  --paper: #ffffff;
+  --canvas: #f3f3f1;
+  --wash: #eaeae6;
+  --radius: 8px;
+  --shadow: 0 12px 34px rgba(0, 0, 0, 0.06);
+  --sidebar: 236px;
+  --content: 1240px;
+}

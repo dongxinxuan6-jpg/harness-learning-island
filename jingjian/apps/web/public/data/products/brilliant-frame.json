@@ -1,0 +1,48 @@
+{
+  "id": "p-brilliant",
+  "slug": "brilliant-frame",
+  "brand": "Brilliant Labs",
+  "name": "Frame",
+  "form": "display",
+  "status": "developer-kit",
+  "heroImage": "/assets/products/brilliant-frame.webp",
+  "officialUrl": "https://brilliant.xyz/products/frame",
+  "positioning": "面向开发者和创客的开放式单眼显示 AI 眼镜。",
+  "audience": "希望访问固件、SDK 和传感数据的开发者。",
+  "scenarios": [
+    "原型开发",
+    "视觉问答",
+    "提词"
+  ],
+  "capabilities": [
+    "显示",
+    "相机",
+    "麦克风",
+    "开放代码"
+  ],
+  "specs": {
+    "连接": "蓝牙 / Wi-Fi（依产品而定）",
+    "核心输入": "语音、触控与第一视角感知",
+    "开发": "Lua / Python / Flutter"
+  },
+  "architecture": [
+    "开放固件",
+    "BLE 主机应用",
+    "可替换 AI 服务"
+  ],
+  "tradeoffs": [
+    "可扩展性强",
+    "消费级完成度和维护要求较高"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "brilliant",
+      "name": "Brilliant Labs",
+      "url": "https://github.com/brilliantlabsAR",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

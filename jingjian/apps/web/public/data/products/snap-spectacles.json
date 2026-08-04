@@ -1,0 +1,47 @@
+{
+  "id": "p-snap",
+  "slug": "snap-spectacles",
+  "brand": "Snap",
+  "name": "Spectacles",
+  "form": "spatial",
+  "status": "developer-kit",
+  "heroImage": "/assets/products/snap-spectacles.webp",
+  "officialUrl": "https://www.spectacles.com/",
+  "positioning": "以 Lens Studio 和空间 Lens 为核心的独立 AR 开发者眼镜。",
+  "audience": "AR 创作者和交互原型开发者。",
+  "scenarios": [
+    "空间 Lens",
+    "手势交互",
+    "多人体验"
+  ],
+  "capabilities": [
+    "全彩显示",
+    "空间追踪",
+    "手势"
+  ],
+  "specs": {
+    "连接": "蓝牙 / Wi-Fi（依产品而定）",
+    "核心输入": "语音、触控与第一视角感知",
+    "开发": "Lens Studio"
+  },
+  "architecture": [
+    "眼镜端 Snap OS",
+    "Lens Studio",
+    "Snap 云服务"
+  ],
+  "tradeoffs": [
+    "开发工具成熟",
+    "面向开发者且佩戴体积较大"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "snap",
+      "name": "Snap Spectacles Developers",
+      "url": "https://developers.snap.com/spectacles/get-started/introduction",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "p-xreal",
+  "slug": "xreal-aura",
+  "brand": "XREAL",
+  "name": "AURA",
+  "form": "spatial",
+  "status": "announced",
+  "heroImage": "/assets/products/xreal-aura.webp",
+  "officialUrl": "https://www.xreal.com/us/aura",
+  "positioning": "基于 Android XR 的分体式空间计算眼镜。",
+  "audience": "需要大空间画布、生产力和沉浸内容的用户与开发者。",
+  "scenarios": [
+    "空间办公",
+    "娱乐",
+    "AI 视觉"
+  ],
+  "capabilities": [
+    "70° 视场角",
+    "6DoF",
+    "手势",
+    "Gemini"
+  ],
+  "specs": {
+    "显示": "Sony Micro-OLED 1920×1200/眼",
+    "视场角": "70°",
+    "刷新率": "最高 120Hz"
+  },
+  "architecture": [
+    "眼镜端 X1S 协处理器",
+    "计算盒 Reality Elite",
+    "Android XR 与 Gemini"
+  ],
+  "tradeoffs": [
+    "空间能力强",
+    "需要线缆和计算盒"
+  ],
+  "updatedAt": "2026-08-03T02:00:00.000Z",
+  "sources": [
+    {
+      "id": "xreal-aura",
+      "name": "XREAL",
+      "url": "https://www.xreal.com/us/aura",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    },
+    {
+      "id": "android-xr",
+      "name": "Android XR Developers",
+      "url": "https://developer.android.com/develop/xr/devices",
+      "tier": "official",
+      "language": "en",
+      "fetchedAt": "2026-08-03T02:00:00.000Z"
+    }
+  ]
+}
