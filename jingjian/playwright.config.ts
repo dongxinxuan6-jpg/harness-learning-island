@@ -1,5 +1,8 @@
 import { defineConfig, devices } from "@playwright/test";
 
+const e2ePort = Number(process.env.E2E_PORT ?? 4175);
+const e2eBaseUrl = `http://127.0.0.1:${e2ePort}`;
+
 export default defineConfig({
   testDir: "./e2e",
   outputDir: "./test-results",
@@ -9,7 +12,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   reporter: process.env.CI ? "github" : "list",
   use: {
-    baseURL: "http://127.0.0.1:4174",
+    baseURL: e2eBaseUrl,
     channel: "chrome",
     trace: "retain-on-failure",
     screenshot: "only-on-failure"
@@ -20,9 +23,9 @@ export default defineConfig({
     { name: "mobile-390", use: { ...devices["Pixel 7"], viewport: { width: 390, height: 844 } } }
   ],
   webServer: {
-    command: "npm run build -w @jingjian/web && npm run preview -w @jingjian/web -- --port 4174",
-    url: "http://127.0.0.1:4174",
-    reuseExistingServer: !process.env.CI,
+    command: `npm run build -w @jingjian/web && npm run preview -w @jingjian/web -- --port ${e2ePort}`,
+    url: e2eBaseUrl,
+    reuseExistingServer: false,
     timeout: 120_000
   }
 });
