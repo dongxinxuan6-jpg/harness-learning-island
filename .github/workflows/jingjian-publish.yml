@@ -1,0 +1,87 @@
+name: Jingjian publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      seed_only:
+        description: Generate seed snapshots without remote enrichment
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    - cron: "17 1 * * *"
+    - cron: "47 1 * * *"
+    - cron: "17 0,4,8,12,16,20 * * *"
+
+concurrency:
+  group: jingjian-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ github.event_name != 'schedule' || github.event.schedule != '47 1 * * *' }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: jingjian
+    permissions:
+      contents: read
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+      OPENAI_BULK_MODEL: ${{ vars.OPENAI_BULK_MODEL }}
+      OPENAI_EDITOR_MODEL: ${{ vars.OPENAI_EDITOR_MODEL }}
+      GITHUB_TOKEN: ${{ github.token }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      D1_DATABASE_ID: ${{ secrets.D1_DATABASE_ID }}
+      CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+      PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
+      AI_SPENT_CNY: ${{ vars.AI_SPENT_CNY }}
+      CNY_PER_USD: ${{ vars.CNY_PER_USD }}
+      RSS_SOURCES_JSON: ${{ vars.RSS_SOURCES_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: jingjian/package-lock.json
+      - run: npm ci
+      - name: Generate seed snapshots
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.seed_only }}
+        run: npm run generate
+      - name: Hydrate currently published snapshots
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.seed_only }}
+        env:
+          REQUIRE_PUBLISHED_SNAPSHOTS: ${{ github.event_name == 'schedule' && github.event.schedule == '17 0,4,8,12,16,20 * * *' && 'true' || 'false' }}
+        run: npm run hydrate
+      - name: Run live pipeline
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.seed_only }}
+        env:
+          PIPELINE_KIND: ${{ github.event_name == 'schedule' && github.event.schedule == '17 0,4,8,12,16,20 * * *' && 'heat' || 'daily' }}
+        run: npm run pipeline
+      - run: npm test
+      - run: npm run build
+      - name: Deploy Cloudflare Pages
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != '' && env.CF_PAGES_PROJECT != '' }}
+        run: npx wrangler pages deploy apps/web/dist --project-name "$CF_PAGES_PROJECT"
+
+  verify-publication:
+    if: ${{ github.event_name == 'schedule' && github.event.schedule == '47 1 * * *' }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: jingjian
+    env:
+      PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: jingjian/package-lock.json
+      - run: npm ci
+      - name: Check published morning digest
+        run: npm run check
