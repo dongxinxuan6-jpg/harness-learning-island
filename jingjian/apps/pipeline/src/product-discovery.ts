@@ -84,7 +84,7 @@ export async function discoverProductCandidates(options: {
   publicRoot: string;
   fetcher?: typeof fetch;
 }): Promise<{ products: Product[]; records: ProductDiscoveryRecord[]; coverSources: ProductCoverSource[] }> {
-  const products = [...options.existingProducts];
+  const products = deduplicateProductAliases(options.existingProducts);
   const records: ProductDiscoveryRecord[] = [];
   const coverSources: ProductCoverSource[] = [];
   const fetcher = options.fetcher ?? fetch;
@@ -99,7 +99,7 @@ export async function discoverProductCandidates(options: {
       continue;
     }
 
-    const existingIndex = products.findIndex((product) => isSameProduct(product, candidate));
+    const existingIndex = products.findIndex((product) => isSameProduct(product, candidate, input.source.url));
     if (existingIndex >= 0) {
       const existing = products[existingIndex];
       products[existingIndex] = ProductSchema.parse({
@@ -284,13 +284,53 @@ function toSpecsRecord(specs: ProductCandidate["specs"]): Record<string, string>
   return Object.fromEntries(specs.map((item) => [item.label, item.value]));
 }
 
-function isSameProduct(product: Product, candidate: ProductCandidate): boolean {
+function isSameProduct(product: Product, candidate: ProductCandidate, sourceUrl: string): boolean {
   if (normalizeProductKey(product.brand, product.name) === normalizeProductKey(candidate.brand, candidate.name)) return true;
+  if (normalizeProductName(product.name) === normalizeProductName(candidate.name) && productSourceUrls(product).has(canonicalUrl(sourceUrl))) return true;
   const existingTokens = productIdentityTokens(product.brand, product.name);
   const candidateTokens = productIdentityTokens(candidate.brand, candidate.name);
   const shared = [...existingTokens].filter((token) => candidateTokens.has(token)).length;
   const union = new Set([...existingTokens, ...candidateTokens]).size;
   return shared >= 2 && union > 0 && shared / union >= 0.8;
+}
+
+function deduplicateProductAliases(products: Product[]): Product[] {
+  const deduplicated: Product[] = [];
+  for (const product of products) {
+    const aliasIndex = deduplicated.findIndex((existing) => isHistoricalAlias(existing, product));
+    if (aliasIndex < 0) {
+      deduplicated.push(product);
+      continue;
+    }
+    const canonical = deduplicated[aliasIndex];
+    const identity = canonical.updatedAt.localeCompare(product.updatedAt) <= 0 ? canonical : product;
+    const latest = canonical.updatedAt.localeCompare(product.updatedAt) >= 0 ? canonical : product;
+    deduplicated[aliasIndex] = ProductSchema.parse({
+      ...latest,
+      id: identity.id,
+      slug: identity.slug,
+      brand: identity.brand,
+      name: identity.name,
+      heroImage: identity.heroImage,
+      officialUrl: identity.officialUrl,
+      sources: mergeProductSourceLists(canonical.sources, product.sources)
+    });
+  }
+  return deduplicated;
+}
+
+function isHistoricalAlias(left: Product, right: Product): boolean {
+  if (normalizeProductName(left.name) !== normalizeProductName(right.name)) return false;
+  const leftSources = productSourceUrls(left);
+  return [...productSourceUrls(right)].some((url) => leftSources.has(url));
+}
+
+function normalizeProductName(name: string): string {
+  return name.normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+}
+
+function productSourceUrls(product: Product): Set<string> {
+  return new Set([product.officialUrl, ...product.sources.map((source) => source.url)].map(canonicalUrl));
 }
 
 function productIdentityTokens(brand: string, name: string): Set<string> {
@@ -320,6 +360,12 @@ function toSource(candidate: RawCandidate, fetchedAt: string): Source {
 function mergeSources(existing: Source[], incoming: Source): Source[] {
   const byUrl = new Map(existing.map((source) => [canonicalUrl(source.url), source]));
   byUrl.set(canonicalUrl(incoming.url), incoming);
+  return [...byUrl.values()];
+}
+
+function mergeProductSourceLists(left: Source[], right: Source[]): Source[] {
+  const byUrl = new Map(left.map((source) => [canonicalUrl(source.url), source]));
+  right.forEach((source) => byUrl.set(canonicalUrl(source.url), source));
   return [...byUrl.values()];
 }
 

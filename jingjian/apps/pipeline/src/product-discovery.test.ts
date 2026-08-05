@@ -223,6 +223,76 @@ describe("discoverProductCandidates", () => {
     expect(result.records[0].status).toBe("updated");
     expect(fetcher).not.toHaveBeenCalled();
   });
+
+  it("recognizes a product alias when its name and official source are unchanged", async () => {
+    const sourceUrl = "https://about.example/news/meta-glasses";
+    const existing = {
+      ...seedDataset.products[0],
+      id: "product-meta-glasses",
+      slug: "meta-meta-glasses",
+      brand: "Meta",
+      name: "Meta Glasses",
+      officialUrl: sourceUrl,
+      sources: [{ ...seedDataset.products[0].sources[0], url: sourceUrl }]
+    };
+    const fetcher = vi.fn();
+
+    const result = await discoverProductCandidates({
+      existingProducts: [existing],
+      candidates: [{
+        source: source("official", { url: sourceUrl }),
+        product: { ...productCandidate, brand: "Meta 与 EssilorLuxottica", name: "Meta Glasses" }
+      }],
+      generatedAt: "2026-08-05T02:00:00.000Z",
+      publicRoot: "unused",
+      fetcher
+    });
+
+    expect(result.products).toHaveLength(1);
+    expect(result.products[0].slug).toBe("meta-meta-glasses");
+    expect(result.records[0]).toEqual(expect.objectContaining({ status: "updated", productSlug: "meta-meta-glasses" }));
+    expect(fetcher).not.toHaveBeenCalled();
+  });
+
+  it("collapses historical aliases with the same product name and official source", async () => {
+    const sourceUrl = "https://about.example/news/meta-glasses";
+    const canonical = {
+      ...seedDataset.products[0],
+      id: "product-meta-glasses",
+      slug: "meta-meta-glasses",
+      brand: "Meta",
+      name: "Meta Glasses",
+      officialUrl: sourceUrl,
+      positioning: "Original positioning",
+      updatedAt: "2026-08-04T02:00:00.000Z",
+      sources: [{ ...seedDataset.products[0].sources[0], url: sourceUrl }]
+    };
+    const alias = {
+      ...canonical,
+      id: "product-meta-glasses-alias",
+      slug: "meta-essilorluxottica-meta-glasses",
+      brand: "Meta 与 EssilorLuxottica",
+      positioning: "Latest verified positioning",
+      updatedAt: "2026-08-05T02:00:00.000Z"
+    };
+
+    const result = await discoverProductCandidates({
+      existingProducts: [alias, canonical],
+      candidates: [],
+      generatedAt: "2026-08-05T02:00:00.000Z",
+      publicRoot: "unused",
+      fetcher: vi.fn()
+    });
+
+    expect(result.products).toHaveLength(1);
+    expect(result.products[0]).toEqual(expect.objectContaining({
+      id: canonical.id,
+      slug: canonical.slug,
+      brand: canonical.brand,
+      positioning: alias.positioning,
+      updatedAt: alias.updatedAt
+    }));
+  });
 });
 
 describe("mergeProductDiscoveryRecords", () => {
