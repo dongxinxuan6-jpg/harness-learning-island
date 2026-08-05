@@ -24,6 +24,8 @@ const stablePaths = [
   "data/projects/index.json",
   "data/radar/latest.json",
   "data/learning/route.json",
+  "data/system/status.json",
+  "data/search-index.json",
   "data/weekly/latest.json"
 ] as const;
 const optionalStablePaths = ["data/products/candidates.json", "assets/products/image-sources.json"] as const;
@@ -33,9 +35,12 @@ export async function collectPublishedSnapshots(
   fetcher: typeof fetch = fetch
 ): Promise<Record<string, unknown>> {
   const base = siteUrl.replace(/\/$/, "");
+  const hydrationId = Date.now().toString(36);
   const files: Record<string, unknown> = {};
   const fetchSnapshot = async (path: string): Promise<unknown> => {
-    const response = await fetcher(`${base}/${path}`, { headers: { "Cache-Control": "no-cache", Accept: "application/json" }, signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
+    const requestUrl = new URL(`${base}/${path}`);
+    requestUrl.searchParams.set("hydrate", hydrationId);
+    const response = await fetcher(requestUrl, { cache: "no-store", headers: { "Cache-Control": "no-cache", Accept: "application/json" }, signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
     if (!response.ok) throw new Error(`snapshot hydration failed for ${path}: ${response.status}`);
     const value = await response.json();
     try {
@@ -127,6 +132,15 @@ function validateSnapshot(path: string, value: unknown): unknown {
   if (path === "data/projects/index.json") return collectionSchema(GitHubProjectSchema).parse(value);
   if (path === "data/radar/latest.json") return collectionSchema(FrontierSignalSchema).parse(value);
   if (path === "data/learning/route.json") return collectionSchema(LearningNodeSchema).parse(value);
+  if (path === "data/system/status.json") {
+    return z.object({
+      generatedAt: z.string(),
+      persistence: z.enum(["not-configured", "succeeded", "degraded"])
+    }).passthrough().parse(value);
+  }
+  if (path === "data/search-index.json") {
+    return z.object({ generatedAt: z.string(), items: z.array(z.unknown()) }).passthrough().parse(value);
+  }
   if (/^data\/products\/[^/]+\.json$/.test(path)) return ProductSchema.parse(value);
   if (/^data\/projects\/[^/]+\.json$/.test(path)) return GitHubProjectSchema.parse(value);
   if (path === "data/weekly/latest.json" || /^data\/weekly\/[^/]+\.json$/.test(path)) return WeeklyDigestSchema.parse(value);

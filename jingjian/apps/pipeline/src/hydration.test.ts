@@ -18,6 +18,8 @@ describe("collectPublishedSnapshots", () => {
       "/data/projects/project-one.json": { ...seedDataset.projects[0], slug: "project-one" },
       "/data/radar/latest.json": { items: [] },
       "/data/learning/route.json": { items: [] },
+      "/data/system/status.json": { generatedAt: "2026-08-05T00:00:00.000Z", persistence: "succeeded" },
+      "/data/search-index.json": { generatedAt: "2026-08-05T00:00:00.000Z", items: [] },
       "/data/weekly/latest.json": { ...seedDataset.weekly[0], isoWeek: "2026-W32" },
       "/data/weekly/2026-W32.json": { ...seedDataset.weekly[0], isoWeek: "2026-W32" },
       "/assets/products/image-sources.json": { "product-one": { pageUrl: "https://example.com/product", assetUrl: "https://example.com/image.webp" } }
@@ -29,6 +31,7 @@ describe("collectPublishedSnapshots", () => {
 
     const files = await collectPublishedSnapshots("https://jingjian.example/", fetcher);
 
+    expect(fetcher.mock.calls.every(([input]) => new URL(String(input)).searchParams.has("hydrate"))).toBe(true);
     expect(Object.keys(files).sort()).toEqual(Object.keys(payloads).map((path) => path.slice(1)).sort());
   });
 
@@ -46,6 +49,8 @@ describe("collectPublishedSnapshots", () => {
       "/data/projects/index.json": { items: [] },
       "/data/radar/latest.json": { items: [] },
       "/data/learning/route.json": { items: [] },
+      "/data/system/status.json": { generatedAt: "2026-08-05T00:00:00.000Z", persistence: "succeeded" },
+      "/data/search-index.json": { generatedAt: "2026-08-05T00:00:00.000Z", items: [] },
       "/data/weekly/latest.json": { ...seedDataset.weekly[0], isoWeek: "2026-W32" },
       "/data/weekly/2026-W32.json": { ...seedDataset.weekly[0], isoWeek: "2026-W32" }
     };
