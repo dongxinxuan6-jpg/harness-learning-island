@@ -59,7 +59,7 @@ h1, h2, h3, p { margin-top: 0; }
 .home-header { min-height: 96px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .home-header h1 { margin: 6px 0 0; font-size: 28px; line-height: 1.2; }
 .digest-meta { display: flex; align-items: center; border: 1px solid var(--line); border-radius: 7px; background: rgba(255,255,255,.55); overflow: hidden; }
-.digest-meta span { height: 36px; padding: 0 12px; display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 11px; border-left: 1px solid var(--line); }
+.digest-meta span { height: 36px; padding: 0 12px; display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 11px; white-space: nowrap; border-left: 1px solid var(--line); }
 .digest-meta span:first-child { border-left: 0; color: var(--ink); }
 .home-first-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(330px, .75fr); gap: 22px; }
 .spotlight-card { position: relative; border-radius: var(--radius); overflow: hidden; }

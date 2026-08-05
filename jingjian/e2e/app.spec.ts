@@ -14,6 +14,12 @@ test("首页呈现今日重点并保持布局稳定", async ({ page }, testInfo)
   await page.screenshot({ path: testInfo.outputPath("home.png"), fullPage: true });
 });
 
+test("mobile digest metadata stays on one line", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== "mobile-390", "mobile-only layout assertion");
+  await page.goto("/");
+  await expect(page.locator(".digest-meta span").first()).toHaveCSS("white-space", "nowrap");
+});
+
 test("七个一级内容板块均可访问", async ({ page }, testInfo) => {
   const routes = [
     ["/rankings", "真正值得读的内容"],
