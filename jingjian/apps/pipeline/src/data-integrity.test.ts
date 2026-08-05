@@ -6,6 +6,8 @@ import { describe, expect, it } from "vitest";
 const root = resolve(process.cwd(), "apps/web/public");
 const read = <T>(path: string): T => JSON.parse(readFileSync(join(root, path), "utf8")) as T;
 const unique = (values: string[]) => new Set(values).size === values.length;
+const productSourceUrls = (product: { officialUrl: string; sources: Array<{ url: string }> }) => new Set([product.officialUrl, ...product.sources.map((source) => source.url)]);
+const normalizedProductName = (name: string) => name.normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 
 describe("public snapshot integrity", () => {
   it("keeps every entity valid, unique and addressable", () => {
@@ -22,6 +24,13 @@ describe("public snapshot integrity", () => {
     expect(unique(value.map((item) => item.slug))).toBe(true);
     expect(value.every((item) => item.score.verification === "verified")).toBe(true);
     expect(unique(products.map((item) => item.slug))).toBe(true);
+    const productAliases = products.flatMap((product, index) => products.slice(index + 1).flatMap((candidate) => {
+      const sameName = normalizedProductName(product.name) === normalizedProductName(candidate.name);
+      const sources = productSourceUrls(product);
+      const sameSource = [...productSourceUrls(candidate)].some((url) => sources.has(url));
+      return sameName && sameSource ? [`${product.slug}:${candidate.slug}`] : [];
+    }));
+    expect(productAliases, "same-name products sharing an official source").toEqual([]);
     expect(unique(projects.map((item) => item.slug))).toBe(true);
     [...value, ...heat].forEach((item) => {
       const traceableDomains = new Set(item.sources.map((source) => getIndependentSourceKey(source.url)));
