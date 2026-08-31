@@ -2,6 +2,8 @@
 
 面向中文初学者的 AI 眼镜产品学习 PWA。应用以产品问题为入口，把每日情报、双榜单、产品档案、开源项目、技术雷达、学习路线和每周复盘组织在同一套信息架构中。
 
+在线体验：[lensforward.pages.dev](https://lensforward.pages.dev)
+
 ## 工程结构
 
 ```text

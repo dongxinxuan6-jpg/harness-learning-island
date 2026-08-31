@@ -1,0 +1,31 @@
+{
+  "isoWeek": "2026-W35",
+  "generatedAt": "2026-08-30T06:40:56.530Z",
+  "thesis": "今天首先阅读 Android XR 的产品路线拆分，因为它同时解释了 AI 眼镜的产品形态、软件平台和硬件约束，是理解音频、显示与 XR 眼镜差异的最佳入口。",
+  "signalIds": [
+    "signal-glimmer",
+    "signal-egocentric",
+    "signal-event-camera"
+  ],
+  "contentIds": [
+    "content-android-xr-dp4",
+    "content-meta-executorch",
+    "content-xreal-aura"
+  ],
+  "title": "本周 AI 眼镜入门首读",
+  "sections": [
+    {
+      "title": "长期信号",
+      "body": "Android XR 正在把 AI 眼镜拆为音频眼镜、显示眼镜和有线 XR 眼镜三条产品路线，并用统一 SDK 连接不同硬件形态。对初学者而言，关键长期信号是：产品定义开始由显示能力、交互方式和 AI 能力共同决定，而不再只有“有没有屏幕”这一维度。"
+    },
+    {
+      "title": "短期噪音",
+      "body": "本周多项内容集中在续航、端侧模型、事件相机和分体计算等技术指标，但它们尚未直接证明大规模消费产品已经解决佩戴舒适度、隐私、联网依赖和日常使用频率问题。单项硬件参数或模型延迟，不能替代完整产品体验。"
+    },
+    {
+      "title": "下周学习",
+      "body": "下周优先学习三条关系：第一，音频眼镜如何用麦克风、扬声器和手机协同承载 AI；第二，显示眼镜如何用低功耗协处理器和轻量 UI 把 AI 结果放进视野；第三，统一 SDK 如何让同一 AI 能力适配不同硬件。由此建立“产品形态—硬件约束—AI 能力”的分析框架。"
+    }
+  ],
+  "editorial": true
+}

@@ -1,0 +1,31 @@
+{
+  "isoWeek": "2026-W33",
+  "generatedAt": "2026-08-14T01:19:33.036Z",
+  "thesis": "AI 眼镜的核心竞争正在从单一硬件形态转向平台化产品路线：不同显示与计算硬件共享 AI 软件基础，产品价值取决于形态、功耗和端侧能力的协同。",
+  "signalIds": [
+    "signal-glimmer",
+    "signal-egocentric",
+    "signal-event-camera"
+  ],
+  "contentIds": [
+    "content-android-xr-dp4",
+    "content-meta-executorch",
+    "content-xreal-aura"
+  ],
+  "title": "AI 眼镜正在分化为多条硬件路线，但由统一 AI 平台连接",
+  "sections": [
+    {
+      "title": "长期信号",
+      "body": "Android XR 统一 SDK 同时覆盖音频眼镜、显示眼镜与有线 XR 眼镜，说明产品形态正在分化，但 AI 能力和硬件接口仍需由同一平台承接。对初学者而言，先理解音频、显示、计算与传感器之间的产品取舍，再看具体品牌更容易建立框架。"
+    },
+    {
+      "title": "短期噪音",
+      "body": "单个产品的发布热度、续航数字或实验室准确率，不能直接代表 AI 眼镜的成熟度。Meta 的端侧 AI、XREAL 的分体计算和事件相机原型分别优化了不同硬件约束，短期内难以用单一指标比较。"
+    },
+    {
+      "title": "下周学习",
+      "body": "继续学习轻显示界面的交互组件、端侧与手机协同的计算分工，以及摄像头和视觉语言模型带来的安全风险。重点观察产品如何在重量、功耗、延迟、视场角和 AI 能力之间做硬件决策。"
+    }
+  ],
+  "editorial": true
+}
