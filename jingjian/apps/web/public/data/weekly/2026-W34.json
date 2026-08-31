@@ -1,0 +1,31 @@
+{
+  "isoWeek": "2026-W34",
+  "generatedAt": "2026-08-23T02:37:35.728Z",
+  "thesis": "AI 眼镜正在从单一的摄像头加音频设备，发展为由产品形态、AI 任务和分布式硬件架构共同定义的平台。Android XR 的统一 SDK 是观察这一变化的最佳入口。",
+  "signalIds": [
+    "signal-glimmer",
+    "signal-egocentric",
+    "signal-event-camera"
+  ],
+  "contentIds": [
+    "content-android-xr-dp4",
+    "content-meta-executorch",
+    "content-xreal-aura"
+  ],
+  "title": "AI 眼镜首先进入平台化产品阶段",
+  "sections": [
+    {
+      "title": "长期信号",
+      "body": "Android XR 通过统一 SDK 同时覆盖音频眼镜、显示眼镜和有线 XR 眼镜，说明产品形态正在由硬件单点竞争转向平台化协同。AI 能力需要根据是否具备显示器、摄像头、扬声器和手机连接，适配不同交互与计算路径。"
+    },
+    {
+      "title": "短期噪音",
+      "body": "轻显示组件 Glimmer 和多种眼镜路线的发布，短期内容易造成“统一平台已经成熟”的错觉。实际产品仍受显示功耗、镜腿空间、端侧 AI 延迟以及手机或主机依赖限制，SDK 覆盖范围不等于硬件体验已经统一。"
+    },
+    {
+      "title": "下周学习",
+      "body": "下一步应重点学习音频眼镜与显示眼镜的任务分工：哪些 AI 推理在眼镜端完成，哪些交给手机或云端；同时比较显示、续航、散热和佩戴重量如何共同决定产品定位。"
+    }
+  ],
+  "editorial": true
+}

@@ -1,246 +1,39 @@
 {
-  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "generatedAt": "2026-08-31T01:19:40.685Z",
   "ingestion": {
     "status": "succeeded",
     "discovered": 115,
     "failedSources": []
   },
   "budget": {
-    "spentCny": 1.404,
+    "spentCny": 7.3826,
     "hardLimitCny": 200,
     "mode": "normal",
     "queuedForNextMonth": 0
   },
   "productDiscovery": {
-    "discovered": 5,
-    "published": 1,
+    "discovered": 0,
+    "published": 0,
     "updated": 0,
-    "pending": 4
+    "pending": 0
   },
-  "persistence": "not-configured",
+  "persistence": "succeeded",
   "quality": {
     "sourceSuccessRate": 100,
     "evidenceCompleteness": 100,
     "productCoverage": 100,
-    "publishedItems": 7,
-    "readMinutes": 14
+    "publishedItems": 0,
+    "readMinutes": 0
   },
   "usage": [
     {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5725,
-      "cachedInputTokens": 0,
-      "outputTokens": 396,
-      "purpose": "content-enrichment",
-      "usd": 0.0081,
-      "cny": 0.0583
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5833,
-      "cachedInputTokens": 0,
-      "outputTokens": 399,
-      "purpose": "content-enrichment",
-      "usd": 0.0082,
-      "cny": 0.0592
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5829,
-      "cachedInputTokens": 0,
-      "outputTokens": 479,
-      "purpose": "content-enrichment",
-      "usd": 0.0087,
-      "cny": 0.0627
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5828,
-      "cachedInputTokens": 0,
-      "outputTokens": 429,
-      "purpose": "content-enrichment",
-      "usd": 0.0084,
-      "cny": 0.0605
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5610,
-      "cachedInputTokens": 3840,
-      "outputTokens": 444,
-      "purpose": "content-enrichment",
-      "usd": 0.0048,
-      "cny": 0.0347
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5705,
-      "cachedInputTokens": 0,
-      "outputTokens": 435,
-      "purpose": "content-enrichment",
-      "usd": 0.0083,
-      "cny": 0.0599
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5852,
-      "cachedInputTokens": 0,
-      "outputTokens": 575,
-      "purpose": "content-enrichment",
-      "usd": 0.0093,
-      "cny": 0.067
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5754,
-      "cachedInputTokens": 0,
-      "outputTokens": 430,
-      "purpose": "content-enrichment",
-      "usd": 0.0083,
-      "cny": 0.06
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5850,
-      "cachedInputTokens": 3840,
-      "outputTokens": 512,
-      "purpose": "content-enrichment",
-      "usd": 0.0055,
-      "cny": 0.0394
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5801,
-      "cachedInputTokens": 0,
-      "outputTokens": 369,
-      "purpose": "content-enrichment",
-      "usd": 0.008,
-      "cny": 0.0577
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5696,
-      "cachedInputTokens": 0,
-      "outputTokens": 445,
-      "purpose": "content-enrichment",
-      "usd": 0.0084,
-      "cny": 0.0602
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5789,
-      "cachedInputTokens": 0,
-      "outputTokens": 434,
-      "purpose": "content-enrichment",
-      "usd": 0.0084,
-      "cny": 0.0604
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5826,
-      "cachedInputTokens": 3840,
-      "outputTokens": 846,
-      "purpose": "content-enrichment",
-      "usd": 0.0074,
-      "cny": 0.0536
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5767,
-      "cachedInputTokens": 3840,
-      "outputTokens": 425,
-      "purpose": "content-enrichment",
-      "usd": 0.0049,
-      "cny": 0.035
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5733,
-      "cachedInputTokens": 0,
-      "outputTokens": 463,
-      "purpose": "content-enrichment",
-      "usd": 0.0085,
-      "cny": 0.0613
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5776,
-      "cachedInputTokens": 0,
-      "outputTokens": 438,
-      "purpose": "content-enrichment",
-      "usd": 0.0084,
-      "cny": 0.0605
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5694,
-      "cachedInputTokens": 0,
-      "outputTokens": 436,
-      "purpose": "content-enrichment",
-      "usd": 0.0083,
-      "cny": 0.0598
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5735,
-      "cachedInputTokens": 3840,
-      "outputTokens": 407,
-      "purpose": "content-enrichment",
-      "usd": 0.0047,
-      "cny": 0.034
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5634,
-      "cachedInputTokens": 3840,
-      "outputTokens": 1145,
-      "purpose": "content-enrichment",
-      "usd": 0.009,
-      "cny": 0.0651
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5587,
-      "cachedInputTokens": 0,
-      "outputTokens": 414,
-      "purpose": "content-enrichment",
-      "usd": 0.0081,
-      "cny": 0.0581
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5256,
-      "cachedInputTokens": 3840,
-      "outputTokens": 851,
-      "purpose": "content-enrichment",
-      "usd": 0.0069,
-      "cny": 0.0497
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5307,
-      "cachedInputTokens": 0,
-      "outputTokens": 861,
-      "purpose": "content-enrichment",
-      "usd": 0.0105,
-      "cny": 0.0754
-    },
-    {
-      "model": "gpt-5.6-luna",
-      "inputTokens": 5581,
-      "cachedInputTokens": 0,
-      "outputTokens": 606,
-      "purpose": "content-enrichment",
-      "usd": 0.0092,
-      "cny": 0.0664
-    },
-    {
       "model": "gpt-5.6-terra",
-      "inputTokens": 5663,
+      "inputTokens": 5682,
       "cachedInputTokens": 0,
-      "outputTokens": 29,
-      "purpose": "daily-final-review",
-      "usd": 0.0146,
-      "cny": 0.1051
+      "outputTokens": 387,
+      "purpose": "daily-review-and-weekly",
+      "usd": 0.02,
+      "cny": 0.1441
     }
   ]
 }

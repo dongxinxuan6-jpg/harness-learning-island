@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-04",
-  "generatedAt": "2026-08-04T05:56:42.376Z",
-  "status": "published",
+  "date": "2026-08-31",
+  "generatedAt": "2026-08-31T01:19:40.685Z",
+  "status": "stale",
   "totalReadMinutes": 14,
   "leadId": "content-android-xr-dp4",
   "items": [
@@ -48,11 +48,11 @@
       ],
       "score": {
         "value": 94,
-        "heat": 67,
+        "heat": 5,
         "confidence": 0.9,
         "verification": "verified",
         "independentSources": 1,
-        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "scoredAt": "2026-08-31T01:19:40.685Z",
         "heatSignals": {
           "discussionVelocity": 78,
           "crossPlatformSources": 1,
@@ -97,11 +97,11 @@
       ],
       "score": {
         "value": 92,
-        "heat": 63,
+        "heat": 5,
         "confidence": 0.9,
         "verification": "verified",
         "independentSources": 1,
-        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "scoredAt": "2026-08-31T01:19:40.685Z",
         "heatSignals": {
           "discussionVelocity": 62,
           "crossPlatformSources": 1,
@@ -152,11 +152,11 @@
       ],
       "score": {
         "value": 90,
-        "heat": 70,
+        "heat": 5,
         "confidence": 0.9,
         "verification": "verified",
         "independentSources": 2,
-        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "scoredAt": "2026-08-31T01:19:40.685Z",
         "heatSignals": {
           "discussionVelocity": 91,
           "crossPlatformSources": 2,
@@ -200,11 +200,11 @@
       ],
       "score": {
         "value": 89,
-        "heat": 57,
+        "heat": 5,
         "confidence": 0.9,
         "verification": "verified",
         "independentSources": 1,
-        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "scoredAt": "2026-08-31T01:19:40.685Z",
         "heatSignals": {
           "discussionVelocity": 54,
           "crossPlatformSources": 1,
@@ -249,11 +249,11 @@
       ],
       "score": {
         "value": 87,
-        "heat": 58,
+        "heat": 5,
         "confidence": 0.9,
         "verification": "verified",
         "independentSources": 1,
-        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "scoredAt": "2026-08-31T01:19:40.685Z",
         "heatSignals": {
           "discussionVelocity": 58,
           "crossPlatformSources": 1,
@@ -263,24 +263,24 @@
       }
     },
     {
-      "id": "meta-product-news-55b74e4db487",
-      "slug": "we-re-partnering-with-essilorluxottica-to-launch-meta-glasses",
-      "title": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
-      "summary": "Meta 宣布与 EssilorLuxottica 合作推出 Meta Glasses，起售价 299 美元，首发提供三种镜框风格、26 种款式并支持处方镜片。产品配备 Meta AI、开放式扬声器、多麦克风阵列、免手拍摄、专用操作按钮、超过 8 小时续航和可额外提供最多 40 小时电量的充电盒；正文称其已在多个国家开售。",
-      "whyItMatters": "这是正文明确宣布并开始销售的具体 AI 眼镜产品，说明 Meta 正把 AI 眼镜从单一硬件功能推进到结合时尚设计、处方镜片、相机、音频和持续软件更新的完整消费产品线。首发搭载 Muse Spark 驱动的 Meta AI，也使模型能力成为产品体验的一部分。",
-      "beginnerNote": "AI 眼镜是在普通眼镜形态中加入摄像头、麦克风、扬声器和 AI 助手的可穿戴设备。Meta Glasses 主要通过语音、开放式音频和拍摄功能与 Meta AI 交互，正文未提及内置显示屏。",
-      "productImpact": "该产品将 Meta AI、相机、开放式音频和多麦克风能力整合到更具时尚属性的消费级眼镜产品线中，并以多镜框、多颜色和处方镜片兼容性扩大日常佩戴场景。Meta AI 由 Muse Spark 驱动，动态照片、即将推出的无显示屏步行导航及新增实时翻译语言则体现了通过软件更新扩展产品能力的路线。",
-      "publishedAt": "2026-07-30T06:52:59.000Z",
+      "id": "arxiv-564bd85e6bab",
+      "slug": "from-seeing-to-acting-smart-glasses-as-first-person-intelligence-platforms",
+      "title": "From Seeing to Acting: Smart Glasses as First-Person Intelligence Platforms",
+      "summary": "该论文系统综述智能眼镜从拍摄与显示配件演变为第一视角智能平台的技术路径。正文明确讨论了设备硬件能力、第一视角数据流、七项基础能力、九类应用场景，以及可靠、具备时间有效性、可纠正且可治理的感知到行动闭环。",
+      "whyItMatters": "它将 AI 眼镜的核心竞争从单点识别、问答或记忆能力，扩展到设备、模型、交互和行动组成的完整系统可靠性。论文还把硬件能力、应用任务、数据集、产品、利益相关者、失败后果和验证证据联系起来，有助于比较不同产品并判断其是否具备可部署性。",
+      "beginnerNote": "这是一篇综述论文，不是某款 AI 眼镜的发布公告。论文将智能眼镜视为连接第一视角感知、持续上下文与数字或物理行动的平台，并讨论其能耗、散热、隐私和交互反馈限制。",
+      "productImpact": "论文提出以“感知—状态—交互—行动”闭环评估 AI 眼镜，覆盖从数据采集、即时感知、上下文辅助、持久状态到受治理行动和具身协同的 L0-L5 能力等级。其部署框架、主张条件化评测协议和证据等级，可影响未来 AI 眼镜的硬件能力定义、软件系统设计、基准测试和规模化部署标准。",
+      "publishedAt": "2026-08-25T17:56:54.000Z",
       "readMinutes": 2,
       "tags": [
+        "AI眼镜",
         "智能眼镜",
-        "头戴设备",
-        "计算机视觉",
-        "人体姿态估计",
-        "全身网格重建",
-        "边缘推理",
-        "生成模型",
-        "AI眼镜"
+        "第一视角智能",
+        "多模态模型",
+        "具身智能",
+        "人机交互",
+        "持续上下文",
+        "隐私与治理评估"
       ],
       "productSlugs": [],
       "learningNodeIds": [
@@ -290,212 +290,70 @@
         {
           "id": "arxiv",
           "name": "arXiv",
-          "url": "https://arxiv.org/abs/2607.27755v1",
+          "url": "https://arxiv.org/abs/2608.24877v1",
           "tier": "research",
           "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2607.15868v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2607.08083v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2607.09780v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2607.02689v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2606.30554v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2606.15859v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2606.10276v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2606.07431v2",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2606.03774v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2605.27464v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2605.16797v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2605.10936v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "arxiv",
-          "name": "arXiv",
-          "url": "https://arxiv.org/abs/2605.10404v1",
-          "tier": "research",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "meta-product-news",
-          "name": "Meta Product News",
-          "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
-          "tier": "official",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "uploadvr",
-          "name": "UploadVR",
-          "url": "https://www.uploadvr.com/meta-still-internally-debating-privacy-of-always-on-ai-glasses/",
-          "tier": "media",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "uploadvr",
-          "name": "UploadVR",
-          "url": "https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/",
-          "tier": "media",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "uploadvr",
-          "name": "UploadVR",
-          "url": "https://www.uploadvr.com/18birdies-arccos-meta-glasses-ai-golf-caddy/",
-          "tier": "media",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
-        },
-        {
-          "id": "uploadvr",
-          "name": "UploadVR",
-          "url": "https://www.uploadvr.com/meta-one-premium-subscription-now-required-for-longer-access-to-glasses-features/",
-          "tier": "media",
-          "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
+          "fetchedAt": "2026-08-26T02:39:40.720Z"
         }
       ],
       "score": {
-        "value": 83,
-        "heat": 56,
-        "confidence": 0.91,
+        "value": 85,
+        "heat": 14,
+        "confidence": 0.75,
         "verification": "verified",
-        "independentSources": 3,
-        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "independentSources": 1,
+        "scoredAt": "2026-08-31T01:19:40.685Z",
         "heatSignals": {
-          "discussionVelocity": 10,
-          "crossPlatformSources": 3,
-          "observedMentions": 19,
+          "discussionVelocity": 37,
+          "crossPlatformSources": 1,
+          "observedMentions": 1,
           "windowHours": 24
         }
       }
     },
     {
-      "id": "content-qualcomm-ar2",
-      "slug": "snapdragon-ar2-distributed",
-      "title": "为什么 AI 眼镜芯片开始采用多芯片与分布式架构",
-      "summary": "Snapdragon AR2 将感知、协处理与连接职责拆开，并把复杂任务分配给手机或主机。",
-      "whyItMatters": "眼镜镜腿空间、散热面积和电池都很有限，单芯片堆性能会迅速破坏佩戴体验。",
-      "beginnerNote": "分布式架构让不同芯片只处理自己擅长的任务，并把高耗能工作移出眼镜。",
-      "productImpact": "可降低眼镜端功耗和 PCB 尺寸，但系统集成、连接稳定性和延迟调优更复杂。",
-      "publishedAt": "2026-07-20T00:00:00Z",
+      "id": "arxiv-8f55046b0363",
+      "slug": "the-slt-2026-smartglasses-challenge-benchmarking-egocentric-multi-talker-speech-",
+      "title": "The SLT 2026 SmartGlasses Challenge: Benchmarking Egocentric Multi-Talker Speech Recognition and Understanding with Audio-Language Models",
+      "summary": "论文介绍 IEEE SLT 2026 SmartGlasses Challenge，用于评测 AI 眼镜第一视角、多说话人语音处理能力。挑战包含双人对话理解和多人会议理解两个赛道，联合评估带时间戳和说话人归属的自动语音识别（TSA-ASR）以及口语语言理解（SLU）。其数据集包含 106 小时、714 个真实场景会话的四通道第一视角语音数据。",
+      "whyItMatters": "AI 眼镜需要在佩戴者视角下持续处理周围对话。该挑战把多人重叠说话、说话人归属、时间定位和复杂语义理解纳入统一评测，有助于比较相关模型并定位实际使用中的关键瓶颈。正文明确指出，严重的说话重叠仍显著影响 TSA-ASR，复杂 SLU 场景中的副语言声学理解也仍较困难。",
+      "beginnerNote": "这是一项面向 AI 眼镜语音能力的评测挑战和数据集研究，不是某款眼镜产品的发布信息。它关注眼镜在真实环境中持续采集第一视角音频时，能否区分多人说话并理解对话内容。",
+      "productImpact": "为 AI 眼镜的多说话人语音识别和语音理解提供了公开的评测框架与数据基础。研究结果表明，说话人重叠以及复杂场景中的副语言信息理解，仍会限制眼镜端或相关音频语言模型的表现。",
+      "publishedAt": "2026-08-12T13:18:49.000Z",
       "readMinutes": 2,
       "tags": [
-        "芯片",
-        "分布式架构",
-        "功耗"
+        "AI眼镜",
+        "语音识别",
+        "多说话人",
+        "第一视角音频",
+        "语音理解",
+        "音频语言模型",
+        "评测基准",
+        "数据集"
       ],
-      "productSlugs": [
-        "xreal-aura",
-        "rokid-glasses"
-      ],
+      "productSlugs": [],
       "learningNodeIds": [
-        "stage-3-hardware"
+        "stage-4-signals"
       ],
       "sources": [
         {
-          "id": "qualcomm-ar2",
-          "name": "Qualcomm",
-          "url": "https://www.qualcomm.com/xr-vr-ar/products/ar-series/snapdragon-ar2-gen-1-platform",
-          "tier": "official",
+          "id": "arxiv",
+          "name": "arXiv",
+          "url": "https://arxiv.org/abs/2608.12034v1",
+          "tier": "research",
           "language": "en",
-          "fetchedAt": "2026-08-03T02:00:00.000Z"
+          "fetchedAt": "2026-08-13T02:49:26.057Z"
         }
       ],
       "score": {
-        "value": 82,
-        "heat": 53,
-        "confidence": 0.9,
+        "value": 83,
+        "heat": 6,
+        "confidence": 0.75,
         "verification": "verified",
         "independentSources": 1,
-        "scoredAt": "2026-08-04T05:56:42.376Z",
+        "scoredAt": "2026-08-31T01:19:40.685Z",
         "heatSignals": {
-          "discussionVelocity": 45,
+          "discussionVelocity": 33,
           "crossPlatformSources": 1,
           "observedMentions": 1,
           "windowHours": 24

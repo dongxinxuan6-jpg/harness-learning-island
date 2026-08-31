@@ -1,11 +1,11 @@
 {
-  "id": "product-0cafa1df24d7",
-  "slug": "meta-与-essilorluxottica-meta-glasses",
-  "brand": "Meta 与 EssilorLuxottica",
+  "id": "product-8bda43f6f824",
+  "slug": "meta-meta-glasses",
+  "brand": "Meta",
   "name": "Meta Glasses",
   "form": "audio",
   "status": "shipping",
-  "heroImage": "/assets/products/meta-与-essilorluxottica-meta-glasses.webp",
+  "heroImage": "/assets/products/meta-meta-glasses.webp",
   "officialUrl": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
   "positioning": "面向日常全天使用的时尚化 AI 眼镜产品线，结合个性化镜框设计、开放式音频、摄像头和 Meta AI。",
   "audience": "希望在日常生活中使用语音助手、音频播放、免提拍摄和实时翻译的消费者；提供处方镜片兼容性及多种外观选择。",
@@ -61,7 +61,7 @@
       "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
       "tier": "official",
       "language": "en",
-      "fetchedAt": "2026-08-05T05:10:05.328Z"
+      "fetchedAt": "2026-08-05T01:22:29.946Z"
     }
   ]
 }

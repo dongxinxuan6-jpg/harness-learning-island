@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "generatedAt": "2026-08-31T01:19:40.685Z",
   "items": [
     {
       "id": "p-meta",
@@ -577,60 +577,61 @@
       ]
     },
     {
-      "id": "product-0cafa1df24d7",
-      "slug": "meta-与-essilorluxottica-meta-glasses",
-      "brand": "Meta 与 EssilorLuxottica",
+      "id": "product-8bda43f6f824",
+      "slug": "meta-meta-glasses",
+      "brand": "Meta",
       "name": "Meta Glasses",
       "form": "audio",
       "status": "shipping",
-      "heroImage": "/assets/products/meta-与-essilorluxottica-meta-glasses.webp",
+      "heroImage": "/assets/products/meta-meta-glasses.webp",
       "officialUrl": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
-      "positioning": "Meta 与 EssilorLuxottica 合作推出的日常佩戴型 AI 眼镜产品线，主打多样化外形、个性化配色和全天候 AI 助手体验。",
-      "audience": "希望在日常生活中使用免手操作 AI、通话、音乐、播客、拍照和视频分享功能的消费者；产品提供多种镜框、颜色和镜片组合，也支持处方镜片。",
+      "positioning": "面向日常全天使用的时尚化 AI 眼镜产品线，结合个性化镜框设计、开放式音频、摄像头和 Meta AI。",
+      "audience": "希望在日常生活中使用语音助手、音频播放、免提拍摄和实时翻译的消费者；提供处方镜片兼容性及多种外观选择。",
       "scenarios": [
-        "日常免手调用 AI",
-        "通话和语音控制",
+        "日常语音问答",
+        "通话和消息处理",
         "听音乐、播客和有声书",
-        "拍摄并分享照片和视频",
-        "获取体育比分和本地餐厅推荐",
-        "管理健康习惯、日历和日程",
-        "实时翻译对话"
+        "免提记录照片和视频",
+        "实时翻译对话",
+        "获取体育比分和本地餐厅建议",
+        "免提管理日历和日程",
+        "未来使用步行转向导航"
       ],
       "capabilities": [
-        "调用 Meta AI 或将操作按钮自定义为启动其他功能",
-        "通过开放式扬声器进行通话、听音乐、播客和有声书",
-        "免手拍摄照片和视频",
-        "语音控制、消息处理和通话",
-        "理解用户所看到的内容并提供多模态回答",
-        "管理日历和日常安排",
-        "支持实时翻译",
-        "通过软件更新持续增加功能"
+        "调用 Meta AI",
+        "语音控制",
+        "电话、音乐、播客和有声书播放",
+        "免提拍照和录像",
+        "照片动态拍摄并推荐最佳画面",
+        "实时翻译",
+        "即将支持无显示屏眼镜的行人导航",
+        "理解用户所见内容并提供相关回答",
+        "日程和生活管理"
       ],
       "specs": {
         "起售价": "299 美元起",
-        "首发镜框风格": "3 种：Meta Adventurer、Meta Fury、Meta Glasses by Kylie",
-        "首发款式数量": "26 种",
-        "镜片支持": "兼容处方镜片",
-        "电池续航": "超过 8 小时",
+        "发布时款式": "3 种镜框风格：Meta Adventurer、Meta Fury、Meta Glasses by Kylie Jenner",
+        "发布时组合": "26 种镜框与镜片组合",
+        "镜片兼容性": "兼容处方镜片",
+        "续航": "超过 8 小时",
         "充电盒额外续航": "最多提供 40 小时额外电量",
-        "首发 AI 模型": "美国和加拿大首发时搭载由 Muse Spark 驱动的 Meta AI",
-        "上市时间": "正文称即日起在多个国家上市"
+        "AI 模型": "美国和加拿大首发搭载由 Muse Spark 驱动的 Meta AI",
+        "上市时间": "正文称已上市，多个国家和地区可购买"
       },
       "architecture": [
+        "无显示屏 AI 眼镜",
         "开放式扬声器",
-        "高级多麦克风阵列与风噪抑制",
-        "免手拍照和录像",
+        "先进多麦克风阵列",
+        "内置摄像头",
         "专用操作按钮",
-        "Meta AI 软件",
-        "便携充电盒"
+        "便携式充电盒"
       ],
       "tradeoffs": [
-        "正文未提及显示屏，因此导航等功能不能按抬头显示体验理解。",
-        "产品依赖语音、开放式音频和手机或云端 AI 体验；正文未明确具体的连接方式或手机兼容范围。",
-        "续航和充电盒数据来自官方表述，未说明具体使用条件。",
-        "隐私控制和内置隐私保护机制存在，但正文未提供其具体实现细节。"
+        "采用无显示屏设计，导航等信息主要依赖音频交互；正文称行人导航仍将推出。",
+        "功能和可用市场会随软件更新及后续市场 rollout 变化。",
+        "续航超过 8 小时、充电盒额外提供最多 40 小时，实际使用时仍需依赖充电盒进行补充。"
       ],
-      "updatedAt": "2026-08-04T05:56:42.376Z",
+      "updatedAt": "2026-08-05T05:10:05.328Z",
       "sources": [
         {
           "id": "meta-product-news-55b74e4db487",
@@ -638,7 +639,7 @@
           "url": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
           "tier": "official",
           "language": "en",
-          "fetchedAt": "2026-08-04T05:56:42.376Z"
+          "fetchedAt": "2026-08-05T01:22:29.946Z"
         }
       ]
     }

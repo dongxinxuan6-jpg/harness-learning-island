@@ -1,19 +1,18 @@
 {
   "isoWeek": "2026-W32",
-  "generatedAt": "2026-08-04T05:56:42.376Z",
-  "editorial": false,
-  "title": "第 32 周：Android XR",
+  "generatedAt": "2026-08-09T03:08:20.321Z",
   "thesis": "Android XR 把 AI 眼镜正式拆成音频与显示两条产品路线是本周最值得建立产品判断的变化。统一平台会降低跨品牌开发成本，但也会增强手机与系统生态对眼镜体验的控制力。",
-  "contentIds": [
-    "content-android-xr-dp4",
-    "content-meta-executorch",
-    "content-xreal-aura"
-  ],
   "signalIds": [
     "signal-glimmer",
     "signal-egocentric",
     "signal-event-camera"
   ],
+  "contentIds": [
+    "content-android-xr-dp4",
+    "content-meta-executorch",
+    "content-xreal-aura"
+  ],
+  "title": "第 32 周：Android XR",
   "sections": [
     {
       "title": "长期信号",
@@ -27,5 +26,6 @@
       "title": "下周学习",
       "body": "围绕“音频眼镜依赖相机、麦克风和扬声器；显示眼镜在此基础上加入短小、私密、可扫读的视觉提示。”，继续拆解相关产品的用户场景、软硬件链路与体验取舍。"
     }
-  ]
+  ],
+  "editorial": false
 }

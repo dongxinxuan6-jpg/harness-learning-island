@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "generatedAt": "2026-08-31T01:19:40.685Z",
   "items": [
     {
       "id": "candidate-128e744dd5526859",
@@ -7,72 +7,71 @@
       "sourceUrl": "https://arxiv.org/abs/2606.07431v2",
       "brand": "OpenGlass",
       "name": "OpenGlass",
+      "status": "pending",
+      "reason": "source-not-official",
       "productSlug": "openglass-openglass",
-      "discoveredAt": "2026-08-04T05:56:42.376Z",
+      "discoveredAt": "2026-08-05T05:10:05.328Z",
       "candidate": {
         "brand": "OpenGlass",
         "name": "OpenGlass",
         "form": "audio",
         "status": "developer-kit",
         "positioning": "开源、超低功耗、支持事件视觉的端侧 AI 眼镜原型平台",
-        "audience": "用于新型传感器与算法快速原型开发的研究人员和开发者",
+        "audience": "用于新型传感器和算法快速原型开发的研究人员与开发者",
         "scenarios": [
-          "使用 Prophesee GENX320 事件相机进行第一视角手势识别",
-          "研究和验证低功耗智能眼镜传感器、算法及软硬件协同设计"
+          "基于第一视角视觉的手势识别",
+          "事件视觉传感器与嵌入式机器学习研究",
+          "AI 眼镜传感器和算法快速原型开发"
         ],
         "capabilities": [
-          "端侧机器学习推理",
-          "基于事件视觉的手势识别",
-          "支持事件相机与帧式相机的传感器原型设计",
-          "事件驱动唤醒"
+          "支持事件视觉和帧式视觉相机",
+          "端侧运行机器学习推理",
+          "事件驱动唤醒",
+          "手势识别"
         ],
         "specs": [
           {
             "label": "连续端侧机器学习续航",
-            "value": "最高 11.5 小时"
+            "value": "最长 11.5 小时"
           },
           {
             "label": "电池",
             "value": "200 mAh"
           },
           {
-            "label": "最佳跨受试者准确率",
-            "value": "83.94%"
+            "label": "手势识别准确率",
+            "value": "83.94%（跨受试者验证）"
           },
           {
-            "label": "宏平均 F1",
+            "label": "手势识别宏平均 F1",
             "value": "0.781"
           },
           {
             "label": "端到端推理延迟",
-            "value": "78.3 ms，运行于 GAP9"
+            "value": "78.3 ms（GAP9）"
           },
           {
             "label": "事件相机",
             "value": "Prophesee GENX320"
           },
           {
-            "label": "最佳模型",
-            "value": "R(2+1)D"
-          },
-          {
             "label": "开源内容",
-            "value": "硬件设计、固件和模型均已发布"
+            "value": "硬件设计、固件和模型全部开源"
           }
         ],
         "architecture": [
-          "模块化 FPC 转接板，可支持事件相机和帧式相机，无需全面重新设计主 PCB",
-          "可配置 PMIC 与 nRF5340 协调器组成事件驱动唤醒的电源管理系统",
-          "GAP9 RISC-V SoC 在推理间歇保持断电"
+          "模块化柔性 FPC 转接板",
+          "nRF5340 协调器",
+          "GAP9 RISC-V SoC",
+          "可配置 PMIC",
+          "Prophesee GENX320 事件相机"
         ],
         "tradeoffs": [
-          "论文展示的是原型平台，正文未说明其面向消费者销售或量产",
-          "当前演示聚焦于基于事件直方图的第一视角手势识别",
-          "事件视觉和端侧推理有助于降低功耗，但正文未给出与帧式视觉方案的完整功耗对比"
+          "论文展示的是用于研究和快速原型开发的原型平台，正文未说明其已作为消费产品销售。",
+          "平台依赖事件相机和专用嵌入式计算架构，正文未给出完整的产品化佩戴体验、重量或成本信息。",
+          "手势识别结果基于 LynX 数据集和特定验证设置，不能直接代表通用 AI 眼镜能力。"
         ]
-      },
-      "status": "pending",
-      "reason": "source-not-official"
+      }
     },
     {
       "id": "candidate-4dc08e3cf5ae0a08",
@@ -80,33 +79,36 @@
       "sourceUrl": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
       "brand": "Meta 与 EssilorLuxottica",
       "name": "Meta Glasses",
+      "status": "updated",
       "productSlug": "meta-与-essilorluxottica-meta-glasses",
-      "discoveredAt": "2026-08-04T05:56:42.376Z",
+      "discoveredAt": "2026-08-05T05:10:05.328Z",
       "candidate": {
         "brand": "Meta 与 EssilorLuxottica",
         "name": "Meta Glasses",
         "form": "audio",
         "status": "shipping",
-        "positioning": "Meta 与 EssilorLuxottica 合作推出的日常佩戴型 AI 眼镜产品线，主打多样化外形、个性化配色和全天候 AI 助手体验。",
-        "audience": "希望在日常生活中使用免手操作 AI、通话、音乐、播客、拍照和视频分享功能的消费者；产品提供多种镜框、颜色和镜片组合，也支持处方镜片。",
+        "positioning": "面向日常全天使用的时尚化 AI 眼镜产品线，结合个性化镜框设计、开放式音频、摄像头和 Meta AI。",
+        "audience": "希望在日常生活中使用语音助手、音频播放、免提拍摄和实时翻译的消费者；提供处方镜片兼容性及多种外观选择。",
         "scenarios": [
-          "日常免手调用 AI",
-          "通话和语音控制",
+          "日常语音问答",
+          "通话和消息处理",
           "听音乐、播客和有声书",
-          "拍摄并分享照片和视频",
-          "获取体育比分和本地餐厅推荐",
-          "管理健康习惯、日历和日程",
-          "实时翻译对话"
+          "免提记录照片和视频",
+          "实时翻译对话",
+          "获取体育比分和本地餐厅建议",
+          "免提管理日历和日程",
+          "未来使用步行转向导航"
         ],
         "capabilities": [
-          "调用 Meta AI 或将操作按钮自定义为启动其他功能",
-          "通过开放式扬声器进行通话、听音乐、播客和有声书",
-          "免手拍摄照片和视频",
-          "语音控制、消息处理和通话",
-          "理解用户所看到的内容并提供多模态回答",
-          "管理日历和日常安排",
-          "支持实时翻译",
-          "通过软件更新持续增加功能"
+          "调用 Meta AI",
+          "语音控制",
+          "电话、音乐、播客和有声书播放",
+          "免提拍照和录像",
+          "照片动态拍摄并推荐最佳画面",
+          "实时翻译",
+          "即将支持无显示屏眼镜的行人导航",
+          "理解用户所见内容并提供相关回答",
+          "日程和生活管理"
         ],
         "specs": [
           {
@@ -114,19 +116,19 @@
             "value": "299 美元起"
           },
           {
-            "label": "首发镜框风格",
-            "value": "3 种：Meta Adventurer、Meta Fury、Meta Glasses by Kylie"
+            "label": "发布时款式",
+            "value": "3 种镜框风格：Meta Adventurer、Meta Fury、Meta Glasses by Kylie Jenner"
           },
           {
-            "label": "首发款式数量",
-            "value": "26 种"
+            "label": "发布时组合",
+            "value": "26 种镜框与镜片组合"
           },
           {
-            "label": "镜片支持",
+            "label": "镜片兼容性",
             "value": "兼容处方镜片"
           },
           {
-            "label": "电池续航",
+            "label": "续航",
             "value": "超过 8 小时"
           },
           {
@@ -134,30 +136,387 @@
             "value": "最多提供 40 小时额外电量"
           },
           {
-            "label": "首发 AI 模型",
-            "value": "美国和加拿大首发时搭载由 Muse Spark 驱动的 Meta AI"
+            "label": "AI 模型",
+            "value": "美国和加拿大首发搭载由 Muse Spark 驱动的 Meta AI"
           },
           {
             "label": "上市时间",
-            "value": "正文称即日起在多个国家上市"
+            "value": "正文称已上市，多个国家和地区可购买"
           }
         ],
         "architecture": [
+          "无显示屏 AI 眼镜",
           "开放式扬声器",
-          "高级多麦克风阵列与风噪抑制",
-          "免手拍照和录像",
+          "先进多麦克风阵列",
+          "内置摄像头",
           "专用操作按钮",
-          "Meta AI 软件",
-          "便携充电盒"
+          "便携式充电盒"
         ],
         "tradeoffs": [
-          "正文未提及显示屏，因此导航等功能不能按抬头显示体验理解。",
-          "产品依赖语音、开放式音频和手机或云端 AI 体验；正文未明确具体的连接方式或手机兼容范围。",
-          "续航和充电盒数据来自官方表述，未说明具体使用条件。",
-          "隐私控制和内置隐私保护机制存在，但正文未提供其具体实现细节。"
+          "采用无显示屏设计，导航等信息主要依赖音频交互；正文称行人导航仍将推出。",
+          "功能和可用市场会随软件更新及后续市场 rollout 变化。",
+          "续航超过 8 小时、充电盒额外提供最多 40 小时，实际使用时仍需依赖充电盒进行补充。"
         ]
-      },
-      "status": "published"
+      }
+    },
+    {
+      "id": "candidate-645044b974c676f0",
+      "sourceDocumentId": "uploadvr-594811f0c677",
+      "sourceUrl": "https://www.uploadvr.com/meta-one-premium-subscription-now-required-for-longer-access-to-glasses-features/",
+      "brand": "Meta",
+      "name": "Meta smart glasses",
+      "status": "pending",
+      "reason": "source-not-official",
+      "productSlug": "meta-meta-smart-glasses",
+      "discoveredAt": "2026-08-05T05:10:05.328Z",
+      "candidate": {
+        "brand": "Meta",
+        "name": "Meta smart glasses",
+        "form": "audio",
+        "status": "shipping",
+        "positioning": "Meta 将部分智能眼镜高级功能纳入 Meta One Premium 订阅，以提供更长的使用时长。",
+        "audience": "Meta 智能眼镜用户，尤其是需要辅助听觉功能的用户",
+        "scenarios": [
+          "嘈杂环境中的面对面对话",
+          "需要听觉辅助的用户进行日常交流"
+        ],
+        "capabilities": [
+          "放大面前说话者的声音",
+          "通过 Conversation Focus 改善对话时的听觉清晰度"
+        ],
+        "specs": [
+          {
+            "label": "非订阅用户 Conversation Focus 使用时长",
+            "value": "3 小时"
+          },
+          {
+            "label": "Meta One Premium 用户 Conversation Focus 使用时长",
+            "value": "15 小时"
+          },
+          {
+            "label": "Conversation Focus 状态",
+            "value": "已开始向美国和加拿大的智能眼镜 Early Access 用户推出"
+          }
+        ],
+        "architecture": [
+          "Conversation Focus 在眼镜本地运行",
+          "功能属于 Meta 智能眼镜的软件与 AI 体验"
+        ],
+        "tradeoffs": [
+          "部分高级功能不再完全免费使用",
+          "Conversation Focus 在本地运行，但更长使用时长需要订阅",
+          "Meta One Premium 美国价格据 TechCrunch 报道为每月 20 美元"
+        ]
+      }
+    },
+    {
+      "id": "candidate-c3b7c1363eaeb1b4",
+      "sourceDocumentId": "uploadvr-52640a4ee041",
+      "sourceUrl": "https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/",
+      "brand": "Meta 与 EssilorLuxottica",
+      "name": "Meta smart glasses（包括第一代 Ray-Ban Meta 等型号）",
+      "status": "pending",
+      "reason": "source-not-official",
+      "productSlug": "meta-与-essilorluxottica-meta-smart-glasses-包括第一代-ray-ban-meta-等型号",
+      "discoveredAt": "2026-08-05T05:10:05.328Z",
+      "candidate": {
+        "brand": "Meta 与 EssilorLuxottica",
+        "name": "Meta smart glasses（包括第一代 Ray-Ban Meta 等型号）",
+        "form": "display",
+        "status": "shipping",
+        "positioning": "通过强制固件更新强化摄像头使用时的隐私保护，阻止拆除或破坏隐私 LED 后继续使用摄像头。",
+        "audience": "Meta 智能眼镜用户",
+        "scenarios": [
+          "用户尝试遮挡隐私 LED",
+          "眼镜被拆解并移除或破坏 LED 与传感器",
+          "检测到 LED 被物理篡改后禁用摄像头"
+        ],
+        "capabilities": [
+          "拍摄照片和视频",
+          "直播",
+          "在视频通话中分享视角",
+          "使用 Live AI",
+          "检测隐私 LED 是否被篡改或损坏",
+          "检测到篡改后禁用摄像头"
+        ],
+        "specs": [
+          {
+            "label": "隐私指示方式",
+            "value": "拍照时闪烁；录像、直播、视频通话分享视角或使用 Live AI 时脉冲亮起"
+          },
+          {
+            "label": "更新方式",
+            "value": "强制固件更新"
+          },
+          {
+            "label": "适用范围",
+            "value": "更新将追溯适用于已经被修改的眼镜"
+          },
+          {
+            "label": "历史兼容范围",
+            "value": "除 2021 年 Ray-Ban Stories 外，Meta 此前的眼镜自第一代 Ray-Ban Meta 起均配备带环境光传感器的隐私 LED"
+          }
+        ],
+        "architecture": [
+          "前置摄像头",
+          "隐私指示 LED",
+          "LED 内置环境光传感器",
+          "可更新固件"
+        ],
+        "tradeoffs": [
+          "强制固件更新会改变已经改装设备的摄像头行为",
+          "正文未说明篡改检测的具体技术实现、误判处理方式或更新发布时间"
+        ]
+      }
+    },
+    {
+      "id": "candidate-0c64d9b05b660184",
+      "sourceDocumentId": "uploadvr-d474d1557e08",
+      "sourceUrl": "https://www.uploadvr.com/18birdies-arccos-meta-glasses-ai-golf-caddy/",
+      "brand": "Meta",
+      "name": "Meta displayless smart glasses with 18Birdies and Arccos integrations",
+      "status": "pending",
+      "reason": "source-not-official",
+      "productSlug": "meta-meta-displayless-smart-glasses-with-18birdies-and-arccos-integrations",
+      "discoveredAt": "2026-08-05T05:10:05.328Z",
+      "candidate": {
+        "brand": "Meta",
+        "name": "Meta displayless smart glasses with 18Birdies and Arccos integrations",
+        "form": "audio",
+        "status": "shipping",
+        "positioning": "将智能眼镜用作免手操作的 AI 高尔夫球童",
+        "audience": "美国和加拿大的高尔夫球手，尤其是使用 18Birdies 或 Arccos 的用户",
+        "scenarios": [
+          "开始指定球场和发球台的一轮比赛",
+          "在击球前询问距离、风况、球杆或瞄准方向",
+          "通过语音记录成绩",
+          "在比赛过程中查询当前表现"
+        ],
+        "capabilities": [
+          "通过“Hey Meta”启动 18Birdies 或 Arccos 会话",
+          "查询球场距离、果岭或旗杆距离、风向和风力影响",
+          "记录杆数和推杆数",
+          "查询当前成绩和表现",
+          "根据当前击球询问球杆选择和瞄准建议"
+        ],
+        "specs": [
+          {
+            "label": "可用地区",
+            "value": "美国和加拿大"
+          },
+          {
+            "label": "连接要求",
+            "value": "手机需在蓝牙范围内；手机无需解锁，也无需保持特定应用处于打开状态"
+          },
+          {
+            "label": "支持范围",
+            "value": "Meta 的显示式智能眼镜之外的所有 displayless 智能眼镜均列为支持设备"
+          },
+          {
+            "label": "语音模型",
+            "value": "Meta 表示 Muse Spark 能理解不同措辞的请求，前提是 18Birdies 或 Arccos 会话中已有相关信息"
+          }
+        ],
+        "architecture": [
+          "Meta 智能眼镜",
+          "Meta AI 应用",
+          "手机蓝牙连接",
+          "18Birdies 或 Arccos 服务"
+        ],
+        "tradeoffs": [
+          "需要在 Meta AI 应用中将 18Birdies 或 Arccos 连接到 Meta 账户",
+          "需要手机处于蓝牙范围内",
+          "功能依赖 18Birdies 或 Arccos 会话中已有的数据",
+          "正文未确认 Meta Ray-Ban Display 是否支持该整合",
+          "18Birdies 的部分俱乐部建议等功能面向付费订阅者，Arccos 的深入分析需要硬件传感器和订阅"
+        ]
+      }
+    },
+    {
+      "id": "candidate-1a7490db7db34d5b",
+      "sourceDocumentId": "meta-product-news-55b74e4db487",
+      "sourceUrl": "https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/",
+      "brand": "Meta",
+      "name": "Meta Glasses",
+      "status": "published",
+      "productSlug": "meta-meta-glasses",
+      "discoveredAt": "2026-08-05T01:22:29.946Z",
+      "candidate": {
+        "brand": "Meta",
+        "name": "Meta Glasses",
+        "form": "audio",
+        "status": "shipping",
+        "positioning": "与 EssilorLuxottica 合作推出的日常 AI 眼镜产品线，强调时尚外形、个性化搭配、全天候 AI 助手和日常免提使用。",
+        "audience": "希望在日常生活中使用 AI 助手、免提拍摄和开放式音频，同时重视外观、处方镜片兼容性与佩戴个性化的消费者。",
+        "scenarios": [
+          "日常语音问答与 AI 助手交互",
+          "免提接打电话和收发消息",
+          "听音乐、播客和有声书",
+          "拍摄并分享照片和视频",
+          "获取运动比分和本地餐厅推荐",
+          "管理健康习惯、日历和日程",
+          "实时翻译对话"
+        ],
+        "capabilities": [
+          "通过专用按钮调用 Meta AI 或自定义快捷功能",
+          "开放式音频支持通话、音乐、播客和有声书",
+          "降低风噪，支持通话、消息和语音控制",
+          "免提拍摄照片和视频",
+          "隐私设置与内置隐私保护措施",
+          "支持 Meta AI 多模态理解",
+          "动态照片自动拍摄多帧并推荐照片",
+          "即将支持无显示屏眼镜的行人导航",
+          "实时翻译将新增包括中文普通话、日语、印地语和韩语在内的14种语言"
+        ],
+        "specs": [
+          {
+            "label": "起售价",
+            "value": "299美元起"
+          },
+          {
+            "label": "续航",
+            "value": "超过8小时"
+          },
+          {
+            "label": "充电盒额外电量",
+            "value": "最多提供40小时额外电池续航"
+          },
+          {
+            "label": "上市款式",
+            "value": "3种镜框风格：Meta Adventurer、Meta Fury、Meta Glasses by Kylie"
+          },
+          {
+            "label": "首发组合",
+            "value": "26种颜色与镜片组合"
+          },
+          {
+            "label": "镜片兼容性",
+            "value": "兼容处方镜片"
+          },
+          {
+            "label": "AI模型",
+            "value": "美国和加拿大首发搭载由 Muse Spark 驱动的 Meta AI"
+          }
+        ],
+        "architecture": [
+          "无显示屏",
+          "开放式扬声器",
+          "多麦克风阵列",
+          "内置相机",
+          "专用操作按钮",
+          "便携式充电盒"
+        ],
+        "tradeoffs": [
+          "无显示屏，导航等视觉相关功能需要通过音频等方式提供",
+          "部分新功能和更多市场的供应情况将通过后续软件更新或逐步推出",
+          "公开信息未给出更具体的相机、音频、存储和充电规格"
+        ]
+      }
+    },
+    {
+      "id": "candidate-cff9783c6fb16c8c",
+      "sourceDocumentId": "uploadvr-52640a4ee041",
+      "sourceUrl": "https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/",
+      "brand": "Meta 与 EssilorLuxottica",
+      "name": "Meta smart glasses（含 Ray-Ban Meta 系列）",
+      "status": "pending",
+      "reason": "source-not-official",
+      "productSlug": "meta-与-essilorluxottica-meta-smart-glasses-含-ray-ban-meta-系列",
+      "discoveredAt": "2026-08-05T01:22:29.946Z",
+      "candidate": {
+        "brand": "Meta 与 EssilorLuxottica",
+        "name": "Meta smart glasses（含 Ray-Ban Meta 系列）",
+        "form": "audio",
+        "status": "shipping",
+        "positioning": "通过硬件隐私指示与固件级防篡改机制，降低智能眼镜被用于未经同意录制的风险。",
+        "audience": "Meta 智能眼镜用户及关注可穿戴设备隐私的消费者",
+        "scenarios": [
+          "拍照、录像和直播时提示周围人",
+          "视频通话共享视野或使用 Live AI 时提示摄像头正在工作",
+          "检测 LED 被胶带遮挡或被拆除后停止摄像头工作",
+          "向已售出的眼镜推送强制固件更新"
+        ],
+        "capabilities": [
+          "拍照时闪烁隐私 LED",
+          "录像、直播、视频通话共享视野或使用 Live AI 时脉冲显示",
+          "检测隐私 LED 被遮挡、拆除或物理破坏",
+          "检测到篡改后禁用摄像头"
+        ],
+        "specs": [],
+        "architecture": [
+          "眼镜前端白色隐私 LED",
+          "隐私 LED 集成环境光传感器",
+          "摄像头禁用检测机制",
+          "强制固件更新"
+        ],
+        "tradeoffs": [
+          "固件更新为强制安装",
+          "检测到隐私 LED 被篡改后摄像头将不可用",
+          "正文未说明检测机制的具体技术参数或误判处理方式"
+        ]
+      }
+    },
+    {
+      "id": "candidate-6dd9da13153a4d7a",
+      "sourceDocumentId": "uploadvr-d474d1557e08",
+      "sourceUrl": "https://www.uploadvr.com/18birdies-arccos-meta-glasses-ai-golf-caddy/",
+      "brand": "Meta",
+      "name": "Meta displayless smart glasses",
+      "status": "pending",
+      "reason": "source-not-official",
+      "productSlug": "meta-meta-displayless-smart-glasses",
+      "discoveredAt": "2026-08-05T01:22:29.946Z",
+      "candidate": {
+        "brand": "Meta",
+        "name": "Meta displayless smart glasses",
+        "form": "audio",
+        "status": "shipping",
+        "positioning": "通过Meta AI语音交互调用高尔夫辅助服务，将智能眼镜用作免手操作的AI高尔夫球童",
+        "audience": "美国和加拿大的高尔夫球员，尤其是18Birdies或Arccos用户",
+        "scenarios": [
+          "开始指定球场和发球台的回合",
+          "在击球过程中查询距离、风向和球杆建议",
+          "通过语音记录成绩并了解当前表现"
+        ],
+        "capabilities": [
+          "通过“Hey Meta”启动高尔夫回合",
+          "记录杆数和推杆数",
+          "查询当前成绩",
+          "查询到果岭或旗杆的距离",
+          "询问推荐球杆",
+          "询问开球瞄准方向",
+          "查询风向及风对击球的影响"
+        ],
+        "specs": [
+          {
+            "label": "支持地区",
+            "value": "美国和加拿大"
+          },
+          {
+            "label": "手机连接要求",
+            "value": "手机需处于蓝牙范围内，无需解锁，也无需保持特定App打开"
+          },
+          {
+            "label": "兼容范围",
+            "value": "Meta的所有无显示智能眼镜均列为支持产品"
+          },
+          {
+            "label": "AI模型",
+            "value": "正文称Muse Spark模型正在取代大多数智能眼镜上的Meta AI，并可理解不同措辞的请求"
+          }
+        ],
+        "architecture": [
+          "Meta AI智能眼镜与手机蓝牙连接",
+          "18Birdies或Arccos账户及服务集成",
+          "手机端提供球场、成绩或击球分析数据"
+        ],
+        "tradeoffs": [
+          "功能依赖手机处于蓝牙范围内",
+          "需要连接18Birdies或Arccos服务",
+          "Arccos的深度分析依赖其硬件传感器和订阅服务",
+          "正文未确认Meta Ray-Ban Display是否支持"
+        ]
+      }
     },
     {
       "id": "candidate-bb6d134512da9d10",
@@ -165,6 +524,8 @@
       "sourceUrl": "https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/",
       "brand": "Meta",
       "name": "Meta smart glasses（包括第一代 Ray-Ban Meta，2021 年 Ray-Ban Stories 除外）",
+      "status": "pending",
+      "reason": "source-not-official",
       "productSlug": "meta-meta-smart-glasses-包括第一代-ray-ban-meta-2021-年-ray-ban-stories-除外",
       "discoveredAt": "2026-08-04T05:56:42.376Z",
       "candidate": {
@@ -214,9 +575,7 @@
           "具体检测实现和更新时间未在正文中说明",
           "正文未说明禁用相机后的恢复方式"
         ]
-      },
-      "status": "pending",
-      "reason": "source-not-official"
+      }
     },
     {
       "id": "candidate-fcfdeddbd4370d6a",
@@ -224,6 +583,8 @@
       "sourceUrl": "https://www.uploadvr.com/18birdies-arccos-meta-glasses-ai-golf-caddy/",
       "brand": "Meta",
       "name": "Meta displayless smart glasses with Meta AI golf integrations",
+      "status": "pending",
+      "reason": "source-not-official",
       "productSlug": "meta-meta-displayless-smart-glasses-with-meta-ai-golf-integrations",
       "discoveredAt": "2026-08-04T05:56:42.376Z",
       "candidate": {
@@ -281,45 +642,7 @@
           "文中未确认Meta Ray-Ban Display是否支持",
           "Arccos的完整体验通常依赖其随身硬件传感器和订阅"
         ]
-      },
-      "status": "pending",
-      "reason": "source-not-official"
-    },
-    {
-      "id": "candidate-645044b974c676f0",
-      "sourceDocumentId": "uploadvr-594811f0c677",
-      "sourceUrl": "https://www.uploadvr.com/meta-one-premium-subscription-now-required-for-longer-access-to-glasses-features/",
-      "brand": "Meta",
-      "name": "Meta smart glasses",
-      "productSlug": "meta-meta-smart-glasses",
-      "discoveredAt": "2026-08-04T05:56:42.376Z",
-      "candidate": {
-        "brand": "Meta",
-        "name": "Meta smart glasses",
-        "form": "audio",
-        "status": "shipping",
-        "positioning": "面向日常使用并逐步加入 AI 与无障碍音频功能的智能眼镜产品",
-        "audience": "需要辅助听清面对面对话的智能眼镜用户",
-        "scenarios": [
-          "面对面对话时增强对方声音",
-          "使用 Meta AI 及相关高级功能"
-        ],
-        "capabilities": [
-          "Conversation Focus：放大眼前说话者的声音",
-          "提供 Meta AI 及其他 Meta 服务的订阅权益"
-        ],
-        "specs": [],
-        "architecture": [
-          "内置本地音频处理"
-        ],
-        "tradeoffs": [
-          "非订阅用户的 Conversation Focus 使用时长为 3 小时，Meta One Premium 用户为 15 小时",
-          "Conversation Focus 在眼镜本地运行，但更长使用时长需要订阅",
-          "Meta One Premium 在美国据报道定价为每月 20 美元"
-        ]
-      },
-      "status": "pending",
-      "reason": "source-not-official"
+      }
     }
   ]
 }

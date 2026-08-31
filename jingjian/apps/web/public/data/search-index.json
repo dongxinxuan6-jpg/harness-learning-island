@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "generatedAt": "2026-08-31T01:19:40.685Z",
   "items": [
     {
       "type": "content",
@@ -33,39 +33,99 @@
     },
     {
       "type": "content",
+      "slug": "from-seeing-to-acting-smart-glasses-as-first-person-intelligence-platforms",
+      "title": "From Seeing to Acting: Smart Glasses as First-Person Intelligence Platforms",
+      "summary": "该论文系统综述智能眼镜从拍摄与显示配件演变为第一视角智能平台的技术路径。正文明确讨论了设备硬件能力、第一视角数据流、七项基础能力、九类应用场景，以及可靠、具备时间有效性、可纠正且可治理的感知到行动闭环。"
+    },
+    {
+      "type": "content",
+      "slug": "the-slt-2026-smartglasses-challenge-benchmarking-egocentric-multi-talker-speech-",
+      "title": "The SLT 2026 SmartGlasses Challenge: Benchmarking Egocentric Multi-Talker Speech Recognition and Understanding with Audio-Language Models",
+      "summary": "论文介绍 IEEE SLT 2026 SmartGlasses Challenge，用于评测 AI 眼镜第一视角、多说话人语音处理能力。挑战包含双人对话理解和多人会议理解两个赛道，联合评估带时间戳和说话人归属的自动语音识别（TSA-ASR）以及口语语言理解（SLU）。其数据集包含 106 小时、714 个真实场景会话的四通道第一视角语音数据。"
+    },
+    {
+      "type": "content",
+      "slug": "egogazelite-on-device-egocentric-gaze-prediction-for-token-efficient-multimodal-",
+      "title": "EgoGazeLite: On-Device Egocentric Gaze Prediction for Token-Efficient Multimodal LLM Video Input",
+      "summary": "EgoGazeLite 是一种面向可穿戴设备第一视角视频理解的轻量级软件视线预测器。它根据摄像头佩戴者的视线预测结果裁剪视频，以降低多模态大语言模型的视觉 token 消耗；论文称其在两种多模态大语言模型、三项自动指标和两名大语言模型评审中，与真实视线裁剪相比均未出现显著差异。模型包含 1570 万参数、计算量为 6.71 GFLOPs，并可在消费级加速硬件上以 21.6 毫秒/帧运行。"
+    },
+    {
+      "type": "content",
+      "slug": "spotter-efficient-urban-visual-localization-via-geo-referenced-facade-landmarks-",
+      "title": "Spotter: Efficient Urban Visual Localization via Geo-Referenced Facade Landmarks in GPS-Degraded Environments",
+      "summary": "论文提出 Spotter，一种利用带地理参考的建筑立面地标进行城市视觉定位的实时框架，用于缓解 GPS 信号退化和视觉里程计漂移问题。研究使用在巴塞罗那多个城区通过可穿戴智能眼镜采集的行人序列进行评测，结果显示该方法优于基于里程计的基线，并以显著更高帧率达到接近先进地图定位方法的精度。"
+    },
+    {
+      "type": "content",
       "slug": "snapdragon-ar2-distributed",
       "title": "为什么 AI 眼镜芯片开始采用多芯片与分布式架构",
       "summary": "Snapdragon AR2 将感知、协处理与连接职责拆开，并把复杂任务分配给手机或主机。"
     },
     {
       "type": "content",
-      "slug": "rayneo-x3-pro-aios",
-      "title": "轻显示眼镜正在从功能集合走向专用 AI 操作系统",
-      "summary": "RayNeo X3 Pro 将彩色光波导、翻译、导航、应用与开发模式放入同一产品，代表轻显示路线对系统完整性的追求。"
-    },
-    {
-      "type": "content",
       "slug": "we-re-partnering-with-essilorluxottica-to-launch-meta-glasses",
       "title": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses",
-      "summary": "Meta 宣布与 EssilorLuxottica 合作推出 Meta Glasses，起售价 299 美元，首发提供三种镜框风格、26 种款式并支持处方镜片。产品配备 Meta AI、开放式扬声器、多麦克风阵列、免手拍摄、专用操作按钮、超过 8 小时续航和可额外提供最多 40 小时电量的充电盒；正文称其已在多个国家开售。"
-    },
-    {
-      "type": "content",
-      "slug": "craft-exploring-wearable-creative-ai-on-smart-glasses-for-fiction-writing-in-rea",
-      "title": "CRAFT: Exploring Wearable Creative AI on Smart Glasses for Fiction Writing in Real-World Contexts",
-      "summary": "论文提出 CRAFT（Context-aware Reality-Fiction Transformation）方法，探索 AI 眼镜如何把用户在现实环境中的日常经历转化为小说创作素材。研究通过九名作者访谈、16 名作者与研究人员参与的共创工作坊，以及覆盖八名作者、24 次创作时段的实地试用，分析了现场感知增强、现实经验真实性、虚构化处理和创作自主权等设计问题。研究发现，AI 眼镜可能帮助作者从偶然遇见的现实事物中获得更丰富的创作想法，并形成“微创作”等使用实践。"
-    },
-    {
-      "type": "content",
-      "slug": "devil-in-the-lens-analyzing-and-defending-physical-prompt-injection-against-visi",
-      "title": "Devil in the Lens: Analyzing and Defending Physical Prompt Injection Against Vision-Language Models on Wearable Devices",
-      "summary": "论文研究面向 AI 眼镜等可穿戴设备的物理提示注入攻击。攻击者将恶意指令嵌入现实环境中的文字，借助眼镜拍摄的图像影响视觉语言模型，可能干扰设备任务，诱导模型生成不当、偏见或不真实的输出。研究使用来自 200 多个现实环境的 AI 眼镜照片，分析了 6 类威胁向量并评估 12 个视觉语言模型；攻击在模拟环境中的成功率最高达 96%，在真实环境中最高达 60%。论文还提出了基于掩码的外部过滤器和基于语义向量的内部检测器。"
+      "summary": "Meta 与 EssilorLuxottica 发布 Meta Glasses，一款起价 299 美元、兼容处方镜片的无显示屏 AI 眼镜。产品提供三种镜框风格和 26 种首发组合，配备 Meta AI、开放式音频、多麦克风、摄像头、超过 8 小时续航及可提供最多 40 小时额外电量的充电盒。产品已在多个国家和地区开售，美国和加拿大首发搭载由 Muse Spark 驱动的 Meta AI。"
     },
     {
       "type": "content",
       "slug": "glassteng-self-powered-triboelectric-nanogenerator-based-sensing-of-pulse-jaw-an",
       "title": "GlassTENG: Self-Powered Triboelectric Nanogenerator based Sensing of Pulse, Jaw, and Upper Facial Activity from Everyday Glasses",
-      "summary": "论文提出 GlassTENG，一种嵌入日常眼镜框架的超低功耗、自供电摩擦电纳米发电机传感系统。系统在鼻梁角动脉、延伸镜腿处的颞浅动脉和太阳穴颞肌位置部署三个传感器，可同时采集动脉脉搏波形、下颌运动和上脸部活动。20 名参与者研究中，六类下颌及上脸部活动识别准确率为 93.8%，在 30 秒窗口内相对胸带传感器的心率平均绝对误差为 1.82 BPM。"
+      "summary": "论文介绍 GlassTENG，一种将三个定制摩擦电纳米发电机嵌入眼镜框架的超低功耗自供能传感系统。传感器分别位于鼻梁的角动脉、延伸镜腿上的颞浅动脉和太阳穴处的颞肌，可同时采集动脉脉搏波形、下颌运动以及眨眼和眉毛运动等上脸部活动。在 20 名参与者的研究中，系统对六类下颌和上脸部活动达到 93.8% 的准确率，并在 30 秒窗口内以胸带传感器为基准估计心率，平均绝对误差为 1.82 BPM。"
+    },
+    {
+      "type": "content",
+      "slug": "openglass-ultra-low-power-on-device-ai-eyewear-with-event-based-vision",
+      "title": "OpenGlass: Ultra-Low-Power On-Device AI Eyewear with Event-based Vision",
+      "summary": "OpenGlass 是一个开源智能眼镜原型平台，支持事件相机和帧式相机，并结合 nRF5340 事件驱动唤醒、可配置 PMIC 与 GAP9 RISC-V SoC，在眼镜端运行机器学习。论文展示了基于 Prophesee GENX320 的第一视角手势识别，端到端推理延迟为 78.3 ms，连续端侧机器学习续航最长达到 11.5 小时。"
+    },
+    {
+      "type": "content",
+      "slug": "devil-in-the-lens-analyzing-and-defending-physical-prompt-injection-against-visi",
+      "title": "Devil in the Lens: Analyzing and Defending Physical Prompt Injection Against Vision-Language Models on Wearable Devices",
+      "summary": "论文研究 AI 眼镜等可穿戴设备上的物理提示注入攻击：攻击者将恶意文字嵌入真实环境，利用摄像头输入影响视觉语言模型。作者使用来自 AI 眼镜在 200 多个真实环境中拍摄的照片，识别出 6 类威胁向量，并评估了 12 个视觉语言模型。攻击在模拟环境中的成功率最高达 96%，在真实环境中最高达 60%，可能干扰设备任务，使模型生成亵渎、有偏见或不真实的输出。论文还提出基于遮罩的外部过滤器和基于语义向量的内部检测器，以降低攻击成功率及安全影响。"
+    },
+    {
+      "type": "content",
+      "slug": "craft-exploring-wearable-creative-ai-on-smart-glasses-for-fiction-writing-in-rea",
+      "title": "CRAFT: Exploring Wearable Creative AI on Smart Glasses for Fiction Writing in Real-World Contexts",
+      "summary": "CRAFT 是一项探索 AI 眼镜辅助现实情境小说创作的研究。研究通过访谈、共创工作坊和实地试用，提出让 AI 眼镜增强即时感知、把现实经历转化为虚构灵感，并支持日常微创作的设计目标与交互机制。"
+    },
+    {
+      "type": "content",
+      "slug": "egogvae-ego-body-mesh-reconstruction-via-guided-variational-autoencoder",
+      "title": "EgoGVAE: Ego-body Mesh Reconstruction via Guided Variational Autoencoder",
+      "summary": "EgoGVAE提出一种通过引导变分自编码器，从头部姿态轨迹重建完整人体网格的方法。论文指出，该任务对头戴设备和智能眼镜相关应用已经变得重要；其方法通过匹配引导网络与头部到运动网络的潜在分布，在仅有头部姿态信息时生成自然的全身姿态，并采用一步采样实现相比扩散方法超过50倍的推理加速。实验结果显示，该方法在基准数据集上改善了自我身体网格重建性能。论文已被ECCV 2026接收。"
+    },
+    {
+      "type": "content",
+      "slug": "personal-visual-context-learning-in-large-multimodal-models",
+      "title": "Personal Visual Context Learning in Large Multimodal Models",
+      "summary": "论文提出 Personal Visual Context Learning，用于研究大多模态模型如何利用 AI 眼镜等可穿戴设备持续采集的个人第一视角视觉信息，回答与特定人物、物体和行为相关的个性化问题。作者发布 Personal-VCL-Bench，并提出 Agentic Context Bank 作为推理时基线。"
+    },
+    {
+      "type": "content",
+      "slug": "beyond-motion-primitives-behavioral-activity-recognition-from-head-mounted-imu",
+      "title": "Beyond Motion Primitives: Behavioral Activity Recognition from Head-Mounted IMU",
+      "summary": "论文研究如何利用头戴式 IMU 在 AR 智能眼镜上进行行为级活动识别。作者构建了包含 160K 个样本的 Ego4D 数据集，覆盖 8 个活动场景，并提出包含 703K 参数的 HiT-HAR 分层模型。该模型在五类动作和八类场景识别上优于此前的头戴式 IMU 模型。研究还分析了不同类别的可观测性，并指出时间上下文和场景结构对识别效果的重要性。"
+    },
+    {
+      "type": "content",
+      "slug": "how-much-does-it-cost-to-answer-my-question-benchmarking-cloud-vlm-based-vqa-sys",
+      "title": "How Much Does It Cost to Answer My Question? Benchmarking Cloud VLM-based VQA Systems",
+      "summary": "该论文提出 VQABench，用于系统评估云端视觉语言模型驱动的视觉问答系统中，客户端图像预处理对准确率、数据载荷、令牌成本和延迟的影响。研究场景明确包括智能眼镜，但正文没有发布或更新具体的 AI 眼镜产品。"
+    },
+    {
+      "type": "content",
+      "slug": "s-ember-a-large-scale-benchmark-for-streaming-egocentric-memory-retrieval",
+      "title": "S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval",
+      "summary": "S-EMBER 是一个面向流式第一视角情景记忆检索的大规模基准，包含使用 Ray-Ban Meta 智能眼镜采集的 3,141 段视频、共 388 小时活动记录，以及 9,448 组问答。它要求模型在连续视频流中根据视觉事件进行因果检索，并提供精确时间定位和视觉证据。"
+    },
+    {
+      "type": "content",
+      "slug": "rayneo-x3-pro-aios",
+      "title": "轻显示眼镜正在从功能集合走向专用 AI 操作系统",
+      "summary": "RayNeo X3 Pro 将彩色光波导、翻译、导航、应用与开发模式放入同一产品，代表轻显示路线对系统完整性的追求。"
     },
     {
       "type": "product",
@@ -141,9 +201,9 @@
     },
     {
       "type": "product",
-      "slug": "meta-与-essilorluxottica-meta-glasses",
-      "title": "Meta 与 EssilorLuxottica Meta Glasses",
-      "summary": "Meta 与 EssilorLuxottica 合作推出的日常佩戴型 AI 眼镜产品线，主打多样化外形、个性化配色和全天候 AI 助手体验。"
+      "slug": "meta-meta-glasses",
+      "title": "Meta Meta Glasses",
+      "summary": "面向日常全天使用的时尚化 AI 眼镜产品线，结合个性化镜框设计、开放式音频、摄像头和 Meta AI。"
     },
     {
       "type": "project",

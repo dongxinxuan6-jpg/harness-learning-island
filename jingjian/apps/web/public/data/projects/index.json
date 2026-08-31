@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T05:56:42.376Z",
+  "generatedAt": "2026-08-31T01:19:40.685Z",
   "items": [
     {
       "id": "repo-mentra",
@@ -18,9 +18,9 @@
         "Even G1/G2",
         "Vuzix Z100"
       ],
-      "stars": 2278,
+      "stars": 2330,
       "latestRelease": "v2.10",
-      "lastCommitAt": "2026-08-04T04:22:23Z",
+      "lastCommitAt": "2026-08-30T06:20:45Z",
       "difficulty": "intermediate",
       "architecture": [
         "眼镜传感与显示",
@@ -48,9 +48,9 @@
         "Meta Ray-Ban Display",
         "Quest"
       ],
-      "stars": 4855,
+      "stars": 4968,
       "latestRelease": "1.x",
-      "lastCommitAt": "2026-08-04T05:24:37Z",
+      "lastCommitAt": "2026-08-31T01:12:30Z",
       "difficulty": "advanced",
       "architecture": [
         "眼镜 SoC/NPU",
@@ -76,7 +76,7 @@
       "supportedDevices": [
         "Brilliant Labs Frame"
       ],
-      "stars": 497,
+      "stars": 516,
       "lastCommitAt": "2025-10-05T11:35:32Z",
       "difficulty": "advanced",
       "architecture": [
@@ -104,8 +104,8 @@
         "WebXR devices",
         "Android XR prototypes"
       ],
-      "stars": 455,
-      "lastCommitAt": "2026-08-04T02:19:38Z",
+      "stars": 465,
+      "lastCommitAt": "2026-08-28T01:16:15Z",
       "difficulty": "intermediate",
       "architecture": [
         "XR 传感设备",
@@ -158,7 +158,7 @@
       "supportedDevices": [
         "DIY ESP32-S3 glasses"
       ],
-      "stars": 4106,
+      "stars": 4144,
       "lastCommitAt": "2025-09-22T03:05:53Z",
       "difficulty": "intermediate",
       "architecture": [
