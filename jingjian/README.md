@@ -22,6 +22,30 @@ Web 与采集流程解耦。发布异常时，PWA 的 Cache Storage 与 IndexedD
 
 要求 Node.js 22+。
 
+### 换电脑恢复
+
+仓库已经包含完整源代码、测试、静态数据、产品封面、项目资料、周报、锁文件和自动发布工作流。新电脑拉取后，在仓库根目录执行：
+
+Windows PowerShell：
+
+```powershell
+cd jingjian
+.\scripts\setup.ps1
+```
+
+macOS/Linux：
+
+```bash
+cd jingjian
+bash scripts/setup.sh
+```
+
+脚本会检查 Node.js 版本、使用 `package-lock.json` 执行 `npm ci`、创建本地 `.env` 模板并完成生产构建。完成后执行 `npm run dev` 即可运行网页。
+
+`node_modules/`、`dist/`、`.wrangler/` 和测试输出属于机器或运行时生成文件，特意不提交；`npm ci` 会根据锁文件在新电脑恢复同一套依赖。`.env`、GitHub Secrets、Cloudflare 凭证和数据库访问凭证属于环境配置，不放入代码仓库；只运行网页时可直接使用模板，运行采集和自动发布管线时再填写对应配置。
+
+### 手动运行
+
 ```bash
 npm install
 npm run generate
